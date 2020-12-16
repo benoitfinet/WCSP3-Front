@@ -1,0 +1,45 @@
+.block-questions {
+  width: 41%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.question-style {
+  border: 1px rgba(63, 63, 70, 0.664) solid;
+  border-radius: 20px;
+  padding: 5px;
+  text-transform: uppercase;
+  color: rgb(49, 53, 60);
+  margin-bottom: 0;
+  font-size: 15px;
+}
+
+.arrow-down {
+  width: 22px;
+  height: 10px;
+  background-color: rgb(49, 53, 60);
+  clip-path: polygon(100% 0, 0 0, 50% 100%);
+  margin: auto;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+.display {
+  display: block;  
+  -webkit-animation: fadeIn 1.5s;
+  animation: fadeIn 1.5s;
+}
+
+@-webkit-keyframes fadeIn {
+  from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+    to { opacity: 1; }
+}
