@@ -4,13 +4,14 @@
 }
 
 .Activites{
-  background-image: url(../img/Forest\ Tote\ Tray\ Label.png);
+  background-image: url(../img/Sans\ titre\ \(3\).png);
   background-size: 100%;
   height: 100vh;
   padding: 0;
   margin: 0;
   font-family: 'Londrina Solid';
   padding-top: 3%;
+  background-repeat: no-repeat;
 }
 
 .Activiteselect {
@@ -48,12 +49,14 @@
   padding: 3% 3%;
   margin: auto;
   width: 700px;
+  box-shadow: 5px 10px 10px rgb(83, 107, 67);
 }
 
 .photoactivite{
-  padding-top: 5%;
   height: auto;
   width: 700px;
+  border-radius: 30px 30px 30px 30px;
+  margin-top: 3%;
 }
 
 .textactivites{
@@ -100,6 +103,9 @@
   .textback{
     width: 240px
   }
+}
+
+@media screen and (max-width: 1560px) {
   .Activites{
     background-image: none;
   }
