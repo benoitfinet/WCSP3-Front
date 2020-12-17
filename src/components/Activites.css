@@ -1,11 +1,25 @@
+* {
+  padding: 0;
+  text-align: center;
+}
+
 .Activites{
-  padding: 2.5%;
+  background-image: url(../img/Forest\ Tote\ Tray\ Label.png);
+  background-size: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: 'Londrina Solid';
 }
 
 .Activiteselect {
-  justify-content: space-between;
   border: 2px solid #009378;
   border-radius: 30px;
+  margin: auto;
+  width: 700px;
+}
+.Activitespadding{
+  padding-top: 3%;
 }
   
 .Activiteselect button {
@@ -33,8 +47,47 @@
 .textback{
   background-color: #E1E9E6;
   border-radius: 30px;
+  padding: 3% 3%;
+  margin: auto;
+  width: 700px;
 }
 
 .textactivites{
-  padding: 10% 10%;
+  margin: auto;
+}
+@media screen and (max-width: 1280px) {
+  .Activiteselect {
+    width: 440px;
+  }
+  .textback{
+    width: 540px
+  }
+}
+@media screen and (max-width: 986px) {
+  .Activiteselect {
+    width: 340px;
+  }
+  .textback{
+    width: 340px
+  }
+}
+
+@media screen and (max-width: 606px) {
+  .Activiteselect {
+    width: 240px;
+  }
+  .textback{
+    width: 240px
+  }
+}
+@media screen and (max-width: 410px) {
+  .Activiteselect {
+    width: 240px;
+  }
+  .textback{
+    width: 240px
+  }
+  .Activites{
+    background-image: none;
+  }
 }

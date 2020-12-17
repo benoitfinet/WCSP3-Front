@@ -3,7 +3,7 @@ import Activites from './components/Activites';
 
 function App () {
   return (
-    <div className="App">
+    <div>
       <Activites />
     </div>
   );

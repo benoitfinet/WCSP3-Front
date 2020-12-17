@@ -127,11 +127,13 @@ class Activites extends Component {
   render () {
     return (
       <div className="Activites">
+        <div className="Activitespadding">
         <Activiteselect
           active={this.state.activeId}
           handleChangeTab={this.handleChangeTab}
         />
         <div className="Activites-content">{this.getTabContent()}</div>
+        </div>
       </div>
     );
   }
