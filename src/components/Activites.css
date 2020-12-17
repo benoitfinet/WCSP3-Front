@@ -10,6 +10,7 @@
   padding: 0;
   margin: 0;
   font-family: 'Londrina Solid';
+  padding-top: 3%;
 }
 
 .Activiteselect {
@@ -17,9 +18,6 @@
   border-radius: 30px;
   margin: auto;
   width: 700px;
-}
-.Activitespadding{
-  padding-top: 3%;
 }
   
 .Activiteselect button {
@@ -30,6 +28,10 @@
   flex-grow: 1;
   margin: 2% 1%;
 }
+
+.h1activite{
+  padding: 3% 0;
+}
   
 .Activiteselect button.active {
   border-radius: 30px;
@@ -39,16 +41,18 @@
 .Activiteselect button:focus {
   outline: none;
 }
-  
-.Activites-content {
-  padding: 1em;
-}
 
 .textback{
   background-color: #E1E9E6;
   border-radius: 30px;
   padding: 3% 3%;
   margin: auto;
+  width: 700px;
+}
+
+.photoactivite{
+  padding-top: 5%;
+  height: auto;
   width: 700px;
 }
 
@@ -62,6 +66,9 @@
   .textback{
     width: 540px
   }
+  .photoactivite{
+    width: 540px;
+  }
 }
 @media screen and (max-width: 986px) {
   .Activiteselect {
@@ -69,6 +76,9 @@
   }
   .textback{
     width: 340px
+  }
+  .photoactivite{
+    width: 340px;
   }
 }
 
@@ -78,6 +88,9 @@
   }
   .textback{
     width: 240px
+  }
+  .photoactivite{
+    width: 240px;
   }
 }
 @media screen and (max-width: 410px) {
