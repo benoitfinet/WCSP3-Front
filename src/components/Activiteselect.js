@@ -1,6 +1,6 @@
-/* eslint-disable react/no-unescaped-entities */
-/* eslint-disable react/prop-types */
 import React, { Component } from 'react';
+
+import PropTypes from 'prop-types';
 
 class Activiteselect extends Component {
   render () {
@@ -52,5 +52,10 @@ class Activiteselect extends Component {
     );
   }
 }
+
+Activiteselect.propTypes = {
+  handleChangeTab: PropTypes.string,
+  active: PropTypes.string
+};
 
 export default Activiteselect;

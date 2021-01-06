@@ -1,5 +1,6 @@
-import './App.css';
 import Activites from './components/Activites';
+
+import './App.css';
 
 function App () {
   return (
