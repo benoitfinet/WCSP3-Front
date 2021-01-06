@@ -3,31 +3,33 @@ import PropTypes from 'prop-types';
 
 import './Question.css';
 
-class Question extends React.Component {
-  state = {
-    show: false
-  };
-
-  onChange = () => {
-    this.setState({ show: !this.state.show });
-  };
-
+class Faq extends React.Component {
   render (props) {
     return (
-      <div className='block-questions'>
-        <h2 className="question-style">{this.props.question}</h2>
-        <p onClick={this.onChange} className="arrow-down"></p>
-        <p className={!this.state.show ? 'hide' : 'display'}>
-          {this.props.response}
+      <div
+        onClick={() => {
+          this.props.handleShow(this.props.question.id);
+        }}
+        className="block-questions"
+      >
+        <div className="block-questions-arrows">
+          <h2 className="question-style">{this.props.question.question}</h2>
+          <p
+            className={this.props.question.arrow ? 'arrow-right' : 'arrow-down'}
+          ></p>
+        </div>
+        <p className={!this.props.question.show ? 'hide' : 'display'}>
+          {this.props.question.response}
         </p>
       </div>
     );
   }
 }
 
-Question.propTypes = {
+Faq.propTypes = {
   question: PropTypes.string.isRequired,
-  response: PropTypes.string.isRequired
+  response: PropTypes.string.isRequired,
+  handleShow: PropTypes.string.isRequired
 };
 
-export default Question;
+export default Faq;
