@@ -1,10 +1,12 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { links } from './data';
-import './navbar.css';
+
 import logo from './logo.png';
 import logo2 from './logo2.jpg';
 import logo3 from './logo3.png';
+
+import './navbar.css';
 
 const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
