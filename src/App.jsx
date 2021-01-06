@@ -1,6 +1,7 @@
-import './App.css';
 import CarouselPage from './components/carouselhome';
 import Button from './components/button';
+
+import './App.css';
 
 function App () {
   return (
