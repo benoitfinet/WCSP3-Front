@@ -44,7 +44,7 @@ class AllQuestions extends React.Component {
     return (
       <div className="block-faq">
         {this.state.questions.map((question) => (
-          <Faq question={question} handleShow={this.handleShow} key={this.question} />
+          <Faq question={question} handleShow={this.handleShow} key={question.question} />
         ))}
       </div>
     );
@@ -52,9 +52,9 @@ class AllQuestions extends React.Component {
 }
 
 AllQuestions.propTypes = {
-  question: PropTypes.string.isRequired,
-  response: PropTypes.string.isRequired,
-  handleShow: PropTypes.string.isRequired
+  questions: PropTypes.object,
+  response: PropTypes.string,
+  handleShow: PropTypes.func
 };
 
 export default AllQuestions;

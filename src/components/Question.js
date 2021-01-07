@@ -27,9 +27,9 @@ class Faq extends React.Component {
 }
 
 Faq.propTypes = {
-  question: PropTypes.string.isRequired,
-  response: PropTypes.string.isRequired,
-  handleShow: PropTypes.string.isRequired
+  question: PropTypes.object,
+  response: PropTypes.string,
+  handleShow: PropTypes.func
 };
 
 export default Faq;
