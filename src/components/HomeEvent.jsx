@@ -1,6 +1,9 @@
 import React from 'react';
 import { MDBRow, MDBCol, MDBCard, MDBCardBody, MDBMask, MDBView, MDBBtn } from 'mdbreact';
 
+import Image1 from './img/flyernocturne.gif';
+import Image2 from './img/Atout branchers parcours enfants Piccolo 2.JPG';
+
 const BlogPage = () => {
   return (
     <MDBCard className="my-5 px-5 pb-5">
@@ -8,11 +11,7 @@ const BlogPage = () => {
         <MDBRow>
           <MDBCol lg="5">
             <MDBView className="rounded z-depth-2 mb-lg-0 mb-4" hover waves>
-              <img
-                className="img-fluid"
-                src="https://mdbootstrap.com/img/Photos/Others/img%20(27).jpg"
-                alt=""
-              />
+              <img className="img-fluid" src={Image1} alt="image d'un homme faisant de l'accrobranche de nuit"/>
               <a href="#!">
                 <MDBMask overlay="white-slight" />
               </a>
@@ -61,8 +60,8 @@ const BlogPage = () => {
             <MDBView className="rounded z-depth-2 mb-lg-0 mb-4" hover waves>
               <img
                 className="img-fluid"
-                src="https://mdbootstrap.com/img/Photos/Others/img%20(34).jpg"
-                alt=""
+                src={Image2}
+                alt="Image de terrasse en forêt"
               />
               <a href="#!">
                 <MDBMask overlay="white-slight" />
