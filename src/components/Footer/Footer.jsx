@@ -1,5 +1,5 @@
-import React from 'react';
 import './Footer.css';
+
 import { ImFacebook2, ImInstagram } from 'react-icons/im';
 
 const Footer = () => {

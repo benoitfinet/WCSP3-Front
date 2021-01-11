@@ -250,7 +250,7 @@ nav {
 }
 
 .background {
-  background-image: url('./backgroundhome.jpeg');
+  background-image: url('./ImgHome/backgroundhome.jpeg');
   height: 85vh;
   width: 100%;
   background-size: cover;

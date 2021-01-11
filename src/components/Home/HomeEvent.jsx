@@ -1,8 +1,7 @@
-import React from 'react';
 import { MDBRow, MDBCol, MDBCard, MDBCardBody, MDBMask, MDBView, MDBBtn } from 'mdbreact';
 
-import Image1 from './img/flyernocturne.gif';
-import Image2 from './img/Atout branchers parcours enfants Piccolo 2.JPG';
+import Image1 from './ImgHome/flyernocturne.gif';
+import Image2 from './ImgHome/Atout branchers parcours enfants Piccolo 2.JPG';
 
 const BlogPage = () => {
   return (
