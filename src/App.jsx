@@ -1,3 +1,4 @@
+import AllQuestions from './components/AllQuestions';
 import HomeEvent from './components/HomeEvent';
 import CarouselPage from './components/carouselhome';
 import Button from './components/button';
@@ -10,12 +11,15 @@ import Cards from './Components/Cards';
 function App () {
   return (
     <div className="App">
-      <Navbar />
-      <CarouselPage />
-      <Button />
-      <HomeEvent />
-      <Footer />
-     <Cards/>
+      <header className="App-header">
+        <AllQuestions />
+        </header>
+        <Navbar />
+        <CarouselPage />
+        <Button />
+        <HomeEvent />
+        <Footer />
+        <Cards/>
     </div>
   );
 }
