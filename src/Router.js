@@ -4,9 +4,9 @@ import { Switch, Route } from 'react-router-dom';
 
 const RouterWebSite = () => {
   return (
-        <Switch>
-          <Route exact path="/" component={Home} />
-        </Switch>
+    <Switch>
+      <Route exact path="/" component={Home} />
+    </Switch>
   );
 };
 
