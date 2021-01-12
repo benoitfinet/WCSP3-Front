@@ -4,14 +4,12 @@ import Button from './components/button';
 import Navbar from './components/navbar';
 
 import './App.css';
+import Cards from './Components/Cards';
 
 function App () {
-  return (      
+  return (
     <div className="App">
-      <Navbar />
-      <CarouselPage />
-      <Button />
-      <HomeEvent />
+     <Cards/>
     </div>
   );
 }
