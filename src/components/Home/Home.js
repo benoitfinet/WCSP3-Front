@@ -8,13 +8,13 @@ import './Home.css';
 
 function Home () {
   return (
-        <div>
-            <Navbar />
-            <Carousel className="carousel" />
-            <Button />
-            <HomeEvent />
-            <Footer />
-        </div>
+    <div>
+      <Navbar />
+      <Carousel className="carousel" />
+      <Button />
+      <HomeEvent />
+      <Footer />
+    </div>
   );
 }
 
