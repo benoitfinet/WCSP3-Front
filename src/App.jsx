@@ -5,6 +5,7 @@ import Navbar from './components/navbar';
 import Footer from './components/Footer';
 
 import './App.css';
+import Cards from './Components/Cards';
 
 function App () {
   return (
@@ -14,6 +15,7 @@ function App () {
       <Button />
       <HomeEvent />
       <Footer />
+     <Cards/>
     </div>
   );
 }
