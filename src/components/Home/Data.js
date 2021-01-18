@@ -11,23 +11,23 @@ export const links = [
   },
   {
     id: 3,
-    url: '/Groupes',
-    text: 'groupes'
-  },
-  {
-    id: 4,
-    url: '/Ounoustrouver',
-    text: 'où nous trouver'
-  },
-  {
-    id: 5,
     url: '/Horaires',
     text: 'horaires'
   },
   {
-    id: 6,
+    id: 4,
     url: '/Tarifs',
     text: 'tarifs'
+  },
+  {
+    id: 5,
+    url: '/Ounoustrouver',
+    text: 'où nous trouver'
+  },
+  {
+    id: 6,
+    url: '/Groupes',
+    text: 'groupes'
   },
   {
     id: 7,

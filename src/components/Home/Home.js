@@ -3,6 +3,7 @@ import Carousel from './Carouselhome';
 import Button from './Button';
 import HomeEvent from './HomeEvent';
 import Footer from '../Footer/Footer';
+import Cards from './Cards';
 
 import './Home.css';
 
@@ -11,7 +12,8 @@ function Home () {
         <div>
             <Navbar />
             <Carousel className="carousel" />
-            <Button />
+            <Button className="button" />
+            <Cards />
             <HomeEvent />
             <Footer />
         </div>

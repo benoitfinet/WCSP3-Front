@@ -11,42 +11,42 @@ class Activiteselect extends Component {
           onClick={this.props.handleChangeTab}
           className={this.props.active === 'lasergame' ? 'active' : ''}
         >
-          Laser game
+          Familles / Amis
         </button>
         <button
           id="orientation"
           onClick={this.props.handleChangeTab}
           className={this.props.active === 'orientation' ? 'active' : ''}
         >
-          Orientation
+          Anniversaires
         </button>
         <button
           id="altispider"
           onClick={this.props.handleChangeTab}
           className={this.props.active === 'altispider' ? 'active' : ''}
         >
-          Alti'Spider
+          Scolaires
         </button>
         <button
           id="escalade"
           onClick={this.props.handleChangeTab}
           className={this.props.active === 'escalade' ? 'active' : ''}
         >
-          Escalade
+          Séminaires
         </button>
         <button
           id="airedejeux"
           onClick={this.props.handleChangeTab}
           className={this.props.active === 'airedejeux' ? 'active' : ''}
         >
-          Aire de jeux
+          CE / Assos
         </button>
         <button
           id="parcours"
           onClick={this.props.handleChangeTab}
           className={this.props.active === 'parcours' ? 'active' : ''}
         >
-          Parcours
+          EVG / EVJF
         </button>
       </div>
     );
