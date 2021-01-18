@@ -9,14 +9,14 @@ import './Home.css';
 
 function Home () {
   return (
-        <div>
-            <Navbar />
-            <Carousel className="carousel" />
-            <Button className="button" />
-            <Cards />
-            <HomeEvent />
-            <Footer />
-        </div>
+    <div>
+      <Navbar />
+      <Carousel className="carousel" />
+      <Button className="button" />
+      <Cards />
+      <HomeEvent />
+      <Footer />
+    </div>
   );
 }
 

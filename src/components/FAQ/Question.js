@@ -15,12 +15,12 @@ class Faq extends React.Component {
         <div className="block-questions-arrows">
           <h2 className="question-style">{this.props.question.question}</h2>
           <p
-            className={this.props.question.arrow ? 'arrow-right' : 'arrow-down'}
-          ></p>
+            className={this.props.question.arrow ? 'arrow-right' : 'arrow-down'}>
+            </p>
         </div>
-        <p className={!this.props.question.show ? 'hide' : 'display'}>
-          {this.props.question.response}
-        </p>
+          <p className={!this.props.question.show ? 'hide' : 'display'}>
+            {this.props.question.response}
+          </p>
       </div>
     );
   }

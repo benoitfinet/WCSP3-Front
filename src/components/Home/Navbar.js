@@ -24,39 +24,39 @@ const Navbar = () => {
     }
   }, [showLinks]);
   return (
-      <div>
-        <nav>
-          <div className="nav-center">
-            <div className="nav-header">
-              <img src={logo} className="logo" alt="logo" />
-              <button className="nav-toggle" onClick={toggleLinks}>
-                <FaBars />
-              </button>
-            </div>
-            <div className="links-container" ref={linksContainerRef}>
-              <ul className="links" ref={linksRef}>
-                {links.map((link) => {
-                  const { id, url, text } = link;
-                  return (
-                    <li key={id}>
-                      <a href={url}>{text}</a>
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
-            <ul className="social-icons">
-            <img src={logo2} className="logo2" alt="logo" />
-            <img src={logo3} className="logo2" alt="logo" />
+    <div>
+      <nav>
+        <div className="nav-center">
+          <div className="nav-header">
+            <img src={logo} className="logo" alt="logo" />
+            <button className="nav-toggle" onClick={toggleLinks}>
+              <FaBars />
+            </button>
+          </div>
+          <div className="links-container" ref={linksContainerRef}>
+            <ul className="links" ref={linksRef}>
+              {links.map((link) => {
+                const { id, url, text } = link;
+                return (
+                  <li key={id}>
+                    <a href={url}>{text}</a>
+                  </li>
+                );
+              })}
             </ul>
           </div>
-        </nav>
+          <ul className="social-icons">
+            <img src={logo2} className="logo2" alt="logo" />
+            <img src={logo3} className="logo2" alt="logo" />
+          </ul>
+        </div>
+      </nav>
       <div className="contentbackground">
         <div className="background">
         <p className="testtitle">Test de titre</p>
       </div>
     </div>
-    </div>
+  </div>
   );
 };
 

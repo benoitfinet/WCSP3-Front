@@ -61,6 +61,7 @@
 .textactivites{
   margin: auto;
 }
+
 @media screen and (max-width: 1280px) {
   .Activiteselect {
     width: 440px;
@@ -72,6 +73,7 @@
     width: 540px;
   }
 }
+
 @media screen and (max-width: 986px) {
   .Activiteselect {
     width: 340px;
@@ -95,6 +97,7 @@
     width: 240px;
   }
 }
+
 @media screen and (max-width: 410px) {
   .Activiteselect {
     width: 240px;

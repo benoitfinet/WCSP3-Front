@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import Activiteselect from './Activiteselect';
 import Navbar from '../Home/Navbar';
 import Footer from '../Footer/Footer';
