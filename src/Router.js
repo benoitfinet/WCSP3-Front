@@ -1,5 +1,5 @@
-import Home from './components/Home/Home.js';
-import Activites from './components/Activites/Activites';
+import Home from './Components/Home/Home.js';
+import Activites from './Components/Activites/Activites';
 
 import { Switch, Route } from 'react-router-dom';
 

@@ -1,3 +1,5 @@
+import logo from './ImgHome/logo2.png';
+
 export const links = [
   {
     id: 1,
@@ -13,6 +15,11 @@ export const links = [
     id: 3,
     url: '/Groupes',
     text: 'groupes'
+  },
+  {
+    id: 0,
+    url: '/test',
+    text: <img src={logo} className="logo" alt="logo" />
   },
   {
     id: 4,

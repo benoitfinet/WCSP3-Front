@@ -1,3 +1,37 @@
+.blocknavbar {
+  background-color: white;
+  padding-top: 0;
+  transition: 0.3s;
+}
+
+.blocknavbar.active {
+  background-color: transparent;
+}
+
+li {
+  background-color: white;
+}
+
+li:first-child {
+  border-top-left-radius: 80px 80px;
+  border-bottom-left-radius: 80px 80px;
+}
+
+li:last-child {
+  border-top-right-radius: 80px 80px;
+  border-bottom-right-radius: 80px 80px;
+}
+
+ul li:nth-child(4) {  
+  border-bottom-left-radius: 0px 125px;
+  border-bottom-right-radius: 90px 55px;
+}
+
+ul li:nth-child(4) {  
+  border-top-left-radius: 90px 55px;
+  border-top-right-radius: 0px 125px;
+}
+
 :root {
   --clr-primary-1: hsl(205, 86%, 17%);
   --clr-primary-2: hsl(205, 77%, 27%);
@@ -119,8 +153,9 @@ p {
 }
 
 nav {
-  background: var(--clr-white);
-  box-shadow: var(--light-shadow);
+  position: fixed;
+  width: 100%;
+  padding-top: 8px;
 }
 
 .nav-header {
@@ -145,7 +180,7 @@ nav {
 }
 
 .logo {
-  height: 120px;
+  height: 95px;
 }
 
 .logo2 {
@@ -160,6 +195,8 @@ nav {
   display: block;
   padding: 0.5rem 1rem;
   transition: var(--transition);
+  margin: 0!important;
+  padding: 10px!important;
 }
 
 .links a:hover {
@@ -214,7 +251,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
+    margin-left: 16%;
   }
   .nav-header {
     padding: 0;
@@ -227,6 +264,8 @@ nav {
   }
   .links {
     display: flex;
+    align-items: center;
+    margin-bottom: 0;
   }
   .links a {
     padding: 0;
