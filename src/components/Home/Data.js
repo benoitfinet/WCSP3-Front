@@ -6,32 +6,32 @@ export const links = [
   },
   {
     id: 2,
-    url: '/about',
+    url: '/Activites',
     text: 'activités'
   },
   {
     id: 3,
-    url: '/projects',
+    url: '/Groupes',
     text: 'groupes'
   },
   {
     id: 4,
-    url: '/contact',
+    url: '/Ounoustrouver',
     text: 'où nous trouver'
   },
   {
     id: 5,
-    url: '/profile',
+    url: '/Horaires',
     text: 'horaires'
   },
   {
     id: 6,
-    url: '/profile',
+    url: '/Tarifs',
     text: 'tarifs'
   },
   {
     id: 7,
-    url: '/profile',
+    url: '/Reservation',
     text: 'réservation'
   }
 ];
