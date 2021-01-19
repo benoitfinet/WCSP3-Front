@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import Activiteselect from './Activiteselect';
+import Navbar from '../Home/Navbar';
+import Footer from '../Footer/Footer';
 
-import Photo1 from '../img/photos atout branches/laser game.jpeg';
-import Photo2 from '../img/photos atout branches/parcours.jpg';
-import Photo3 from '../img/photos atout branches/parcours2.JPG';
-import Photo4 from '../img/photos atout branches/escalade.jpeg';
-import Photo5 from '../img/photos atout branches/team.JPG';
-import Photo6 from '../img/photos atout branches/tyro.jpg';
+import Photo1 from '../../img/photos atout branches/laser game.jpeg';
+import Photo2 from '../../img/photos atout branches/parcours.jpg';
+import Photo3 from '../../img/photos atout branches/parcours2.JPG';
+import Photo4 from '../../img/photos atout branches/escalade.jpeg';
+import Photo5 from '../../img/photos atout branches/team.JPG';
+import Photo6 from '../../img/photos atout branches/tyro.jpg';
 
 import './Activites.css';
 
@@ -134,14 +136,18 @@ class Activites extends Component {
 
   render () {
     return (
-      <div className="Activites">
-        <div className="Activitespadding">
-        <Activiteselect
-          active={this.state.activeId}
-          handleChangeTab={this.handleChangeTab}
-        />
-        <div className="Activites-content">{this.getTabContent()}</div>
+      <div>
+        <Navbar />
+        <div className="Activites">
+          <div className="Activitespadding">
+          <Activiteselect
+            active={this.state.activeId}
+            handleChangeTab={this.handleChangeTab}
+          />
+          <div className="Activites-content">{this.getTabContent()}</div>
+          </div>
         </div>
+        <Footer />
       </div>
     );
   }
