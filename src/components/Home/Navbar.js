@@ -56,9 +56,7 @@ const Navbar = () => {
         </ul>
       </div>
     </nav>
-    <div className="background">
-    </div>
-    </div>
+  </div>
   );
 };
 

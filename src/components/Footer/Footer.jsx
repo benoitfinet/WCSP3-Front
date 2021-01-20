@@ -6,15 +6,15 @@ import './Footer.css';
 const Footer = () => {
   return (
     <MDBFooter color="unique-color-dark" className="page-footer font-small pt-0">
-      <div style={{ backgroundColor: '#6351ce' }}>
+      <div style={{ backgroundColor: '#545454' }}>
         <MDBContainer fluid className="text-center text-md-left">
           <MDBRow className="py-4 d-flex align-items-center">
-            <MDBCol md="6" lg="5" className="text-center text-md-left mb-4 mb-md-0">
+            <MDBCol md="6" lg="5" className="text-center">
               <h6 className="mb-0 white-text">
                 RÉSEAUX SOCIAUX ET LABELS
               </h6>
             </MDBCol>
-            <MDBCol md="6" lg="7" className="text-center text-md-right">
+            <MDBCol md="6" lg="7" className="text-center">
               <a className="fb-ic ml-0">
                 <i className="fab fa-facebook-f white-text mr-lg-4"> </i>
               </a>
@@ -113,7 +113,7 @@ const Footer = () => {
       </MDBContainer>
       <div className="footer-copyright text-center py-3">
         <MDBContainer fluid>
-          &copy; {new Date().getFullYear()} Copyright: <a href="https://www.MDBootstrap.com"> MDBootstrap.com </a>
+          &copy; {new Date().getFullYear()} Copyright: <a href="https://www.wildcodeschool.com"> WildCodeSchool.com </a>
         </MDBContainer>
       </div>
     </MDBFooter>

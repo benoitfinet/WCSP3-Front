@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 
 import Faq from './Question';
 import questions from './Faq';
+import Navbar from '../Home/Navbar';
+import Footer from '../Footer/Footer';
 
 import './AllQuestions.css';
 
@@ -42,10 +44,14 @@ class AllQuestions extends React.Component {
 
   render () {
     return (
+      <div>
+        <Navbar />
       <div className="block-faq">
         {this.state.questions.map((question) => (
           <Faq question={question} handleShow={this.handleShow} key={question.question} />
         ))}
+      </div>
+      <Footer />
       </div>
     );
   }

@@ -4,9 +4,11 @@ import './Button.css';
 
 function button () {
   return (
-        <div>
-            <button className="button">Découvrez toutes nos activités</button>
-        </div>
+    <div>
+      <button className="button">
+        Découvrez toutes nos activités
+      </button>
+    </div>
   );
 }
 
