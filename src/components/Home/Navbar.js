@@ -32,7 +32,7 @@ const Navbar = () => {
   window.addEventListener('scroll', changeBackground);
 
   return (
-    <div>
+    <div className="background">
     <nav className={navbar ? 'blocknavbar' : 'blocknavbar.active'}>
       <div className="nav-center">
         <div className="nav-header">

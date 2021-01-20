@@ -3,7 +3,7 @@ import Footer from '../Footer/Footer';
 
 import './Map.css';
 
-import PhotoMap from './img/map.png';
+import PhotoMap from '../Home/ImgHome/map.png';
 
 const Map = () => {
   return (
