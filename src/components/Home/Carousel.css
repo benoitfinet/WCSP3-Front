@@ -1,0 +1,27 @@
+.d-block {
+    height: 624px;
+}
+
+@media screen and (max-width: 1200px) {
+    .d-block {
+        height: 520px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .d-block {
+        height: 420px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .d-block {
+        height: 320px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .d-block {
+        height: 220px;
+    }
+}
