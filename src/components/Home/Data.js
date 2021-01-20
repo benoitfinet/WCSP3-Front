@@ -1,44 +1,56 @@
 import logo from './ImgHome/logo2.png';
+import { FaFacebook } from 'react-icons/fa';
+import { AiFillInstagram } from 'react-icons/ai';
 
 export const links = [
   {
     id: 1,
     url: '/',
-    text: 'accueil'
+    text: <FaFacebook />
   },
   {
     id: 2,
+    url: '/',
+    text: <AiFillInstagram />
+  },
+  {
+    id: 3,
+    url: '/',
+    text: 'accueil'
+  },
+  {
+    id: 4,
     url: '/Activites',
     text: 'activités'
   },
   {
-    id: 3,
-    url: '/Groupes',
-    text: 'groupes'
+    id: 5,
+    url: '/Horaires',
+    text: 'Nos horaires'
   },
   {
-    id: 0,
+    id: 6,
     url: '/test',
     text: <img src={logo} className="logo" alt="logo" />
   },
   {
-    id: 4,
-    url: '/Ounoustrouver',
-    text: 'où nous trouver'
-  },
-  {
-    id: 5,
-    url: '/Horaires',
-    text: 'horaires'
-  },
-  {
-    id: 6,
-    url: '/Tarifs',
-    text: 'tarifs'
-  },
-  {
     id: 7,
+    url: '/Horaires',
+    text: 'Tarifs'
+  },
+  {
+    id: 8,
+    url: '/Horaires',
+    text: 'Nous trouver'
+  },
+  {
+    id: 9,
+    url: '/Tarifs',
+    text: 'Groupes'
+  },
+  {
+    id: 10,
     url: '/Reservation',
-    text: 'réservation'
+    text: 'réserver'
   }
 ];

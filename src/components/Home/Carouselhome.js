@@ -2,9 +2,11 @@ import React from 'react';
 
 import { MDBCarousel, MDBCarouselCaption, MDBCarouselInner, MDBCarouselItem, MDBView, MDBMask, MDBContainer } from 'mdbreact';
 
+import './Carouselhome.css';
+
 const CarouselPage = () => {
   return (
-    <MDBContainer>
+    <MDBContainer className="carousel">
       <MDBCarousel
       activeItem={1}
       length={3}
