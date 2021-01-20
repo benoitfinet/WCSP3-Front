@@ -3,7 +3,7 @@ import Footer from '../Footer/Footer';
 
 import './Map.css';
 
-import PhotoMap from '../../img/photos atout branches/parcours.jpg';
+import PhotoMap from './img/map.png';
 
 const Map = () => {
   return (
@@ -18,7 +18,9 @@ const Map = () => {
             <p className="text-map">
               Notre adresse : Route de Boutigny, 91490 Milly-la-Forêt
             </p>
+            <a href="https://www.google.fr/maps/place/Atout+Branches/@48.3936706,2.4418254,13z/data=!4m5!3m4!1s0x47e5eaf727d334c5:0x9944747c258b3223!8m2!3d48.4086668!4d2.4491385" target="blank">
             <img className="img-fluid" src={PhotoMap} alt="Carte de Milly-la-Forêt"/>
+            </a>
             <p className="text-map">
               Code + Google: CF38+CP Milly-la-Forêt
             </p>
