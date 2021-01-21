@@ -1,8 +1,8 @@
-import Home from './components/Home/Home.js';
-import Activites from './components/Activites/Activites';
-import Groupes from './components/Groupes/Groupes';
-import Map from './components/Map/Map';
-import Faq from './components/FAQ/AllQuestions';
+import Home from './Components/Home/Home.js';
+import Activites from './Components/Activites/Activites';
+import Groupes from './Components/Groupes/Groupes';
+import Map from './Components/Map/Map';
+import Faq from './Components/FAQ/AllQuestions';
 
 import { Switch, Route } from 'react-router-dom';
 

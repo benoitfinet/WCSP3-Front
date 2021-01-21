@@ -6,7 +6,7 @@
   z-index: 2;
 }
 
-.blocknavbar.active {
+.blocknavbaractive {
   background-color: transparent;
 }
 
@@ -310,4 +310,23 @@ nav {
 
 .contentbackground {
   position: relative;
+}
+
+@media screen and (max-width: 832px) {
+  ul li:nth-child(6) {
+    display: none!important;
+  }
+
+  .blocknavbaractive {
+    background-color: white!important;
+  }
+
+  li:first-child {
+    display: none;
+  }
+
+  ul li:nth-child(2) {  
+    display: none;
+  }
+
 }
