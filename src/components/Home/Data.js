@@ -35,17 +35,17 @@ export const links = [
   },
   {
     id: 7,
-    url: '/Horaires',
+    url: '/Tarifs',
     text: 'Tarifs'
   },
   {
     id: 8,
-    url: '/Horaires',
+    url: '/Ounoustrouver',
     text: 'Nous trouver'
   },
   {
     id: 9,
-    url: '/Tarifs',
+    url: '/Groupes',
     text: 'Groupes'
   },
   {

@@ -34,6 +34,7 @@ const Navbar = () => {
   return (
     <div className="background">
     <nav className={navbar ? 'blocknavbar' : 'blocknavbaractive'}>
+      <p className="testtitle">REVEIL TES SENS</p>
       <div className="nav-center">
         <div className="nav-header">
           <button className="nav-toggle" onClick={toggleLinks}>
