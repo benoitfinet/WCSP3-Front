@@ -33,7 +33,7 @@ const Navbar = () => {
 
   return (
     <div className="background">
-    <nav className={navbar ? 'blocknavbar' : 'blocknavbar.active'}>
+    <nav className={navbar ? 'blocknavbar' : 'blocknavbaractive'}>
       <div className="nav-center">
         <div className="nav-header">
           <button className="nav-toggle" onClick={toggleLinks}>
