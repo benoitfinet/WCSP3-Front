@@ -11,11 +11,15 @@ import './Indexcards.css';
 // eslint-disable-next-line react/prop-types
 const Indexcards = ({ deviceType }) => {
   return (
+    <div>
+    <h2 className="home-title">Des offres pour tout publics</h2>
+    <h3 className="home-subtitle">En famille, entre amis, entre collègues ...</h3>
     <Fragment>
       <Section>
         <Simple deviceType={deviceType} />
       </Section>
     </Fragment>
+    </div>
   );
 };
 Indexcards.getInitialProps = ({ req }) => {

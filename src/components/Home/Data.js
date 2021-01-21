@@ -6,12 +6,12 @@ export const links = [
   {
     id: 1,
     url: '/',
-    text: <FaFacebook />
+    text: <FaFacebook size={32}/>
   },
   {
     id: 2,
     url: '/',
-    text: <AiFillInstagram />
+    text: <AiFillInstagram size={32} />
   },
   {
     id: 3,

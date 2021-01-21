@@ -15,6 +15,7 @@ import './Carouselhome.css';
 const CarouselPage = () => {
   return (
     <MDBContainer className="carousel">
+      <h2 className="home-title">Nos activites</h2>
       <MDBCarousel
       activeItem={1}
       length={6}

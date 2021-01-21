@@ -1,3 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+.test {
+  background-color: white;
+  padding: 5px;
+}
+
+.block-logo {
+  display: none!important;
+}
+
+.block-logo-active {
+  display: block;
+}
+
+.logo-label img {
+  width: 75px;
+  height: 73px;
+  margin-left: 87%;
+  padding: 10px;
+}
+
+.logo-label {
+  padding-top: 10%;
+}
+
 .blocknavbar {
   background-color: white;
   padding-top: 0;
@@ -12,6 +38,28 @@
 
 li {
   background-color: white;
+}
+
+.test:last-child a {
+  border-top-left-radius: 80px 80px;
+  border-bottom-left-radius: 80px 80px;
+  border-top-right-radius: 80px 80px;
+  border-bottom-right-radius: 80px 80px;
+  background-color: bisque;
+}
+
+.test:first-child a {
+  padding-top: 1%!important;
+  padding-bottom: 2%!important;
+  padding-right: 0!important;
+  padding-left: 0!important;
+}
+
+.test:nth-child(2) a {
+  padding-top: 1%!important;
+  padding-bottom: 2%!important;
+  padding-right: 0!important;
+  padding-left: 0!important;
 }
 
 li:first-child {
@@ -95,7 +143,6 @@ a {
 
 h1, h2, h3, h4 {
   letter-spacing: var(--spacing);
-  text-transform: capitalize;
   line-height: 1.25;
   margin-bottom: 0.75rem;
 }
@@ -246,6 +293,37 @@ nav {
   }
 }
 
+@media screen and (min-width: 945px) {
+  .test:nth-child(2) a {
+    padding-top: 3%!important;
+    padding-bottom: 7%!important;
+    padding-right: 0!important;
+    padding-left: 0!important;
+  }
+  .test:first-child a {
+    padding-top: 3%!important;
+    padding-bottom: 7%!important;
+    padding-right: 0!important;
+    padding-left: 0!important;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .test:nth-child(2) a {
+    padding-top: 8%!important;
+    padding-bottom: 18%!important;
+    padding-right: 0!important;
+    padding-left: 0!important;
+  }
+
+  .test:first-child a {
+    padding-top: 8%!important;
+    padding-bottom: 18%!important;
+    padding-right: 0!important;
+    padding-left: 0!important;
+  }
+}
+
 @media screen and (min-width: 832px) {
   .nav-center {
     max-width: 1170px;
@@ -289,23 +367,45 @@ nav {
   }
 }
 
-.background {
+.block-title-button {
   background-image: url('./ImgHome/backgroundhome.jpeg');
-  height: 100vh;
+  height: 80vh;
   width: 100%;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+  margin-bottom: 2%;
+}
+
+.title-button {
+  position: absolute;
+  top: 48%;
+  right: 20%;
+  left: 46%;
+  padding: 10px;
+  border-radius: 30px;
+  padding-left: 2%;
+  padding-right: 2%;
+  border: 1px solid transparent;
+  color: var(--clr-grey-3);
+  background-color: bisque;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .testtitle {
   position: absolute;
-  top: 50%;
+  top: 35%;
   bottom: 50%;
   right: 20%;
-  left: 20%;
+  left: 29%;
   color: whitesmoke;
-  font-size: 60px;
+  font-size: 80px;
+  font-family: 'Bangers', cursive;
+  letter-spacing: 5px;
+  width: 41%;
+  height: 11%;
+  background-color: #b1cc9d80;
 }
 
 .contentbackground {

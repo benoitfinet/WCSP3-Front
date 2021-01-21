@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Jua&display=swap');
+
 #__next {
     padding: 20px;
   }
@@ -5,3 +7,18 @@
     padding: 20px 0 20px 20px;
   }
   
+  .home-title {
+    font-family: 'Francois One', sans-serif;
+    font-size: 40px;
+  }
+
+  .home-subtitle {
+    font-family: 'Francois One', sans-serif;
+  }
+
+  .home-para {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
