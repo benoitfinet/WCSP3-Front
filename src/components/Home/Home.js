@@ -4,7 +4,8 @@ import Button from './Button';
 import HomeEvent from './HomeEvent';
 import Footer from '../Footer/Footer';
 import Indexcards from './Indexcards';
-import SecondNavbar from './SecondNavbar';
+import Cards from './Cards';
+import Textparc from './Textparc';
 
 import './Home.css';
 
@@ -12,7 +13,7 @@ function Home () {
   return (
     <div>
       <Navbar />
-      <SecondNavbar />
+      <Textparc className="textparc"/>
       <Carousel className="carousel" />
       <Button className="button" />
       <Indexcards />

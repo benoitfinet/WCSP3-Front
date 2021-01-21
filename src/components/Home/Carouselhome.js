@@ -10,10 +10,11 @@ import Photo5 from '../../img/photos atout branches/team.JPG';
 import Photo6 from '../../img/photos atout branches/tyro.jpg';
 
 import './Carousel.css';
+import './Carouselhome.css';
 
 const CarouselPage = () => {
   return (
-    <MDBContainer>
+    <MDBContainer className="carousel">
       <MDBCarousel
       activeItem={1}
       length={6}
