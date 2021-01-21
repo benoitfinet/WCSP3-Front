@@ -3,6 +3,7 @@ import Carousel from './Carouselhome';
 import Button from './Button';
 import HomeEvent from './HomeEvent';
 import Footer from '../Footer/Footer';
+import Indexcards from './Indexcards';
 import Cards from './Cards';
 import Textparc from './Textparc';
 
@@ -15,7 +16,7 @@ function Home () {
       <Textparc className="textparc"/>
       <Carousel className="carousel" />
       <Button className="button" />
-      <Cards />
+      <Indexcards />
       <HomeEvent />
       <Footer />
     </div>
