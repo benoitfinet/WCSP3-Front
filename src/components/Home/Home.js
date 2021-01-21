@@ -4,7 +4,6 @@ import Button from './Button';
 import HomeEvent from './HomeEvent';
 import Footer from '../Footer/Footer';
 import Indexcards from './Indexcards';
-import Cards from './Cards';
 import Textparc from './Textparc';
 
 import './Home.css';

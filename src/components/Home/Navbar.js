@@ -33,6 +33,7 @@ const Navbar = () => {
 
   return (
     <div className="background">
+      <p className="testtitle">REVEIL TES SENS</p>
     <nav className={navbar ? 'blocknavbar' : 'blocknavbar.active'}>
       <div className="nav-center">
         <div className="nav-header">
