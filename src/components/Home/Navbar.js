@@ -38,7 +38,7 @@ const Navbar = () => {
 
   return (
     <div className="block-title-button">
-      <h1 className="testtitle">REVEIL TES SENS</h1>
+      <h1 className="testtitle">REVEILLE TES SENS</h1>
       <button className="title-button">Découvrir</button>
     <nav className={navbar ? 'blocknavbar' : 'blocknavbaractive'}>
       <div className="nav-center">
