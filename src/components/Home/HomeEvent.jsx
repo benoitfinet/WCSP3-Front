@@ -3,11 +3,12 @@ import { MDBRow, MDBCol, MDBCard, MDBCardBody, MDBMask, MDBView } from 'mdbreact
 import Image1 from './ImgHome/flyernocturne.gif';
 import Image2 from './ImgHome/Atout branchers parcours enfants Piccolo 2.JPG';
 
-import './HomeEvent.css';
+import './Homeevent.css';
 
 const BlogPage = () => {
   return (
-    <MDBCard className="my-5 px-5 pb-5">
+    <div>
+    <MDBCard className="my-5 px-5 pb-5" id="testcard">
       <MDBCardBody>
         <MDBRow>
           <MDBCol lg="5">
@@ -20,13 +21,13 @@ const BlogPage = () => {
           </MDBCol>
           <MDBCol lg="7">
             <a href="#!" className="black-text">
-              <h6 className="font-weight-bold mb-3">
+              <h3 className="font-weight-bold mb-3">
                 Évenement
-              </h6>
+              </h3>
             </a>
-            <h3 className="font-weight-bold mb-3 p-0">
+            <h4 className="font-weight-bold mb-3 p-0">
               <strong>Nocturne</strong>
-            </h3>
+            </h4>
             <p className="home-para">
                 Evénements Alti’Max propose des mois de Mai à Septembre une soirée nocturne tous les premiers samedi du mois et à partir de 6 ans.
                 Réservation obligatoire, places limitées.
@@ -39,13 +40,13 @@ const BlogPage = () => {
         <MDBRow>
           <MDBCol lg="7">
             <a href="#!" className="black-text">
-              <h6 className="font-weight-bold mb-3">
+              <h3 className="font-weight-bold mb-3">
                 Offre
-              </h6>
+              </h3>
             </a>
-            <h3 className="font-weight-bold mb-3 p-0">
+            <h4 className="font-weight-bold mb-3 p-0">
               <strong>Privatisez votre terrasse</strong>
-            </h3>
+            </h4>
             <p className="home-para">
                 Privatisez votre terrasse Vous pouvez privatiser votre terrasse aérienne à la journée.
                 Equipé d’une table, de bancs et d’un coffre fermé par cadenas afin d’y déposer vos affaires.
@@ -69,6 +70,7 @@ const BlogPage = () => {
 
       </MDBCardBody>
     </MDBCard>
+    </div>
   );
 };
 
