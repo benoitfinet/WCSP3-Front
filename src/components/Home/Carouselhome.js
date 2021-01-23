@@ -16,6 +16,7 @@ const CarouselPage = () => {
   return (
     <MDBContainer className="carousel">
       <h2 className="home-title">Nos activites</h2>
+      <h3 className="home-subtitle">Garantie 100% FUN</h3>
       <MDBCarousel
       activeItem={1}
       length={6}
