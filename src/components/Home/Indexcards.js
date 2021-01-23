@@ -19,6 +19,7 @@ const Indexcards = ({ deviceType }) => {
         <Simple deviceType={deviceType} />
       </Section>
     </Fragment>
+    <button className="button">Découvrez toutes nos offres</button>
     </div>
   );
 };
