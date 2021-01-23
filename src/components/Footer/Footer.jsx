@@ -90,7 +90,7 @@ const Footer = () => {
             </h6>
             <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style={{ width: '60px' }} />
             <p>
-              <a href="#!">Écrivez-vous</a>
+              <a href="#!">Écrivez-nous</a>
             </p>
 
           </MDBCol>
