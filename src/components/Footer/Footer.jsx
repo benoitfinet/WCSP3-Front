@@ -20,15 +20,6 @@ const Footer = () => {
               <a className="fb-ic ml-0">
                 <i className="fab fa-facebook-f white-text mr-lg-4"> </i>
               </a>
-              <a className="tw-ic">
-                <i className="fab fa-twitter white-text mr-lg-4"> </i>
-              </a>
-              <a className="gplus-ic">
-                <i className="fab fa-google-plus-g white-text mr-lg-4"> </i>
-              </a>
-              <a className="li-ic">
-                <i className="fab fa-linkedin-in white-text mr-lg-4"> </i>
-              </a>
               <a className="ins-ic">
                 <i className="fab fa-instagram white-text mr-lg-4"> </i>
               </a>
@@ -54,16 +45,10 @@ const Footer = () => {
             </h6>
             <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style={{ width: '60px' }} />
             <p>
-              <a href="#!">Notre Buvette</a>
+              <a href="#!">Tarifs Buvette</a>
             </p>
             <p>
               <a href="#!">Evénements</a>
-            </p>
-            <p>
-              <a href="#!">Où nous trouver?</a>
-            </p>
-            <p>
-              <a href="#!">Voir le plan du parc</a>
             </p>
             <p>
               <a href="#!">Nos Engagements</a>
@@ -81,13 +66,16 @@ const Footer = () => {
               <a href="#!">Consulter la brochure</a>
             </p>
             <p>
+              <a href="#!">Où nous trouver?</a>
+            </p>
+            <p>
+              <a href="#!">Voir le plan du parc</a>
+            </p>
+            <p>
               <a href="#!">Calendrier et horaires</a>
             </p>
             <p>
-              <a href="#!">Organisez votre journée</a>
-            </p>
-            <p>
-              <a href="#!">Térrasses aériennes</a>
+              <a href="#!">FAQ</a>
             </p>
             <p>
               <a href="#!">Tarifs</a>
@@ -102,20 +90,17 @@ const Footer = () => {
             </h6>
             <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style={{ width: '60px' }} />
             <p>
-              <a href="#!">Contact</a>
+              <a href="#!">Écrivez-vous</a>
             </p>
-            <p>
-              <a href="#!">Newsletter</a>
-            </p>
-            <p>
-              <a href="#!">Mentions légales</a>
-            </p>
+
           </MDBCol>
         </MDBRow>
       </MDBContainer>
       <div className="footer-copyright text-center py-3">
         <MDBContainer fluid>
-          &copy; {new Date().getFullYear()} Copyright: <a href="https://www.wildcodeschool.com"> WildCodeSchool.com </a>
+          <p>
+            <a href="#!">Mentions légales</a> - <a href="#!">Politique de confidentialité</a>
+          </p>
         </MDBContainer>
       </div>
     </MDBFooter>
