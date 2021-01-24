@@ -5,6 +5,7 @@ import Map from './components/Map/Map';
 import Faq from './components/FAQ/AllQuestions';
 
 import { Switch, Route } from 'react-router-dom';
+import CalendarPage from './components/Calendar/CalendarPage.jsx';
 
 const RouterWebSite = () => {
   return (
@@ -14,6 +15,7 @@ const RouterWebSite = () => {
       <Route path="/Groupes" component={Groupes} />
       <Route path="/Ounoustrouver" component={Map} />
       <Route path="/Tarifs" component={Faq} />
+      <Route path="/Horaires" component={CalendarPage} />
     </Switch>
   );
 };
