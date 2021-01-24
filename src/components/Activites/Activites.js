@@ -236,7 +236,7 @@ class Activites extends Component {
   render () {
     return (
       <div>
-        <Navbar />
+        <Navbar title="Activités"/>
         <div className="Activites">
           <div className="Activitespadding">
           <Activiteselect

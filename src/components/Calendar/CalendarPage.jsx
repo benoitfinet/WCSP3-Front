@@ -7,7 +7,7 @@ import './CalendarPage.css';
 function CalendarPage () {
   return (
         <div className='calendarPage'>
-          <Navbar/>
+          <Navbar title="Nos horaires"/>
           <h1 className='cldPageTitle'>Horaires</h1>
           <CalendarBody/>
           <Footer/>

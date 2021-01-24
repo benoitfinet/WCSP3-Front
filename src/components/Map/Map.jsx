@@ -8,7 +8,7 @@ import PhotoMap from '../Home/ImgHome/map.png';
 const Map = () => {
   return (
     <div>
-      <Navbar />
+      <Navbar title="Où nous trouver"/>
         <div className="map-layout">
           <div className="textback">
             <h2 className="titles">La carte</h2>

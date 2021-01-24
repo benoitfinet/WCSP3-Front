@@ -146,7 +146,7 @@ class Groupes extends Component {
   render () {
     return (
       <div>
-        <Navbar />
+        <Navbar title="Offres de groupes"/>
         <div className="Activites">
           <div className="Activitespadding">
             <Groupesselect
