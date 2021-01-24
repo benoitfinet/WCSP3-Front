@@ -11,7 +11,7 @@ import './Home.css';
 function Home () {
   return (
     <div>
-      <Navbar />
+      <Navbar title="Eveil tes sens"/>
       <Textparc className="textparc"/>
       <Carousel className="carousel" />
       <Button className="button" />

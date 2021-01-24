@@ -6,7 +6,8 @@ import logo3 from './ImgHome/logo3.png';
 
 import './Navbar.css';
 
-const Navbar = () => {
+// eslint-disable-next-line react/prop-types
+const Navbar = ({ title }) => {
   const [showLinks, setShowLinks] = useState(false);
   const [navbar, setNavbar] = useState(false);
   const [logo, setLogo] = useState(false);
@@ -38,7 +39,7 @@ const Navbar = () => {
 
   return (
     <div className="block-title-button">
-      <h1 className="testtitle">REVEILLE TES SENS</h1>
+      <h1 className="testtitle">{title}</h1>
       <button className="title-button">Découvrir</button>
     <nav className={navbar ? 'blocknavbar' : 'blocknavbaractive'}>
       <div className="nav-center">
