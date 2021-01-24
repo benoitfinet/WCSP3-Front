@@ -10,27 +10,23 @@
   font-family: 'Londrina Solid';
   padding-top: 3%;
   background-repeat: no-repeat;
-  margin-bottom: 6%;
+  padding-bottom: 6%;
+  background-color: #eef1f3;
 }
 
-.Activiteselect {
-  border: 2px solid #009378;
-  border-radius: 30px;
-  margin: auto;
-  width: 700px;
-}
-  
-.Activiteselect button {
-  border: 2px solid transparent;
-  background: white;
-  font-size: 1rem;
-  padding: 0.5rem;
-  flex-grow: 1;
-  margin: 2% 1%;
+.textactivites {
+  padding-right: 3%;
+  padding-left: 3%;
+  font-family: 'Roboto';
+  font-size: 1.2em;
+  color: #344454;
+  line-height: 1.7em;
 }
 
 .h1activite{
   padding: 3% 0;
+  font-size: 4rem;
+  color: #344454;
 }
   
 .Activiteselect button.active {
@@ -42,20 +38,13 @@
   outline: none;
 }
 
-.textback{
-  background-color: #E1E9E6;
-  border-radius: 30px;
-  padding: 3% 3%;
-  margin: auto;
-  width: 700px;
-  box-shadow: 5px 10px 10px rgb(83, 107, 67);
-}
-
 .photoactivite{
   height: auto;
   width: 700px;
   border-radius: 30px 30px 30px 30px;
-  margin-top: 3%;
+  margin: auto;
+  padding: 3%;
+  width: 50%!important;
 }
 
 .textactivites{
@@ -110,5 +99,6 @@
 @media screen and (max-width: 1560px) {
   .Activites{
     background-image: none;
+    background-color: #eef0f1;
   }
 }

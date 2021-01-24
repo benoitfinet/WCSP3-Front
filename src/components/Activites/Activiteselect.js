@@ -7,46 +7,53 @@ class Activiteselect extends Component {
     return (
       <div className="Activiteselect">
         <button
-          id="lasergame"
+          id="parcours-acrobatiques"
           onClick={this.props.handleChangeTab}
-          className={this.props.active === 'lasergame' ? 'active' : ''}
+          className={this.props.active === 'parcours-acrobatiques' ? 'active' : ''}
+        >
+          Parcours acrobatiques en hauteur
+        </button>
+        <button
+          id="escape-game"
+          onClick={this.props.handleChangeTab}
+          className={this.props.active === 'escape-game' ? 'active' : ''}
+        >
+          Escape game
+        </button>
+        <button
+          id="parcours-enigmes"
+          onClick={this.props.handleChangeTab}
+          className={this.props.active === 'parcours-enigmes' ? 'active' : ''}
+        >
+          Parcours d'énigmes
+        </button>
+        <button
+          id="chasse-tresor"
+          onClick={this.props.handleChangeTab}
+          className={this.props.active === 'chasse-tresor' ? 'active' : ''}
+        >
+          Chasse au trésor
+        </button>
+        <button
+          id="atout-spider"
+          onClick={this.props.handleChangeTab}
+          className={this.props.active === 'atout-spider' ? 'active' : ''}
+        >
+          L'atour spider / Aire de jeux enfants
+        </button>
+        <button
+          id="laser-game"
+          onClick={this.props.handleChangeTab}
+          className={this.props.active === 'laser-game' ? 'active' : ''}
         >
           Laser game
         </button>
         <button
-          id="orientation"
+          id="mur-escalade"
           onClick={this.props.handleChangeTab}
-          className={this.props.active === 'orientation' ? 'active' : ''}
+          className={this.props.active === 'mur-escalade' ? 'active' : ''}
         >
-          Orientation
-        </button>
-        <button
-          id="altispider"
-          onClick={this.props.handleChangeTab}
-          className={this.props.active === 'altispider' ? 'active' : ''}
-        >
-          Alti'Spider
-        </button>
-        <button
-          id="escalade"
-          onClick={this.props.handleChangeTab}
-          className={this.props.active === 'escalade' ? 'active' : ''}
-        >
-          Escalade
-        </button>
-        <button
-          id="airedejeux"
-          onClick={this.props.handleChangeTab}
-          className={this.props.active === 'airedejeux' ? 'active' : ''}
-        >
-          Aire de jeux
-        </button>
-        <button
-          id="parcours"
-          onClick={this.props.handleChangeTab}
-          className={this.props.active === 'parcours' ? 'active' : ''}
-        >
-          Parcours
+          Mur d'escalade
         </button>
       </div>
     );
