@@ -8,6 +8,8 @@ import Photo4 from '../../img/photos atout branches/escalade.jpeg';
 import Photo5 from '../../img/photos atout branches/team.JPG';
 import Photo6 from '../../img/photos atout branches/tyro.jpg';
 
+import './Cards.css';
+
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
@@ -25,8 +27,32 @@ const responsive = {
     paritialVisibilityGutter: 30
   }
 };
+
 const images = [
-  Photo1, Photo2, Photo3, Photo4, Photo5, Photo6
+  {
+    photo: Photo1,
+    fig: 'En famille et entre amis'
+  },
+  {
+    photo: Photo2,
+    fig: 'Les Anniversaires'
+  },
+  {
+    photo: Photo3,
+    fig: 'Les Centre de loisirs et scolaires'
+  },
+  {
+    photo: Photo4,
+    fig: 'Le Team building/Séminaires'
+  },
+  {
+    photo: Photo5,
+    fig: 'Les Comités d’entreprises et les Associations'
+  },
+  {
+    photo: Photo6,
+    fig: 'EVG / EVJF'
+  }
 ];
 
 // Because this is an inframe, so the SSR mode doesn't not do well here.
@@ -43,12 +69,17 @@ const Simple = ({ deviceType }) => {
     >
       {images.slice(0, 5).map(image => {
         return (
-          <Image
-          key="image"
-            draggable={false}
-            style={{ width: '100%', height: '100%' }}
-            src={image}
-          />
+          <div key="image">
+            <figure key="image">
+              <Image
+              key="image"
+                draggable={false}
+                style={{ width: '100%', height: '100%' }}
+                src={image.photo}
+              />
+              <figcaption>{image.fig}</figcaption>
+            </figure>
+          </div>
         );
       })}
     </Carousel>

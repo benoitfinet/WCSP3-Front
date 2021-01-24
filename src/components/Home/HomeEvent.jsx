@@ -1,11 +1,14 @@
-import { MDBRow, MDBCol, MDBCard, MDBCardBody, MDBMask, MDBView, MDBBtn } from 'mdbreact';
+import { MDBRow, MDBCol, MDBCard, MDBCardBody, MDBMask, MDBView } from 'mdbreact';
 
 import Image1 from './ImgHome/flyernocturne.gif';
 import Image2 from './ImgHome/Atout branchers parcours enfants Piccolo 2.JPG';
 
+import './Homeevent.css';
+
 const BlogPage = () => {
   return (
-    <MDBCard className="my-5 px-5 pb-5">
+    <div>
+    <MDBCard className="my-5 px-5 pb-5" id="testcard">
       <MDBCardBody>
         <MDBRow>
           <MDBCol lg="5">
@@ -17,43 +20,39 @@ const BlogPage = () => {
             </MDBView>
           </MDBCol>
           <MDBCol lg="7">
-            <a href="#!" className="green-text">
-              <h6 className="font-weight-bold mb-3">
+            <a href="#!" className="black-text">
+              <h3 className="font-weight-bold mb-3">
                 Évenement
-              </h6>
+              </h3>
             </a>
-            <h3 className="font-weight-bold mb-3 p-0">
+            <h4 className="font-weight-bold mb-3 p-0">
               <strong>Nocturne</strong>
-            </h3>
-            <p>
+            </h4>
+            <p className="home-para">
                 Evénements Alti’Max propose des mois de Mai à Septembre une soirée nocturne tous les premiers samedi du mois et à partir de 6 ans.
                 Réservation obligatoire, places limitées.
                 Fête des mères et fête de pères. 50% sur le prix de l’entrée pour le parent pratiquant sous condition de venir en famille de trois personnes minimum. Privatisation du parc ou pour toutes demandes particulières, contactez-nous : altimax78@gmail.com
             </p>
-            <MDBBtn color="success" size="md" className="waves-light ">
-              En savoir plus
-            </MDBBtn>
+            <button className="button">En savoir plus</button>
           </MDBCol>
         </MDBRow>
         <hr className="my-5" />
         <MDBRow>
           <MDBCol lg="7">
-            <a href="#!" className="pink-text">
-              <h6 className="font-weight-bold mb-3">
+            <a href="#!" className="black-text">
+              <h3 className="font-weight-bold mb-3">
                 Offre
-              </h6>
+              </h3>
             </a>
-            <h3 className="font-weight-bold mb-3 p-0">
+            <h4 className="font-weight-bold mb-3 p-0">
               <strong>Privatisez votre terrasse</strong>
-            </h3>
-            <p>
+            </h4>
+            <p className="home-para">
                 Privatisez votre terrasse Vous pouvez privatiser votre terrasse aérienne à la journée.
                 Equipé d’une table, de bancs et d’un coffre fermé par cadenas afin d’y déposer vos affaires.
                 Vous pourrez ainsi profiter de votre pause déjeuner, gouter ou anniversaire en hauteur avec la vue sur le parc et à l’écart.
             </p>
-            <MDBBtn color="pink" size="md" className="mb-lg-0 mb-4 waves-light">
-              En savoir plus
-            </MDBBtn>
+            <button className="button">En savoir plus</button>
           </MDBCol>
           <MDBCol lg="5">
             <MDBView className="rounded z-depth-2 mb-lg-0 mb-4" hover waves>
@@ -71,6 +70,7 @@ const BlogPage = () => {
 
       </MDBCardBody>
     </MDBCard>
+    </div>
   );
 };
 
