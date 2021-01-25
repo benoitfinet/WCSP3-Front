@@ -5,12 +5,12 @@ import { AiFillInstagram } from 'react-icons/ai';
 export const links = [
   {
     id: 1,
-    url: '/',
+    url: 'https://fr-fr.facebook.com/AtoutBranches/',
     text: <FaFacebook size={32}/>
   },
   {
     id: 2,
-    url: '/',
+    url: 'https://www.instagram.com/atout_branches/',
     text: <AiFillInstagram size={32} />
   },
   {
@@ -30,7 +30,7 @@ export const links = [
   },
   {
     id: 6,
-    url: '/test',
+    url: '/',
     text: <img src={logo} className="logo" alt="logo" />
   },
   {

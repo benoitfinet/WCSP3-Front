@@ -45,7 +45,7 @@ class AllQuestions extends React.Component {
   render () {
     return (
       <div>
-        <Navbar />
+        <Navbar title="Organisez votre journée"/>
       <div className="block-faq">
         {this.state.questions.map((question) => (
           <Faq question={question} handleShow={this.handleShow} key={question.question} />
