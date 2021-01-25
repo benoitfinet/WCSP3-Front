@@ -41,7 +41,7 @@ const Footer = () => {
           </MDBCol>
           <MDBCol md="2" lg="2" xl="2" className="mb-4">
             <h6 className="text-uppercase font-weight-bold">
-              <strong>Le parc</strong>
+              <strong><a href="/Parc">Le parc</a></strong>
             </h6>
             <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style={{ width: '60px' }} />
             <p>
@@ -66,10 +66,10 @@ const Footer = () => {
               <a href="#!">Consulter la brochure</a>
             </p>
             <p>
-              <a href="#!">Où nous trouver?</a>
+              <a href="/ounoustrouver">Où nous trouver?</a>
             </p>
             <p>
-              <a href="#!">Voir le plan du parc</a>
+              <a href="/Parc">Voir le plan du parc</a>
             </p>
             <p>
               <a href="#!">Calendrier et horaires</a>

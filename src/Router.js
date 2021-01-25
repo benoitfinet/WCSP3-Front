@@ -3,6 +3,7 @@ import Activites from './components/Activites/Activites';
 import Groupes from './components/Groupes/Groupes';
 import Map from './components/Map/Map';
 import Faq from './components/FAQ/AllQuestions';
+import Parc from './components/Parc/Parc';
 
 import { Switch, Route } from 'react-router-dom';
 import CalendarPage from './components/Calendar/CalendarPage.jsx';
@@ -16,6 +17,7 @@ const RouterWebSite = () => {
       <Route path="/Ounoustrouver" component={Map} />
       <Route path="/Tarifs" component={Faq} />
       <Route path="/Horaires" component={CalendarPage} />
+      <Route path="/Parc" component={Parc} />
     </Switch>
   );
 };
