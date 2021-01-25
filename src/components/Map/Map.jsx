@@ -9,7 +9,9 @@ const Map = () => {
   return (
     <div>
       <Navbar title="Où nous trouver"/>
-        <div className="map-layout">
+        <div className="mapBody">
+          <div className="mapContent">
+          <div>
           <div className="textback">
             <h2 className="titles">La carte</h2>
             <p className="text-map">
@@ -77,6 +79,8 @@ const Map = () => {
         Hors saison estivale, il est  très facile de trouver des places de parkings à proximité de l’appartement.
       </p>
       </div>
+    </div>
+    </div>
     </div>
     <Footer />
   </div>

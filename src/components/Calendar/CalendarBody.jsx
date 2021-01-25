@@ -8,10 +8,12 @@ import './CalendarPage.css';
 function CalendarBody () {
   return (
         <div className='cldBody'>
+              <div className="cldContent">
               <CldPageInfo/>
               <CldInfoButton/>
               <CldSeasonInfo/>
               <CldTextInfo/>
+              </div>
         </div>
   );
 }

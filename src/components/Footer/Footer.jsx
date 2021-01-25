@@ -17,10 +17,10 @@ const Footer = () => {
               </h6>
             </MDBCol>
             <MDBCol md="6" lg="7" className="text-center">
-              <a className="fb-ic ml-0">
+              <a className="fb-ic ml-0" href="https://fr-fr.facebook.com/AtoutBranches/" target="blank">
                 <i className="fab fa-facebook-f white-text mr-lg-4"> </i>
               </a>
-              <a className="ins-ic">
+              <a className="ins-ic" href="https://www.instagram.com/atout_branches/" target="blank">
                 <i className="fab fa-instagram white-text mr-lg-4"> </i>
               </a>
             </MDBCol>
@@ -54,7 +54,7 @@ const Footer = () => {
               <a href="#!">Nos Engagements</a>
             </p>
             <p>
-              <a href="#!">Réglement intérieur</a>
+              <a href="/Reglement">Réglement intérieur</a>
             </p>
           </MDBCol>
           <MDBCol md="3" lg="2" xl="2" className="mb-4">
@@ -66,19 +66,19 @@ const Footer = () => {
               <a href="#!">Consulter la brochure</a>
             </p>
             <p>
-              <a href="#!">Où nous trouver?</a>
+              <a href="/Ounoustrouver">Où nous trouver?</a>
             </p>
             <p>
               <a href="#!">Voir le plan du parc</a>
             </p>
             <p>
-              <a href="#!">Calendrier et horaires</a>
+              <a href="/Horaires">Calendrier et horaires</a>
             </p>
             <p>
-              <a href="#!">FAQ</a>
+              <a href="/Faq">FAQ</a>
             </p>
             <p>
-              <a href="#!">Tarifs</a>
+              <a href="/Tarifs">Tarifs</a>
             </p>
             <p>
               <a href="#!">Billeterie</a>
@@ -99,7 +99,7 @@ const Footer = () => {
       <div className="footer-copyright text-center py-3">
         <MDBContainer fluid>
           <p>
-            <a href="#!">Mentions légales</a> - <a href="#!">Politique de confidentialité</a>
+            <a href="/Mentions">Mentions légales</a> - <a href="/Politique">Politique de confidentialité</a>
           </p>
         </MDBContainer>
       </div>
