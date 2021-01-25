@@ -3,20 +3,6 @@
     text-align: center;
   }
 
-.textback{
-    background-color: #E1E9E6;
-    border-radius: 30px;
-    padding: 3% 3%;
-    margin: auto;
-    width: 700px;
-    box-shadow: 5px 10px 10px rgb(83, 107, 67);
-  }
-
-.text-parc{
-    margin: auto;
-    color: #8B4513;
-}
-
 .img-fluid {
     padding: 15px;
 }
