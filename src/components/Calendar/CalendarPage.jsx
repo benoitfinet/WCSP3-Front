@@ -8,7 +8,6 @@ function CalendarPage () {
   return (
         <div className='calendarPage'>
           <Navbar title="Nos horaires"/>
-          <h1 className='cldPageTitle'>Horaires</h1>
           <CalendarBody/>
           <Footer/>
         </div>
