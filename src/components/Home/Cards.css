@@ -5,5 +5,11 @@ figure {
 figcaption {
   font-family: 'Francois One', sans-serif;
   font-weight: bold;
+  font-size: 1.7rem;
+  padding: 4%;
+  border: 1px solid #8080808f;
+  background-color: #60b196;
+  color: white;
+  height: 33%;
 }
 

@@ -20,13 +20,13 @@ export const links = [
   },
   {
     id: 4,
-    url: '/Activites',
+    url: '/activites',
     text: 'activités'
   },
   {
     id: 5,
-    url: '/Horaires',
-    text: 'Nos horaires'
+    url: '/groupes',
+    text: 'Groupes'
   },
   {
     id: 6,
@@ -35,18 +35,18 @@ export const links = [
   },
   {
     id: 7,
-    url: '/Tarifs',
+    url: '/tarifs',
     text: 'Tarifs'
   },
   {
     id: 8,
-    url: '/Ounoustrouver',
-    text: 'Nous trouver'
+    url: '/Horaires',
+    text: 'Nos horaires'
   },
   {
     id: 9,
-    url: '/Groupes',
-    text: 'Groupes'
+    url: '/nous-trouver',
+    text: 'Nous trouver'
   },
   {
     id: 10,

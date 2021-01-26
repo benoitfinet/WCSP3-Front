@@ -12,6 +12,7 @@ import './Indexcards.css';
 const Indexcards = ({ deviceType }) => {
   return (
     <div>
+    <div className="block-cards">
     <h2 className="home-title">Des offres pour tout publics</h2>
     <h3 className="home-subtitle">En famille, entre amis, entre collègues ...</h3>
     <Fragment>
@@ -19,7 +20,8 @@ const Indexcards = ({ deviceType }) => {
         <Simple deviceType={deviceType} />
       </Section>
     </Fragment>
-    <button className="button">Découvrez toutes nos offres</button>
+    </div>
+    <button className="button-cards">Découvrez toutes nos offres</button>
     </div>
   );
 };
