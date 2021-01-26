@@ -7,6 +7,7 @@ import Mentions from './components/RulesPages/Mentions';
 import Politique from './components/RulesPages/Politique';
 import Reglement from './components/RulesPages/Reglement';
 import Parc from './components/Parc/Parc';
+import Tarifs from './components/Tarifs/Tarifs';
 
 import { Switch, Route } from 'react-router-dom';
 import CalendarPage from './components/Calendar/CalendarPage.jsx';
@@ -24,6 +25,7 @@ const RouterWebSite = () => {
       <Route path="/Politique" component={Politique} />
       <Route path="/Reglement" component={Reglement} />
       <Route path="/Parc" component={Parc} />
+      <Route path="/Tarifs" component={Tarifs} />
     </Switch>
   );
 };

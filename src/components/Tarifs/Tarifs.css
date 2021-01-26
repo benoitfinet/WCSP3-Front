@@ -1,0 +1,43 @@
+table, tr, td {
+  border: solid 1px black;
+}
+
+table {
+  margin: auto;
+  width: 70%;
+}
+
+.head-title {
+  font-weight: bold;
+}
+
+.tarif-page {
+  background-color: #eef1f3;
+}
+
+.block-page-tarif {
+  width: 85%;
+  margin: auto;
+  border: 1px solid #d0c6c68c;
+  background-color: white;
+  margin-top: 2%;
+  border-radius: 3px;
+  padding: 4%;
+  margin-bottom: 7%;
+}
+
+.title-tarif {
+  margin-top: 5%;
+  margin-bottom: 2%;
+  font-size: 3.5rem;
+  color: #344454;
+  font-family: 'Francois One', sans-serif;
+}
+
+.secondary-title {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  text-transform: uppercase;
+  color: #344454;
+  font-family: 'Francois One', sans-serif;
+}
