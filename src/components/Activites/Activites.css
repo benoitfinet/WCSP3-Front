@@ -3,6 +3,10 @@
   text-align: center;
 }
 
+.container {
+  margin: 0;
+}
+
 .first-block-img-para {
   margin-top: 2%;
   margin-bottom: 5%;

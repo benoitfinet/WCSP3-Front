@@ -10,6 +10,7 @@
   .home-title {
     font-family: 'Francois One', sans-serif;
     font-size: 40px;
+    padding-top: 2%;
   }
 
   .home-subtitle {
@@ -22,3 +23,54 @@
     margin-top: 3%;
     margin-bottom: 3%;
   }
+
+  .block-home {
+    background-color: #efefef;
+    -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 92%, 49% 96%, 0 92%, 0 0);
+    clip-path: polygon(50% 0%, 100% 0, 100% 92%, 49% 96%, 0 92%, 0 0);
+}
+
+.block-global-home {
+  height: 460px!important;
+}
+
+.block-cards {
+  background-color: #efefef;
+  -webkit-clip-path: polygon(50% 10%, 100% 6%, 100% 90%, 48% 95%, 0 90%, 0 6%);
+  clip-path: polygon(50% 10%, 100% 6%, 100% 90%, 48% 95%, 0 90%, 0 6%);
+  padding-bottom: 9%;
+  padding-top: 6%;
+}
+
+.react-multi-carousel-track {
+  background-color: #efefef;
+}
+
+.react-multi-carousel-track li {
+  background-color: #efefef;
+}
+
+.button-cards {
+  background-color: #EFB960;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 20px;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  position: relative;
+  top: -74px;
+}
+
+.react-multi-carousel-list {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  height: 465px;
+  position: relative;
+}
