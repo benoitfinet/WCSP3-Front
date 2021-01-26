@@ -6,6 +6,7 @@ import Faq from './components/FAQ/AllQuestions';
 
 import { Switch, Route } from 'react-router-dom';
 import CalendarPage from './components/Calendar/CalendarPage.jsx';
+import Reservation from './components/Reservation/Reservation.js';
 
 const RouterWebSite = () => {
   return (
@@ -16,6 +17,7 @@ const RouterWebSite = () => {
       <Route path="/Ounoustrouver" component={Map} />
       <Route path="/Tarifs" component={Faq} />
       <Route path="/Horaires" component={CalendarPage} />
+      <Route path="/Reservation" component={Reservation}/>
     </Switch>
   );
 };
