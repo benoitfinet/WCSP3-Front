@@ -7,6 +7,7 @@ import Mentions from './components/RulesPages/Mentions';
 import Politique from './components/RulesPages/Politique';
 import Reglement from './components/RulesPages/Reglement';
 import Parc from './components/Parc/Parc';
+import Tarifs from './components/Tarifs/Tarifs';
 import Event from './components/Event/Event';
 
 import { Switch, Route } from 'react-router-dom';
@@ -25,6 +26,7 @@ const RouterWebSite = () => {
       <Route path="/Politique" component={Politique} />
       <Route path="/Reglement" component={Reglement} />
       <Route path="/Parc" component={Parc} />
+      <Route path="/Tarifs" component={Tarifs} />
       <Route path="/Event" component={Event} />
     </Switch>
   );

@@ -35,7 +35,7 @@ export const links = [
   },
   {
     id: 7,
-    url: '/tarifs',
+    url: '/Tarifs',
     text: 'Tarifs'
   },
   {
@@ -45,7 +45,7 @@ export const links = [
   },
   {
     id: 9,
-    url: '/nous-trouver',
+    url: '/Ounoustrouver',
     text: 'Nous trouver'
   },
   {
