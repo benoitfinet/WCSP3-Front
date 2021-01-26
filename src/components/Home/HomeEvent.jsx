@@ -33,7 +33,7 @@ const BlogPage = () => {
                 Réservation obligatoire, places limitées.
                 Fête des mères et fête de pères. 50% sur le prix de l’entrée pour le parent pratiquant sous condition de venir en famille de trois personnes minimum. Privatisation du parc ou pour toutes demandes particulières, contactez-nous : altimax78@gmail.com
             </p>
-            <button className="button">En savoir plus</button>
+            <button className="button"><a href="/Event" className="event-link">En savoir plus</a></button>
           </MDBCol>
         </MDBRow>
         <hr className="my-5" />

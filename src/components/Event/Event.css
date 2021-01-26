@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    text-align: center;
+  }
+  
+  .Activites{
+    background-size: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Londrina Solid';
+    padding-top: 3%;
+    background-repeat: no-repeat;
+    padding-bottom: 6%;
+    background-color: #eef1f3;
+  }
+  
+  .textactivites {
+    padding-right: 3%;
+    padding-left: 3%;
+    font-family: 'Roboto';
+    font-size: 1.2em;
+    color: #344454;
+    line-height: 1.7em;
+  }
+  
+  .h1activite{
+    padding: 3% 0;
+    font-size: 4rem;
+    color: #344454;
+  }
+    
+  .Activiteselect button.active {
+    border-radius: 30px;
+    background-color: #009378;
+  }
+    
+  .Activiteselect button:focus {
+    outline: none;
+  }
+  
+  .photoactivite{
+    height: auto;
+    width: 700px;
+    border-radius: 30px 30px 30px 30px;
+    margin: auto;
+    padding: 3%;
+    width: 50%!important;
+  }
+  
+  .textactivites{
+    margin: auto;
+  }
+  
+  @media screen and (max-width: 1280px) {
+    .Activiteselect {
+      width: 440px;
+    }
+    .textback{
+      width: 540px
+    }
+    .photoactivite{
+      width: 540px;
+    }
+  }
+  
+  @media screen and (max-width: 986px) {
+    .Activiteselect {
+      width: 340px;
+    }
+    .textback{
+      width: 340px
+    }
+    .photoactivite{
+      width: 340px;
+    }
+  }
+  
+  @media screen and (max-width: 606px) {
+    .Activiteselect {
+      width: 240px;
+    }
+    .textback{
+      width: 240px
+    }
+    .photoactivite{
+      width: 240px;
+    }
+  }
+  
+  @media screen and (max-width: 410px) {
+    .Activiteselect {
+      width: 240px;
+    }
+    .textback{
+      width: 240px
+    }
+  }
+  
+  @media screen and (max-width: 1560px) {
+    .Activites{
+      background-image: none;
+      background-color: #eef0f1;
+    }
+  }
