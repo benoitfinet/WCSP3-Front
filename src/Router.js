@@ -18,7 +18,7 @@ const RouterWebSite = () => {
       <Route exact path="/" component={Home} />
       <Route path="/Activites" component={Activites} />
       <Route path="/Groupes" component={Groupes} />
-      <Route path="/Ounoustrouver" component={Map} />
+      <Route path="/nous-trouver" component={Map} />
       <Route path="/Faq" component={Faq} />
       <Route path="/Horaires" component={CalendarPage} />
       <Route path="/Mentions" component={Mentions} />

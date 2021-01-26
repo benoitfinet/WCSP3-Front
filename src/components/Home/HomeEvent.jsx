@@ -28,7 +28,7 @@ const BlogPage = () => {
             <h4 className="font-weight-bold mb-3 p-0">
               <strong>Nocturne</strong>
             </h4>
-            <p className="home-para">
+            <p className="home-event-para">
                 Evénements Alti’Max propose des mois de Mai à Septembre une soirée nocturne tous les premiers samedi du mois et à partir de 6 ans.
                 Réservation obligatoire, places limitées.
                 Fête des mères et fête de pères. 50% sur le prix de l’entrée pour le parent pratiquant sous condition de venir en famille de trois personnes minimum. Privatisation du parc ou pour toutes demandes particulières, contactez-nous : altimax78@gmail.com
@@ -47,7 +47,7 @@ const BlogPage = () => {
             <h4 className="font-weight-bold mb-3 p-0">
               <strong>Privatisez votre terrasse</strong>
             </h4>
-            <p className="home-para">
+            <p className="home-event-para">
                 Privatisez votre terrasse Vous pouvez privatiser votre terrasse aérienne à la journée.
                 Equipé d’une table, de bancs et d’un coffre fermé par cadenas afin d’y déposer vos affaires.
                 Vous pourrez ainsi profiter de votre pause déjeuner, gouter ou anniversaire en hauteur avec la vue sur le parc et à l’écart.
