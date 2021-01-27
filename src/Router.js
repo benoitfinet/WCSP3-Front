@@ -11,6 +11,7 @@ import Tarifs from './components/Tarifs/Tarifs';
 import Event from './components/Event/Event';
 
 import { Switch, Route } from 'react-router-dom';
+import AppReactadmin from './components/ReactAdmin/AppReactadmin.js';
 import CalendarPage from './components/Calendar/CalendarPage.jsx';
 
 const RouterWebSite = () => {
@@ -19,7 +20,8 @@ const RouterWebSite = () => {
       <Route exact path="/" component={Home} />
       <Route path="/Activites" component={Activites} />
       <Route path="/Groupes" component={Groupes} />
-      <Route path="/nous-trouver" component={Map} />
+      <Route path="/Ounoustrouver" component={Map} />
+      <Route path="/AppReactAdmin" component={AppReactadmin} />
       <Route path="/Faq" component={Faq} />
       <Route path="/Horaires" component={CalendarPage} />
       <Route path="/Mentions" component={Mentions} />
