@@ -28,7 +28,7 @@ export const PostEditInfo = (props) => (
     <SimpleForm>
     <TextInput source="id"/>
       <TextInput source="title" />
-      <TextInput source="description" />
+      <TextInput multiline source="description" />
     </SimpleForm>
   </Edit>
 );
