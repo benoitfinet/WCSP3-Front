@@ -13,25 +13,22 @@ import {
 import BookIcon from '@material-ui/icons/Book';
 export const PostIcon = BookIcon;
 
-export const PostList = (props) => (
+export const PostListEvent = (props) => (
   <List {...props}>
     <Datagrid rowClick="edit">
       <TextField source="id"/>
-      <TextField source="name" />
-      <TextField source="description" />
-      <TextField source="price" />
+      <TextField source="title" />
       <EditButton/>
     </Datagrid>
   </List>
 );
 
-export const PostEdit = (props) => (
+export const PostEditEvent = (props) => (
   <Edit title="Edit a Post" {...props}>
     <SimpleForm>
     <TextInput source="id"/>
-      <TextInput source="name" />
-      <TextInput source="description" />
-      <TextInput source="price" />
+      <TextInput source="title" />
+      <TextInput source="location" />
     </SimpleForm>
   </Edit>
 );
@@ -40,13 +37,12 @@ export const PostEdit = (props) => (
 //   return <span>Post {record ? `"${record.title}"` : ''}</span>;
 // };
 
-export const PostCreate = (props) => (
+export const PostCreateEvent = (props) => (
   <Create title="Create a Post" {...props}>
     <SimpleForm>
       <TextInput source="id" />
-      <TextInput source="name" />
-      <TextInput multiline source="description" />
-      <TextInput source="price" />
+      <TextInput source="title" />
+      <TextInput source="location" />
     </SimpleForm>
   </Create>
 );

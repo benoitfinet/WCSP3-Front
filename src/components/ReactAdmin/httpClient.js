@@ -3,22 +3,21 @@ import eventEmitter from './eventEmitter';
 
 function decorateFetch (fetchJson) {
   return function decoratedFetchJson (url, options) {
-    if (
-      options && options.method && ['POST', 'PUT', 'DELETE']
-    ) {
+    if (options && options.method && ['POST', 'PUT', 'DELETE']) {
       eventEmitter.emit('change');
     }
     return fetchJson(url, options);
   };
 }
-const windowGlobal = typeof window !== 'undefined' && window;
-const decoratedFetchJson = decorateFetch(fetchUtils.fetchJson);
+const token = localStorage.getItem('token');
+console.log('Token: ' + token);
 const httpClient = (url, options = {}) => {
+  const token = localStorage.getItem('token');
   if (!options.headers) {
     options.headers = new Headers({ Accept: 'application/json' });
   }
-  const token = windowGlobal.localStorage.getItem('token');
   options.headers.set('Authorization', `Bearer ${token}`);
-  return decoratedFetchJson(url, options);
+
+  return fetchUtils.fetchJson(url, options);
 };
 export default decorateFetch(httpClient);
