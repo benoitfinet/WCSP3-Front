@@ -13,88 +13,184 @@ import Photo6 from '../../img/photos atout branches/tyro.jpg';
 
 import './Activites.css';
 
-const LaserGame = () =>
+const ParcoursAcrobatiques = () =>
   <div>
-    <h1 className="h1activite">Laser Game</h1>
-    <div className="textback">
-      <p className="textactivites">A partir de 7 ans, de 6 à 20 personnes, le laser game est devenu à la mode en raison de son côté ludique, stratégique et divertissant, le laser Game est
-        un jeu dans lequel deux équipes de joueurs ou unités s’affrontent dans une simulation de tir. Au travers différents scénarios, l’idée est de marquer le maximum
-        de points en touchant les adversaires.
-        Muni d’une arme laser et d’un plastron, le laser Game est une activité sportive 100% sécu.
-      </p>
+    <h1 className="h1activite">Les parcours acrobatiques en hauteur</h1>
+    <div className="trait_et_rond">
+      <div className="trait"></div>
+      <div className="rond_bleu"></div>
     </div>
-    <img alt="photo" className="photoactivite" src={Photo1}></img>
+    <div className="first-block-img-para">
+        <img alt="photo" className="photoactivite" src={Photo1}></img>
+        <p className="textactivites">Le parcours acrobatique en hauteur est une activité qui consiste à se balader d’arbre en arbre au travers de différents obstacles plus fun les uns que les autres. Cette activité est adaptée pour tous les âges puisque le parc Atout Branches propose plusieurs parcours avec plus de 100 ateliers spécifiquement conçus pour des âges différents.<br/>
+            Vous atteindrez 18 mètres de hauteur au plus haut point du circuit Panoramique.<br/>
+            Nos 12 parcours sont adaptés en hauteur et difficultés en fonction de l’âge et de la taille des pratiquants.<br/>
+            Nos parcours accrobranches sont régis par une réglementation dite de « pratique en autonomie surveillée », c’est-à-dire que l’activité n’est pas encadrée individuellement.<br/>
+            100 % ligne de vie continue, Atout Branches vous profitez des dernières innovations en matière de sécurité. Tous les circuits sont équipés d'une ligne de vie continue.<br/>
+            Ce système élimine les erreurs de manipulations sur le parcours puisque l'un des connecteurs de votre équipement est accroché en permanence à la ligne de vie du début à la fin du parcours.<br/>
+            Votre équipement est composé d'un harnais équipé de 2 longes de sécurité. Chacune de ces longes est terminée par un connecteur. Le premier est un mousqueton à virole de sureté le second est un crochet qui ne peut être décroché à la fin du parcours. Ce crochet spécial reste connecté dès le début du parcours et en permanence tout au long de celui-ci. Votre sécurité n'est plus dépendante de votre attention.<br/>
+            Après une initiation obligatoire sur l’utilisation du matériel et l’application des règles de sécurité, vous évoluez en autonomie dans les arbres, à votre rythme, sous la surveillance générale de nos opérateurs qui interviennent en cas de difficulté majeure.<br/>
+            Pour plus de confort pensez à apporter une paire de gant type cycliste. Notre parc en propose à la vente (2€ la paire, T5 jusqu’à T11).
+        </p>
+    </div>
+    <div className="trait_et_rond">
+      <div className="trait"></div>
+      <div className="rond_bleu"></div>
+    </div>
+    <div className="block-card">
+    <div className="card-activite">
+        <img alt="photo" className="photo-card" src={Photo1}></img>
+        <h3 className="parcour-titre">Parcours PICCOLO</h3>
+        <p>Tout près du sol, des obstacles à franchir et des situations d'équilibre pour les apprentis aventuriers.<br/><br/> Accessible de 2 à 5 ans.</p>
+      </div>
+      <div className="card-activite">
+        <img alt="photo" className="photo-card" src={Photo2}></img>
+        <h3 className="parcour-titre">Parcours PITCHOUN (NOUVEAUTE 2021)</h3>
+        <p>Réveil tes sens et l’aventurier qui est en toi. Ce parcours d’initiation d’une hauteur d’environ 1 mètre t’apportera l’agilité nécessaire pour continuer l’aventure des parcours suivants. Les parents pourront t’aider dans ta progression.<br/><br/> Accessible de 3 à 7 ans.</p>
+      </div>
+      <div className="card-activite">
+        <img alt="photo" className="photo-card" src={Photo3}></img>
+        <h3 className="parcour-titre">Parcours COLIBRI</h3>
+        <p>Une série de tyroliennes pour les tous petits.<br/><br/> Accessible de 2 à 7 ans.</p>
+      </div>
+      <div className="card-activite">
+        <img alt="photo" className="photo-card" src={Photo4}></img>
+        <h3 className="parcour-titre">Parcours OUISTITI</h3>
+        <p>Avec une hauteur de 3 à 4 mètres, ce circuit est un vrai challenge pour les enfants. Des obstacles en hauteur pour développer concentration et équilibre.<br/><br/>Taille requise : 1m.<br/>Accessible de 4 à 7 ans.</p>
+      </div>
+      <div className="card-activite">
+        <img alt="photo" className="photo-card" src={Photo5}></img>
+        <h3 className="parcour-titre">Parcours VERT</h3>
+        <p>De 3 à 5 mètres du sol, ce circuit s'adresse à tous les publics recherchant de nouvelles sensations. De l'adulte novice au jeune aventurier chacun y trouvera son plaisir.<br/><br/>Taille requise : 1m20.<br/>Accessible à partir de 7 ans.</p>
+      </div>
+      <div className="card-activite">
+        <img alt="photo" className="photo-card" src={Photo1}></img>
+        <h3 className="parcour-titre">Parcours JAUNE</h3>
+        <p>Jusqu'à 5 mètres de hauteur, circuit ludique et un peu plus difficile que le circuit vert. Il mettra à l'épreuve de vos capacités d'équilibre.<br/><br/>Taille requise : 1m20.<br/>Accessible à partir de 7 ans.</p>
+      </div>
+      <div className="card-activite">
+        <img alt="photo" className="photo-card" src={Photo2}></img>
+        <h3 className="parcour-titre">Parcours BLEU</h3>
+        <p>Jusqu'à 6 mètres de hauteur, circuit plus acrobatique que le vert et le jaune. Un bon échauffement avant d'attaquer le circuit rouge.<br/><br/>Taille requise : 1m30.</p>
+      </div>
+      <div className="card-activite">
+        <img alt="photo" className="photo-card" src={Photo3}></img>
+        <h3 className="parcour-titre">Parcours ROUGE n° 1 et n° 2 (NOUVEAUTE 2021)</h3>
+        <p>De 4 à 11 mètres de haut, des sensations garanties avec la diversité des passages aériens. Un raccourci au milieu vous laissera le choix entre le circuit long ou court.<br/><br/>Taille requise : 1m40.</p>
+      </div>
+      <div className="card-activite">
+        <img alt="photo" className="photo-card" src={Photo4}></img>
+        <h3 className="parcour-titre">Parcours PANORAMIQUE</h3>
+        <p>100% tyroliennes, le circuit le plus haut du parcours avec son perchoir à 18 mètres et une série de 8 tyroliennes pour survoler le parc.<br/><br/>Taille requise 1m40. ( accès possible aux enfants de 1m30 encadrés par 2 adultes)</p>
+      </div>
+      <div className="card-activite">
+        <img alt="photo" className="photo-card" src={Photo5}></img>
+        <h3 className="parcour-titre">Parcours NOIR</h3>
+        <p>Seuls les plus téméraires oseront se mesurer au parcours noir, votre équilibre et vos capacités à surmonter la peur du vide seront mises à l'épreuve. Encore de grandes tyroliennes pour vous récompenser et pour finir un saut en chute libre.<br/><br/>Taille requise : 1m50.<br/>Accessible à partir de 15 ans.</p>
+      </div>
+      <div className="card-activite">
+        <img alt="photo" className="photo-card" src={Photo1}></img>
+        <h3 className="parcour-titre">Parcours EBENE</h3>
+        <p>Circuit court mais qui vous demandera beaucoup de force dans les bras. Encore des émotions pour finir avec un saut de tarzan impressionnant.<br/><br/>Taille requise : 1m60<br/>Accessible à partir de 15 ans.</p>
+      </div>
+      <div className="card-activite">
+        <img alt="photo" className="photo-card" src={Photo2}></img>
+        <h3 className="parcour-titre">VERTIJUMP</h3>
+        <p>Une attraction indépendante du parcours. Vous montez à 12 mètres pour un saut avec une chute libre de plusieurs mètres. Oserez sauter ?</p>
+      </div>
+      <div className="card-activite">
+        <img alt="photo" className="photo-card" src={Photo3}></img>
+        <h3 className="parcour-titre">LES NOCTURNES 2021</h3>
+        <p>Découvrez des sensations nouvelles en effectuant les parcours dans l'obscurité.<br/>Séances spéciales les samedis : 29 Mai, 26 Juin, 24 Juillet, 21 Aout, 18 Septembre.<br/><br/>Conditions : Age minimum 10 ans, les mineurs doivent être accompagnés d'un adulte.<br/>Nombre de places limité - Réservation Obligatoire.<br/>ICI Réservation (créer un lien)</p>
+      </div>
+    </div>
+  </div>;
+const EscapeGame = () =>
+  <div>
+    <h1 className="h1activite">L'escape game</h1>
+    <div className="trait_et_rond">
+      <div className="trait"></div>
+      <div className="rond_bleu"></div>
+    </div>
+    <div className="block-img-para">
+      <img alt="photo" className="photoactivite" src={Photo2}></img>
+      <p className="textactivites">Un ESCAPE GAME 100% naturel, saurez-vous trouver le refuge et y entrer vous avez 1h pour cela.Fouillez la forêt à la recherche des objets indispensables pour trouver et déverrouiller la porte d'accès.Le jeu se déroule uniquement au sol et s'adresse à tous, adultes et enfants à partir de 10 ansNous conseillons de constituer une équipe de 3 à 6 joueurs.<br/>Une aventure ludique et sportive qui fera appel à toute votre ingéniosité.<br/>Réservation téléphonique ou par mail obligatoire par avance.</p>
+    </div>
   </div>;
 
-const Orientation = () =>
+const ParcoursEnigmes = () =>
   <div>
-    <h1 className="h1activite">Les courses d'orientation</h1>
-    <div className="textback">
-      <p className="textactivites">Nous vous proposons deux chasses aux trésors sous la forme de courses d'orientation pédagogiques autour des thèmes de la faune, la flore et de notre patrimoine.
-        Une carte spéciale d’orientation, une boussole et c’est parti pour une activité sportive de plein air, un défi mental praticable par tous ou il faudra se diriger d’une balise à une autre.
-        Seul, en groupe ou en famille, des enfants aux vétérans, tout le monde trouvera son bonheur, celui de se promener en pleine nature, découvrir son territoire, trouver les balises, ou courir le plus vite possible sur un parcours adapté.
+    <h1 className="h1activite">Parcours d'énigmes</h1>
+    <div className="trait_et_rond">
+      <div className="trait"></div>
+      <div className="rond_bleu"></div>
+    </div>
+    <div className="block-img-para">
+      <img alt="photo" className="photoactivite" src={Photo3}></img>
+      <p className="textactivites">Testez vos capacités d'orientation et votre perspicacité avec les parcours d'énigmes
+        Un livret de jeu vous donne toutes les instructions pour parcourir la forêt en résolvant les énigmes.
+        Idéal pour jouer en groupes jusqu'à 5 personnes par groupe
+        Très apprécié pour les anniversaires.
       </p>
     </div>
-    <img alt="photo" className="photoactivite" src={Photo2}></img>
   </div>;
 
-const AltiSpider = () =>
+const ChasseTresor = () =>
   <div>
-    <h1 className="h1activite">Alti'Spider</h1>
-    <div className="textback">
-      <p className="textactivites">Enfants à partir de 4 ans. Cette activité sans baudrier permet de se déplacer en toute sécurité sur des filets géants telle une toile d’araignée.
+    <h1 className="h1activite">La chasse au trésor</h1>
+    <div className="trait_et_rond">
+      <div className="trait"></div>
+      <div className="rond_bleu"></div>
+    </div>
+    <div className="block-img-para">
+      <img alt="photo" className="photoactivite" src={Photo4}></img>
+      <p className="textactivites">La chasse au trésor qui fait appel votre maitrise de l'orientation.
+        Retrouvez les coffres forts cachés dans le parc pour reconstituer la clé du mystère.
+        Idéal pour jouer en groupes pour compléter les anniversaires par exemple.
+        Nous mettons un coffre à votre disposition si vous souhaitez prévoir des récompenses pour les participants
       </p>
     </div>
-    <img alt="photo" className="photoactivite" src={Photo3}></img>
-  </div>;
-
-const Escalade = () =>
-  <div>
-    <h1 className="h1activite">Les murs d'escalade</h1>
-    <div className="textback">
-      <p className="textactivites">A partir de 4 ans. Equipés du système d’assurage Trublue®, Deux murs d’escalades sont à votre disposition.
-        Un mur enfant d’une hauteur de 10 mètres et un mur adulte d’une hauteur de 15 mètres.
-        une expérience de grimpe unique pour tous qui s’adapte aux différents niveaux de pratique en intégrant une valeur ancestrale de l’escalade, le dépassement de soi.
-      </p>
-    </div>
-    <img alt="photo" className="photoactivite" src={Photo4}></img>
   </div>;
 
 const AireDeJeux = () =>
   <div>
-    <h1 className="h1activite">L'aire de jeux des piou-piou</h1>
-    <div className="textback">
-    <p className="textactivites">Enfants de 2 à 6 ans. Les enfants, tout comme les adultes, ont besoin de lâcher prise et de s'amuser, bouger et jouer avec d'autres enfants. Notre aire de jeux est un lieu idéal pour ça. Riche en activités, elle permet de grimper, de sauter, de glisser, de faire des parcours et de relever de nouveaux défis.
-      Amusement et la rigolade seront aux rendez-vous à travers la pratiquer une vraie activité sportive où les enfants se dépensent. L'activité physique est réelle et elle est un vrai atout pour leur santé. Au-delà du bien-être mental, c'est également le bien-être physique qui est amélioré.
-      Les parents aussi y trouvent leur bonheur, allant parfois même jusqu'à s'amuser eux aussi.
-      Nos jeux : Un parcours acrobatique d’initiation sans baudrier, un Alti’spider, des tyroliennes, des jeux…
+    <h1 className="h1activite">L'atout spider / L'aire de jeux enfants</h1>
+    <div className="trait_et_rond">
+      <div className="trait"></div>
+      <div className="rond_bleu"></div>
+    </div>
+    <div className="block-img-para">
+      <img alt="photo" className="photoactivite" src={Photo5}></img>
+      <p className="textactivites">Cette activité sans baudrier, l’Atout Spider permet de se déplacer et jouer en toute sécurité sur un filet géant telle une toile d’araignée. Vous retrouverez autour de l’Atout spider différents jeux pour vos enfants (tyrolienne, slackline, Ninja Warrior)<br/>Enfants à partir de 4 ans et jusqu’à 12 ans.
     </p>
     </div>
-    <img alt="photo" className="photoactivite" src={Photo5}></img>
   </div>;
 
-const Parcours = () =>
+const LaserGame = () =>
   <div>
-    <h1 className="h1activite">Les parcours acrobatique en hauteur</h1>
-    <div className="textback">
-    <p className="textactivites">Le parcours acrobatiques en hauteur est une activité qui consiste à se balader d’arbre en arbre au travers de différents obstacles plus fun les uns que les autres. Cette activité est adaptée pour tous les âges puisque le parc Alti’Max propose plusieurs parcours avec 100 ateliers spécifiquement conçus pour des âges différents.
-      Nos 9 parcours sont adaptés en hauteur et difficultés en fonction de l’âge et de la taille des pratiquants.
-      Nos parcours accrobranches sont régis par une réglementation dite de « pratique en autonomie surveillée », c’est-à-dire que l’activité n’est pas encadrée individuellement.
-      Après une initiation obligatoire sur l’utilisation du matériel et l’application des règles de sécurité, vous évoluez en autonomie dans les arbres, à votre rythme, sous la surveillance générale de nos opérateurs qui interviennent en cas de difficulté majeure.
-      Pour plus de confort pensez à apporter une paire de gant type cycliste. Notre parc en propose à la vente (2€ la paire).
-      <br></br>- 1 PARCOUR TOUT PETIT JAUNE : PITCHOUNE : Enfant de moins de 3 ans, hauteur maximum de 50 cm, sans ligne de vie continue. (aire de jeux pioupiou)
-      <br></br>- 3 PARCOURS JAUNES : OUISTITI – LUTIN - PIOU PIOU : Public à partir de 3 ans, taille 1 mètre.
-      Ce sont des parcours à hauteur d’homme (moins de 1,5 mètre) afin que les parents puissent suivre l’évolution de leurs enfants à chaque instant avec la possibilité de les aider.
-      <br></br>- 2 PARCOURS VERTS : DECOUVERTE - FAMILLE : Public à partir de 6 ans, taille 1,2 mètre.
-      Parcours plus aérien d’une hauteur d’évolution d’ateliers comprises entre 2 et 4 mètres comportant des difficultés progressives.
-      <br></br>- 2 PARCOURS BLEUS : TYRO – AVENTURIER : Public à partir de 14 ans, d’une taille 1,4 mètre.
-      Parcours aérien et technique d’une hauteur d’évolution d’ateliers comprises entre 3 et 8 mètres.
-      <br></br>- 1 PARCOURS ROUGE ET VARIANTE NOIR : ADRENALINE : Public à partir de 14 ans, taille 1,6 mètre.
-      Parcours aérien et plus technique d’une hauteur d’évolution d’ateliers comprises entre 5 et 15 mètres.
-    </p>
+    <h1 className="h1activite">Le laser game</h1>
+    <div className="trait_et_rond">
+      <div className="trait"></div>
+      <div className="rond_bleu"></div>
     </div>
-    <img alt="photo" className="photoactivite" src={Photo6}></img>
+    <div className="block-img-para">
+      <img alt="photo" className="photoactivite" src={Photo6}></img>
+      <p className="textactivites">Le laser game est devenu à la mode en raison de son côté ludique, stratégique et divertissant, le laser Game est un jeu dans lequel deux équipes de joueurs ou unités s’affrontent dans une simulation de tir. Au travers différents scénarios, l’idée est de marquer le maximum de points en touchant les adversaires.Muni d’une arme laser et d’un plastron, le laser Game est une activité sportive 100% sécu.<br/> A partir de 7 ans, de 6 à 20 personnes,<br/>Réservation téléphonique ou par mail obligatoire par avance.</p>
+    </div>
   </div>;
+
+const MurEscalade = () =>
+<div>
+  <h1 className="h1activite">Les murs d'escalade</h1>
+  <div className="trait_et_rond">
+      <div className="trait"></div>
+      <div className="rond_bleu"></div>
+    </div>
+  <div className="block-img-para">
+    <img alt="photo" className="photoactivite" src={Photo6}></img>
+    <p className="textactivites">Équipés du système d’assurage Trublue® et de votre baudrier, Deux murs d’escalades sont à votre disposition. Un mur enfant d’une hauteur de 7 mètres et un mur adulte d’une hauteur de 12 mètres vous attendent pour un défi vertical. Une expérience de grimpe unique pour tous qui s’adapte aux différents niveaux de pratique en intégrant une valeur ancestrale de l’escalade, le dépassement de soi.<br/>A partir de 4 ans.</p>
+  </div>
+</div>;
 
 const Error = () => (
   <p>
@@ -106,7 +202,7 @@ class Activites extends Component {
   constructor (props) {
     super(props);
     this.state = {
-      activeId: 'lasergame'
+      activeId: 'parcours-acrobatiques'
     };
     this.handleChangeTab = this.handleChangeTab.bind(this);
   }
@@ -118,18 +214,20 @@ class Activites extends Component {
 
   getTabContent () {
     switch (this.state.activeId) {
-      case 'lasergame':
-        return <LaserGame />;
-      case 'orientation':
-        return <Orientation />;
-      case 'altispider':
-        return <AltiSpider />;
-      case 'escalade':
-        return <Escalade />;
-      case 'airedejeux':
+      case 'parcours-acrobatiques':
+        return <ParcoursAcrobatiques />;
+      case 'escape-game':
+        return <EscapeGame />;
+      case 'parcours-enigmes':
+        return <ParcoursEnigmes />;
+      case 'chasse-tresor':
+        return <ChasseTresor />;
+      case 'atout-spider':
         return <AireDeJeux />;
-      case 'parcours':
-        return <Parcours />;
+      case 'laser-game':
+        return <LaserGame />;
+      case 'mur-escalade':
+        return <MurEscalade />;
       default:
         return <Error />;
     }
@@ -138,7 +236,7 @@ class Activites extends Component {
   render () {
     return (
       <div>
-        <Navbar />
+        <Navbar title="Activités"/>
         <div className="Activites">
           <div className="Activitespadding">
           <Activiteselect

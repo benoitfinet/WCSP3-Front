@@ -2,15 +2,6 @@
     padding: 3% 0;
   }
 
-.textback{
-    background-color: #E1E9E6;
-    border-radius: 30px;
-    padding: 3% 3%;
-    margin: auto;
-    width: 700px;
-    box-shadow: 5px 10px 10px rgb(83, 107, 67);
-  }
-
 .text-map{
     margin: auto;
     color: #8B4513;
@@ -44,4 +35,25 @@
     .textback{
       width: 240px
     }
+  }
+
+  .mapBody {
+    background-size: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Londrina Solid';
+    padding-top: 3%;
+    background-repeat: no-repeat;
+    padding-bottom: 6%;
+    background-color: #eef1f3;
+  }
+
+  .mapContent {
+    width: 85%;
+  margin: auto;
+  border: 1px solid #d0c6c68c;
+  background-color: white;
+  margin-top: 2%;
+  border-radius: 3px;
+  padding: 2%;
   }

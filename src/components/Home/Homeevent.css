@@ -1,3 +1,14 @@
 #testcard{
     box-shadow: none;
+    margin-top:0!important;
+}
+.event-link{
+    color: white;
+    text-decoration: none;
+
+}
+
+.event-link:hover{
+    color: white;
+    text-decoration: none;
 }

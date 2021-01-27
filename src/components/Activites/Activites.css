@@ -3,6 +3,32 @@
   text-align: center;
 }
 
+.container {
+  margin: 0;
+}
+
+.first-block-img-para {
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+.block-img-para {
+  display: flex;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+.h1activite {
+  font-family: 'Francois One', sans-serif;
+}
+
+.block-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 3%;
+}
+
 .Activites{
   background-size: 100%;
   padding: 0;
@@ -14,24 +40,77 @@
 }
 
 .Activiteselect {
-  border: 2px solid #009378;
+  border: 1px solid #009378;
   border-radius: 30px;
   margin: auto;
-  width: 700px;
+  width: 50%;
+  margin-top: 1%;
+  margin-bottom: 5%;
+}
+
+.textactivites {
+  margin: auto!important;
+}
+
+.card-activite {
+  border: 1px solid #c8ced2;
+  margin: 2%;
+  width: 25%;
+  border-radius: 15px;
+  height: 550px;
+  box-shadow: 6px 5px 5px #f1eeee;
+}
+
+.card-activite p {
+  margin: 7%;
+  text-align: start;
+  color: #9199a1;
+  text-align: justify;
 }
   
 .Activiteselect button {
   border: 2px solid transparent;
-  background: white;
-  font-size: 1rem;
+  font-size: 1.1rem;
   padding: 0.5rem;
   flex-grow: 1;
-  margin: 2% 1%;
+  margin: 0.8% 1%;
+  font-family: 'Francois One', sans-serif;
+  text-transform: uppercase;
 }
 
-.h1activite{
-  padding: 3% 0;
+.Activites-content {
+  width: 85%;
+  margin: auto;
+  border: 1px solid #d0c6c68c;
+  background-color: white;
+  margin-top: 2%;
+  border-radius: 3px;
+  padding: 2%;
 }
+
+/* ---------- Trait de séparation ligne + rond ---------- */
+
+.trait
+{
+  width: 30%;
+  height: 1px;
+  background-color: rgba(0,0,0,0.3);
+  margin: auto;
+}
+
+.rond_bleu
+{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #EFB960;;
+  margin: auto;
+  position: relative;
+  bottom: 13px;
+  border: 3px white solid;
+}
+
+/* ---------- End ---------- */
   
 .Activiteselect button.active {
   border-radius: 30px;
@@ -42,13 +121,11 @@
   outline: none;
 }
 
-.textback{
-  background-color: #E1E9E6;
-  border-radius: 30px;
-  padding: 3% 3%;
-  margin: auto;
-  width: 700px;
-  box-shadow: 5px 10px 10px rgb(83, 107, 67);
+.parcour-titre {
+  margin: 7%;
+  text-align: center;
+  font-weight: bold;
+  color: #404245;
 }
 
 .photoactivite{
@@ -56,6 +133,13 @@
   width: 700px;
   border-radius: 30px 30px 30px 30px;
   margin-top: 3%;
+}
+
+.photo-card {
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 38%;
 }
 
 .textactivites{

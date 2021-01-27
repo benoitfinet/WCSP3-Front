@@ -17,3 +17,14 @@
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
   }
+
+.parc-link{
+    color: white;
+    text-decoration: none;
+
+}
+
+.parc-link:hover{
+    color: white;
+    text-decoration: none;
+}
