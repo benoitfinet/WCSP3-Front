@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import ReactDOM from 'react-dom';
-import AppReactadmin from './components/ReactAdmin/AppReactadmin';
+import App from './App';
 
 import './index.css';
 
@@ -12,7 +12,7 @@ import 'mdbreact/dist/css/mdb.css';
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-    <AppReactadmin/>
+      <App />
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')

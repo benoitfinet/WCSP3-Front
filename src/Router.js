@@ -16,7 +16,6 @@ const RouterWebSite = () => {
       <Route path="/Ounoustrouver" component={Map} />
       <Route path="/Tarifs" component={Faq} />
       <Route path="/AppReactAdmin" component={AppReactadmin} />
-
     </Switch>
   );
 };
