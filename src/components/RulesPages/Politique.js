@@ -11,7 +11,7 @@ class Politique extends React.Component {
   };
 
   getUser = () => {
-    fetch('http://localhost:5000/info?id=1')
+    fetch('http://localhost:5000/info')
       .then((res) => res.json())
       .then((data) => {
         this.setState({
