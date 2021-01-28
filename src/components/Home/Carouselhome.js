@@ -12,12 +12,33 @@ import Photo6 from '../../img/photos atout branches/tyro.jpg';
 import './Carousel.css';
 import './Carouselhome.css';
 
-const CarouselPage = () => {
-  return (
+class CarouselPage extends React.Component {
+  state = {
+    homes: []
+  };
+
+  getHome = () => {
+    fetch('http://localhost:5000/home/')
+      .then((res) => res.json())
+      .then((data) => {
+        this.setState({
+          homes: data
+        });
+      });
+  };
+
+  componentDidMount () {
+    this.getHome();
+  }
+
+  render () {
+    const { homes } = this.state;
+
+    return (
     <div className="block-caroussel">
     <MDBContainer className="carousel">
-      <h2 className="home-title">Nos activites</h2>
-      <h3 className="home-subtitle">Garantie 100% FUN</h3>
+      <h2 className="home-title">{homes.length !== 0 && homes[4].title}</h2>
+      <h3 className="home-subtitle">{homes.length !== 0 && homes[4].subtitle}</h3>
       <MDBCarousel
       activeItem={1}
       length={6}
@@ -108,7 +129,7 @@ const CarouselPage = () => {
     </MDBCarousel>
     </MDBContainer>
     </div>
-  );
-};
-
+    );
+  }
+}
 export default CarouselPage;

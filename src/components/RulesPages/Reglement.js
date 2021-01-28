@@ -10,7 +10,7 @@ class Reglement extends React.Component {
     infos: []
   };
 
-  getUser = () => {
+  getInfo = () => {
     fetch('http://localhost:5000/info')
       .then((res) => res.json())
       .then((data) => {
@@ -21,7 +21,7 @@ class Reglement extends React.Component {
   };
 
   componentDidMount () {
-    this.getUser();
+    this.getInfo();
   }
 
   render () {

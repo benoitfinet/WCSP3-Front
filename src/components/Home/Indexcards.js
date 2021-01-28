@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import 'semantic-ui-css/semantic.min.css';
 import 'react-multi-carousel/lib/styles.css';
 import UAParser from 'ua-parser-js';
@@ -6,25 +7,44 @@ import Simple from './Cards';
 import Section from './Section';
 import './Indexcards.css';
 
-// Because this is an inframe, so the SSR mode doesn't not do well here.
-// It will work on real devices.
-// eslint-disable-next-line react/prop-types
-const Indexcards = ({ deviceType }) => {
-  return (
+class Indexcards extends React.Component {
+  state = {
+    homes: []
+  };
+
+  getHome = () => {
+    fetch('http://localhost:5000/home/')
+      .then((res) => res.json())
+      .then((data) => {
+        this.setState({
+          homes: data
+        });
+      });
+  };
+
+  componentDidMount () {
+    this.getHome();
+  }
+
+  render () {
+    const { homes } = this.state;
+
+    return (
     <div>
     <div className="block-cards">
-    <h2 className="home-title">Des offres pour tout publics</h2>
-    <h3 className="home-subtitle">En famille, entre amis, entre collègues ...</h3>
+    <h2 className="home-title">{homes.length !== 0 && homes[2].title}</h2>
+    <h3 className="home-subtitle">{homes.length !== 0 && homes[2].subtitle}</h3>
     <Fragment>
       <Section>
-        <Simple deviceType={deviceType} />
+        <Simple deviceType={this.props.deviceType} />
       </Section>
     </Fragment>
     </div>
     <button className="button-cards">Découvrez toutes nos offres</button>
     </div>
-  );
-};
+    );
+  }
+}
 Indexcards.getInitialProps = ({ req }) => {
   let userAgent;
   if (req) {

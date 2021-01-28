@@ -12,20 +12,23 @@ import {
 import BookIcon from '@material-ui/icons/Book';
 export const PostIcon = BookIcon;
 
-export const PostListInfo = (props) => (
+export const PostListHome = (props) => (
   <List {...props}>
     <Datagrid rowClick="edit">
-      <TextField source="title" />
+        <TextField source="id" />
+        <TextField source="title" />
       <EditButton/>
     </Datagrid>
   </List>
 );
 
-export const PostEditInfo = (props) => (
+export const PostEditHome = (props) => (
   <Edit title="Réalisez ici vos modifications" {...props}>
     <SimpleForm>
       <TextInput source="title" />
-      <TextInput multiline source="description" />
+      <TextInput multiline source="subtitle" />
+      <TextInput multiline source="text" />
+      <TextInput multiline source="subtext" />
     </SimpleForm>
   </Edit>
 );

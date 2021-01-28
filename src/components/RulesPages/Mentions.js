@@ -7,33 +7,32 @@ import './RulesPages.css';
 
 class Mentions extends React.Component {
   state = {
-    users: []
+    infos: []
   };
 
-  getUser = () => {
+  getInfo = () => {
     fetch('http://localhost:5000/info/')
       .then((res) => res.json())
       .then((data) => {
         this.setState({
-          users: data[0]
+          infos: data
         });
-        console.log(data[0]);
       });
   };
 
   componentDidMount () {
-    this.getUser();
+    this.getInfo();
   }
 
   render () {
-    const { users } = this.state;
+    const { infos } = this.state;
 
     return (
     <div>
         <Navbar title="Mentions légales"/>
         <div className="pagesBody">
             <div className="pagesContent">
-            {users.description}
+            {infos.length !== 0 && infos[2].description}
             </div>
         </div>
         <Footer />

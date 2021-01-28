@@ -7,32 +7,31 @@ import './RulesPages.css';
 
 class Politique extends React.Component {
   state = {
-    users: []
+    infos: []
   };
 
-  getUser = () => {
+  getinfo = () => {
     fetch('http://localhost:5000/info')
       .then((res) => res.json())
       .then((data) => {
         this.setState({
-          users: data[1]
+          infos: data
         });
-        console.log(data);
       });
   };
 
   componentDidMount () {
-    this.getUser();
+    this.getinfo();
   }
 
   render () {
-    const { users } = this.state;
+    const { infos } = this.state;
     return (
     <div>
         <Navbar title="Politique de confidentialité"/>
         <div className="pagesBody">
             <div className="pagesContent">
-            {users.description}
+            {infos.length !== 0 && infos[1].description}
             </div>
         </div>
         <Footer />
