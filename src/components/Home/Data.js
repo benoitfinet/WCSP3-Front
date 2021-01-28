@@ -5,12 +5,12 @@ import { AiFillInstagram } from 'react-icons/ai';
 export const links = [
   {
     id: 1,
-    url: '/',
+    url: 'https://fr-fr.facebook.com/AtoutBranches/',
     text: <FaFacebook size={32}/>
   },
   {
     id: 2,
-    url: '/',
+    url: 'https://www.instagram.com/atout_branches/',
     text: <AiFillInstagram size={32} />
   },
   {
@@ -20,17 +20,17 @@ export const links = [
   },
   {
     id: 4,
-    url: '/Activites',
+    url: '/activites',
     text: 'activités'
   },
   {
     id: 5,
-    url: '/Horaires',
-    text: 'Nos horaires'
+    url: '/groupes',
+    text: 'Groupes'
   },
   {
     id: 6,
-    url: '/test',
+    url: '/',
     text: <img src={logo} className="logo" alt="logo" />
   },
   {
@@ -40,13 +40,13 @@ export const links = [
   },
   {
     id: 8,
-    url: '/Ounoustrouver',
-    text: 'Nous trouver'
+    url: '/Horaires',
+    text: 'Nos horaires'
   },
   {
     id: 9,
-    url: '/Groupes',
-    text: 'Groupes'
+    url: '/Ounoustrouver',
+    text: 'Nous trouver'
   },
   {
     id: 10,
