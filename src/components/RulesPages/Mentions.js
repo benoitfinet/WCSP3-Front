@@ -1,27 +1,44 @@
+import React from 'react';
+
 import Navbar from '../Home/Navbar';
 import Footer from '../Footer/Footer';
 
 import './RulesPages.css';
 
-import axios from 'axios';
+class Mentions extends React.Component {
+  state = {
+    users: []
+  };
 
-function Mentions () {
-  async function makeGetRequest () {
-    const res = await axios.get('http://localhost:5000/info');
-    const data = res.data;
-    console.log(data);
+  getUser = () => {
+    fetch('http://localhost:5000/info/')
+      .then((res) => res.json())
+      .then((data) => {
+        this.setState({
+          users: data[0]
+        });
+        console.log(data[0]);
+      });
+  };
+
+  componentDidMount () {
+    this.getUser();
   }
-  makeGetRequest();
-  return (
+
+  render () {
+    const { users } = this.state;
+
+    return (
     <div>
         <Navbar title="Mentions légales"/>
         <div className="pagesBody">
             <div className="pagesContent">
+            {users.description}
             </div>
         </div>
         <Footer />
     </div>
-  );
+    );
+  }
 }
-
 export default Mentions;
