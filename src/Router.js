@@ -19,7 +19,7 @@ const RouterWebSite = () => {
     <Switch>
       <Route exact path="/" component={Home} />
       <Route path="/Activites" component={Activites} />
-      <Route path="/Groupes" component={Groupes} />
+      <Route path="/Groupes/:activity" component={Groupes} />
       <Route path="/nous-trouver" component={Map} />
       <Route path="/Faq" component={Faq} />
       <Route path="/Horaires" component={CalendarPage} />

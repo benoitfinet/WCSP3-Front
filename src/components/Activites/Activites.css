@@ -43,7 +43,6 @@
   border: 1px solid #009378;
   border-radius: 30px;
   margin: auto;
-  width: 50%;
   margin-top: 1%;
   margin-bottom: 5%;
 }
@@ -66,16 +65,17 @@
   text-align: start;
   color: #9199a1;
   text-align: justify;
+  font-family: 'Francois One', sans-serif;
 }
   
 .Activiteselect button {
-  border: 2px solid transparent;
-  font-size: 1.1rem;
-  padding: 0.5rem;
-  flex-grow: 1;
-  margin: 0.8% 1%;
+  color: #344454;
+  padding-left: 2%;
+  padding-right: 2%;
   font-family: 'Francois One', sans-serif;
-  text-transform: uppercase;
+  font-size: 1.5rem;
+  border: none;
+  font-weight: 100;
 }
 
 .Activites-content {
@@ -126,6 +126,8 @@
   text-align: center;
   font-weight: bold;
   color: #404245;
+  font-size: 17px;
+  font-family: 'Francois One', sans-serif;
 }
 
 .photoactivite{

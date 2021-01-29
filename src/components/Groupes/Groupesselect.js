@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
 
 import PropTypes from 'prop-types';
 
@@ -6,48 +7,36 @@ class Activiteselect extends Component {
   render () {
     return (
       <div className="Activiteselect">
-        <button
-          id="lasergame"
-          onClick={this.props.handleChangeTab}
-          className={this.props.active === 'lasergame' ? 'active' : ''}
+        <Link to="/groupes/familleAmis" id="familleAmis" className={this.props.active === 'familleAmis' ? 'active' : 'unActive'}
+        onClick={this.props.handleChangeTab}
         >
           Familles / Amis
-        </button>
-        <button
-          id="orientation"
-          onClick={this.props.handleChangeTab}
-          className={this.props.active === 'orientation' ? 'active' : ''}
+        </Link>
+        <Link to="/groupes/anniversaires" id="anniversaires" className={this.props.active === 'anniversaires' ? 'active' : 'unActive'}
+         onClick={this.props.handleChangeTab}
         >
           Anniversaires
-        </button>
-        <button
-          id="altispider"
-          onClick={this.props.handleChangeTab}
-          className={this.props.active === 'altispider' ? 'active' : ''}
+        </Link>
+        <Link to="/groupes/centreLoisirs" id="centreLoisirs" className={this.props.active === 'centreLoisirs' ? 'active' : 'unActive'}
+         onClick={this.props.handleChangeTab}
         >
-          Scolaires
-        </button>
-        <button
-          id="escalade"
-          onClick={this.props.handleChangeTab}
-          className={this.props.active === 'escalade' ? 'active' : ''}
+          Les centres de loisirs et scolaires
+        </Link>
+        <Link to="/groupes/teamBuilding" id="teamBuilding" className={this.props.active === 'teamBuilding' ? 'active' : 'unActive'}
+         onClick={this.props.handleChangeTab}
         >
-          Séminaires
-        </button>
-        <button
-          id="airedejeux"
-          onClick={this.props.handleChangeTab}
-          className={this.props.active === 'airedejeux' ? 'active' : ''}
+          Le team building / Séminaires
+        </Link>
+        <Link to="/groupes/comiteEntreprise" id="comiteEntreprise" className={this.props.active === 'comiteEntreprise' ? 'active' : 'unActive'}
+         onClick={this.props.handleChangeTab}
         >
-          CE / Assos
-        </button>
-        <button
-          id="parcours"
-          onClick={this.props.handleChangeTab}
-          className={this.props.active === 'parcours' ? 'active' : ''}
+          Les comités d'entreprise et les associations
+        </Link>
+        <Link to="/groupes/EVG-EVJF" id="EVG-EVJF" className={this.props.active === 'EVG-EVJF' ? 'active' : 'unActive'}
+         onClick={this.props.handleChangeTab}
         >
           EVG / EVJF
-        </button>
+        </Link>
       </div>
     );
   }

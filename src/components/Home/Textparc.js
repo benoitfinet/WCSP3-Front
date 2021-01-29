@@ -1,8 +1,10 @@
 import './Button.css';
 
+import './Textparc.css';
+
 function Textparc () {
   return (
-        <div>
+        <div className="block-text-parc">
             <h2 className="home-title">Atout branches</h2>
             <h3 className="home-subtitle">Au coeur du Parc naturel régional du Gâtinais français</h3>
             <p className="home-para">Atout Branches est un parc d’activités de loisirs ludo sportives situé à Milly la Forêt au cœur du Parc Naturel Régional du Gâtinais Français, véritable poumon vert au sud de l’Ile-de-France.

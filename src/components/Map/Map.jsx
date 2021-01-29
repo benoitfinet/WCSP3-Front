@@ -13,7 +13,11 @@ const Map = () => {
           <div className="mapContent">
           <div>
           <div className="textback">
-            <h2 className="titles">La carte</h2>
+            <h2 className="home-title">La carte</h2>
+            <div className="trait_et_rond">
+      <div className="trait"></div>
+      <div className="rond_bleu"></div>
+    </div>
             <p className="text-map">
               Atout branches vous acceuil dans le Parc naturel du Gâtinais français
             </p>
@@ -33,7 +37,11 @@ const Map = () => {
       </div>
     <div className="map-layout">
       <div className="textback">
-        <h2 className="titles">L’accès en voiture:</h2>
+        <h2 className="home-title">L’accès en voiture:</h2>
+        <div className="trait_et_rond">
+      <div className="trait"></div>
+      <div className="rond_bleu"></div>
+    </div>
         <p className="text-map">A 1 H 30 de Lille par l’autoroute A 25 puis l’autoroute A 16 direction Calais/Boulogne sur mer.
           <br></br>
           A 1 H 30 d’Arras par l’autoroute A 26 puis N 42 à partir de Saint Omer, puis arrivé à BOULOGNE SUR MER prendre l’autoroute A 16 direction Calais.
@@ -54,7 +62,11 @@ const Map = () => {
     </div>
     <div className="map-layout">
       <div className="textback">
-        <h2 className="titles">L’accès en train  et en bus :</h2>
+        <h2 className="home-title">L’accès en train  et en bus :</h2>
+        <div className="trait_et_rond">
+      <div className="trait"></div>
+      <div className="rond_bleu"></div>
+    </div>
         <p className="text-map">TGV jusqu’à la gare de Boulogne sur mer puis bus ou taxi jusqu’à Wimereux (2h38 depuis Paris, 1 h depuis Lille)
           TGV jusqu’à la gare de Calais puis trajet en autocar ou taxi jusqu’à Wimereux.
           <br></br>
@@ -71,7 +83,11 @@ const Map = () => {
     </div>
     <div className="map-layout">
       <div className="textback">
-      <h2 className="titles">Info sur les places de parking</h2>
+      <h2 className="home-title">Info sur les places de parking</h2>
+      <div className="trait_et_rond">
+      <div className="trait"></div>
+      <div className="rond_bleu"></div>
+    </div>
       <p className="text-map">Tous les parkings et emplacements autour de l’immeuble sont gratuits.
         <br></br>
         En été , il peut être difficile de se garer l’après midi aux alentours de l’immeuble car nous sommes à côté de la plage …mais avec de  la persévérance et en s’éloignant un peu de la mer, nous trouvons toujours de la place  🙂.

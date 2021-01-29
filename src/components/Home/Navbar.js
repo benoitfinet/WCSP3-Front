@@ -40,7 +40,6 @@ const Navbar = ({ title }) => {
   return (
     <div className="block-title-button">
       <h1 className="testtitle">{title}</h1>
-      <button className="title-button">Découvrir</button>
     <nav className={navbar ? 'blocknavbar' : 'blocknavbaractive'}>
       <div className="nav-center">
         <div className="nav-header">
