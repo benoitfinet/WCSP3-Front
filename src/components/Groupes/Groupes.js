@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
 import Groupesselect from './Groupesselect';
 import Navbar from '../Home/Navbar';
 import Footer from '../Footer/Footer';
+import PropTypes from 'prop-types';
 
 import Photo1 from '../../img/photos atout branches/laser game.jpeg';
 import Photo2 from '../../img/photos atout branches/parcours.jpg';
@@ -12,9 +14,13 @@ import Photo6 from '../../img/photos atout branches/tyro.jpg';
 
 import './Groupes.css';
 
-const LaserGame = () =>
+const FamilleAmis = () =>
   <div>
     <h1 className="h1activite">En famille ou entre amis</h1>
+    <div className="trait_et_rond">
+      <div className="trait"></div>
+      <div className="rond_bleu"></div>
+    </div>
     <div className="textback">
       <p className="textactivites">En famille ou entre amis, les activités ludo-sportives que nous vous proposons vous apportent une diversité dans l’éveil et le développement des personnes.
         Elles développent l’équilibre entre le physique et le mental, Enseigne l'autonomie, Aiguise la prise de décision, Apprend à penser et à agir sous pression, Augmente le niveau de condition physique, Développe l'estime de soi.
@@ -24,9 +30,13 @@ const LaserGame = () =>
     <img alt="photo" className="photoactivite" src={Photo1}></img>
   </div>;
 
-const Orientation = () =>
+const Anniversaires = () =>
   <div>
     <h1 className="h1activite">Les anniversaires</h1>
+    <div className="trait_et_rond">
+      <div className="trait"></div>
+      <div className="rond_bleu"></div>
+    </div>
     <div className="textback">
       <p className="textactivites">Vous bénéficiez: <br></br><br></br>
         D’une réservation pour un minimum de 6 enfants et d’une prise en charge de votre groupe dès votre arrivée.
@@ -55,9 +65,13 @@ const Orientation = () =>
     <img alt="photo" className="photoactivite" src={Photo2}></img>
   </div>;
 
-const AltiSpider = () =>
+const CentreLoisir = () =>
   <div>
     <h1 className="h1activite">Les centres de loisirs / Scolaires</h1>
+    <div className="trait_et_rond">
+      <div className="trait"></div>
+      <div className="rond_bleu"></div>
+    </div>
     <div className="textback">
       <p className="textactivites">Activités pédagogiques demandées par les professeurs des écoles, elles permettent aux enfants d’agir, de s’exprimer, et de comprendre à travers les activités physique, d’adapter leurs déplacements à des environnements variés.
         Nous prioriserons leurs accès en semaine et les mercredis .
@@ -66,9 +80,13 @@ const AltiSpider = () =>
     <img alt="photo" className="photoactivite" src={Photo3}></img>
   </div>;
 
-const Escalade = () =>
+const TeamBuilding = () =>
   <div>
     <h1 className="h1activite">Le team building / Séminaires</h1>
+    <div className="trait_et_rond">
+      <div className="trait"></div>
+      <div className="rond_bleu"></div>
+    </div>
     <div className="textback">
       <p className="textactivites">Nous accueillons les Petites et Moyennes Entreprises pour une journée team-building ou séminaire en semaines.<br></br><br></br>
         Face aux succès et à la demande importante de la part des entreprises, de nombreuses variantes sont venues compléter les possibilités d’animations Team-building ou de séminaire.<br></br><br></br>
@@ -80,9 +98,13 @@ const Escalade = () =>
     <img alt="photo" className="photoactivite" src={Photo4}></img>
   </div>;
 
-const AireDeJeux = () =>
+const ComiteEntreprise = () =>
   <div>
     <h1 className="h1activite">Les comités d'entreprises / Associations</h1>
+    <div className="trait_et_rond">
+      <div className="trait"></div>
+      <div className="rond_bleu"></div>
+    </div>
     <div className="textback">
       <p className="textactivites">Mettez vos équipes en défi, organisation d'olympiades avec nos activités : Parcours acrobatiques en hauteur, Laser Game, Courses d’orientation, Murs d’escalade.
       <br></br><br></br>Notre traiteur local vous propose différentes formules pour votre déjeuner : Apéritif dinatoire, cocktail, buffet.
@@ -91,9 +113,13 @@ const AireDeJeux = () =>
     <img alt="photo" className="photoactivite" src={Photo5}></img>
   </div>;
 
-const Parcours = () =>
+const EVG = () =>
   <div>
     <h1 className="h1activite">EVG / EVJF</h1>
+    <div className="trait_et_rond">
+      <div className="trait"></div>
+      <div className="rond_bleu"></div>
+    </div>
     <div className="textback">
       <p className="textactivites">Fêtez votre enterrement de vie de célibataire en pleine forêt.<br></br><br></br>
         Un(e) de vos proches se marie ? Enterrez sa vie de jeune fille ou de garçon au Parc Alti’Max pour passer une journée forte d’émotions !<br></br><br></br>
@@ -114,7 +140,7 @@ class Groupes extends Component {
   constructor (props) {
     super(props);
     this.state = {
-      activeId: 'lasergame'
+      activeId: this.props.match.params.activity
     };
     this.handleChangeTab = this.handleChangeTab.bind(this);
   }
@@ -126,41 +152,48 @@ class Groupes extends Component {
 
   getTabContent () {
     switch (this.state.activeId) {
-      case 'lasergame':
-        return <LaserGame />;
-      case 'orientation':
-        return <Orientation />;
-      case 'altispider':
-        return <AltiSpider />;
-      case 'escalade':
-        return <Escalade />;
-      case 'airedejeux':
-        return <AireDeJeux />;
-      case 'parcours':
-        return <Parcours />;
+      case 'familleAmis':
+        return <FamilleAmis />;
+      case 'anniversaires':
+        return <Anniversaires />;
+      case 'centreLoisirs':
+        return <CentreLoisir />;
+      case 'teamBuilding':
+        return <TeamBuilding />;
+      case 'comiteEntreprise':
+        return <ComiteEntreprise />;
+      case 'EVG-EVJF':
+        return <EVG />;
       default:
         return <Error />;
     }
   }
 
   render () {
+    console.log(this.props.match);
     return (
       <div>
         <Navbar title="Offres de groupes"/>
+        <div id="test"></div>
         <div className="Activites">
           <div className="Activitespadding">
             <Groupesselect
               active={this.state.activeId}
               handleChangeTab={this.handleChangeTab}
-            />
+              />
             <div className="Activites-content">{this.getTabContent()}
-            </div>
           </div>
-        </div>
+          </div>
         <Footer />
+      </div>
       </div>
     );
   }
 }
 
-export default Groupes;
+Groupes.propTypes = {
+  match: PropTypes.object,
+  params: PropTypes.string
+};
+
+export default withRouter(Groupes);

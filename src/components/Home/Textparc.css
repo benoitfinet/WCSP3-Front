@@ -1,0 +1,31 @@
+.home-title {
+  font-family: 'Francois One', sans-serif;
+  font-size: 40px;
+  padding-top: 3%;
+}
+
+.home-subtitle {
+  margin-bottom: 2%;
+  font-family: 'Francois One', sans-serif;
+}
+
+.block-text-parc {
+    background-color: aliceblue;
+} 
+
+.button-text-parc {
+  background-color: #EFB960;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 20px;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  position: relative;
+  top: -74px;
+}

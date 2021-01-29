@@ -9,42 +9,42 @@ class Activiteselect extends Component {
         <button
           id="parcours-acrobatiques"
           onClick={this.props.handleChangeTab}
-          className={this.props.active === 'parcours-acrobatiques' ? 'active' : ''}
+          className={this.props.active === 'parcours-acrobatiques' ? 'active' : 'unActive'}
         >
           Parcours acrobatiques en hauteur
         </button>
         <button
           id="escape-game"
           onClick={this.props.handleChangeTab}
-          className={this.props.active === 'escape-game' ? 'active' : ''}
+          className={this.props.active === 'escape-game' ? 'active' : 'unActive'}
         >
           Escape game
         </button>
         <button
           id="parcours-enigmes"
           onClick={this.props.handleChangeTab}
-          className={this.props.active === 'parcours-enigmes' ? 'active' : ''}
+          className={this.props.active === 'parcours-enigmes' ? 'active' : 'unActive'}
         >
           Parcours d'énigmes
         </button>
         <button
           id="chasse-tresor"
           onClick={this.props.handleChangeTab}
-          className={this.props.active === 'chasse-tresor' ? 'active' : ''}
+          className={this.props.active === 'chasse-tresor' ? 'active' : 'unActive'}
         >
           Chasse au trésor
         </button>
         <button
           id="atout-spider"
           onClick={this.props.handleChangeTab}
-          className={this.props.active === 'atout-spider' ? 'active' : ''}
+          className={this.props.active === 'atout-spider' ? 'active' : 'unActive'}
         >
           L'atour spider / Aire de jeux enfants
         </button>
         <button
           id="laser-game"
           onClick={this.props.handleChangeTab}
-          className={this.props.active === 'laser-game' ? 'active' : ''}
+          className={this.props.active === 'laser-game' ? 'active' : 'unActive'}
         >
           Laser game
         </button>

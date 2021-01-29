@@ -25,7 +25,7 @@ export const links = [
   },
   {
     id: 5,
-    url: '/groupes',
+    url: '/groupes/familleAmis',
     text: 'Groupes'
   },
   {
@@ -45,7 +45,7 @@ export const links = [
   },
   {
     id: 9,
-    url: '/Ounoustrouver',
+    url: '/nous-trouver',
     text: 'Nous trouver'
   },
   {
