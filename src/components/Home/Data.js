@@ -20,7 +20,7 @@ export const links = [
   },
   {
     id: 4,
-    url: '/activites',
+    url: '/Activites/parcours-acrobatiques',
     text: 'activités'
   },
   {

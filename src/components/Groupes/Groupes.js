@@ -173,9 +173,9 @@ class Groupes extends Component {
     console.log(this.props.match);
     return (
       <div>
+        <div className="Block-groupe">
         <Navbar title="Offres de groupes"/>
-        <div id="test"></div>
-        <div className="Activites">
+        <div id="ancre"></div>
           <div className="Activitespadding">
             <Groupesselect
               active={this.state.activeId}

@@ -7,32 +7,32 @@ class Activiteselect extends Component {
   render () {
     return (
       <div className="Activiteselect">
-        <Link to="/groupes/familleAmis" id="familleAmis" className={this.props.active === 'familleAmis' ? 'active' : 'unActive'}
+        <Link to="/groupes/familleAmis" id="familleAmis" className={this.props.active === 'familleAmis' ? 'Gpe-active' : 'unActive'}
         onClick={this.props.handleChangeTab}
         >
           Familles / Amis
         </Link>
-        <Link to="/groupes/anniversaires" id="anniversaires" className={this.props.active === 'anniversaires' ? 'active' : 'unActive'}
+        <Link to="/groupes/anniversaires" id="anniversaires" className={this.props.active === 'anniversaires' ? 'Gpe-active' : 'unActive'}
          onClick={this.props.handleChangeTab}
         >
           Anniversaires
         </Link>
-        <Link to="/groupes/centreLoisirs" id="centreLoisirs" className={this.props.active === 'centreLoisirs' ? 'active' : 'unActive'}
+        <Link to="/groupes/centreLoisirs" id="centreLoisirs" className={this.props.active === 'centreLoisirs' ? 'Gpe-active' : 'unActive'}
          onClick={this.props.handleChangeTab}
         >
           Les centres de loisirs et scolaires
         </Link>
-        <Link to="/groupes/teamBuilding" id="teamBuilding" className={this.props.active === 'teamBuilding' ? 'active' : 'unActive'}
+        <Link to="/groupes/teamBuilding" id="teamBuilding" className={this.props.active === 'teamBuilding' ? 'Gpe-active' : 'unActive'}
          onClick={this.props.handleChangeTab}
         >
           Le team building / Séminaires
         </Link>
-        <Link to="/groupes/comiteEntreprise" id="comiteEntreprise" className={this.props.active === 'comiteEntreprise' ? 'active' : 'unActive'}
+        <Link to="/groupes/comiteEntreprise" id="comiteEntreprise" className={this.props.active === 'comiteEntreprise' ? 'Gpe-active' : 'unActive'}
          onClick={this.props.handleChangeTab}
         >
           Les comités d'entreprise et les associations
         </Link>
-        <Link to="/groupes/EVG-EVJF" id="EVG-EVJF" className={this.props.active === 'EVG-EVJF' ? 'active' : 'unActive'}
+        <Link to="/groupes/EVG-EVJF" id="EVG-EVJF" className={this.props.active === 'EVG-EVJF' ? 'Gpe-active' : 'unActive'}
          onClick={this.props.handleChangeTab}
         >
           EVG / EVJF

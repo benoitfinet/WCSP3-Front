@@ -16,6 +16,8 @@
     "react": "^17.0.1",
     "react-awesome-button": "^6.5.1",
     "react-bootstrap": "^0.32.4",
+    "react-bootstrap-carousel": "^2.0.2",
+    "react-bootstrap-validation": "^0.1.11",
     "react-dom": "^17.0.1",
     "react-icons": "^4.1.0",
     "react-leaf-carousel": "^2.0.3",

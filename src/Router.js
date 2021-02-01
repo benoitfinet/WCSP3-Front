@@ -18,7 +18,7 @@ const RouterWebSite = () => {
   return (
     <Switch>
       <Route exact path="/" component={Home} />
-      <Route path="/Activites" component={Activites} />
+      <Route path="/Activites/:activity" component={Activites} />
       <Route path="/Groupes/:activity" component={Groupes} />
       <Route path="/nous-trouver" component={Map} />
       <Route path="/Faq" component={Faq} />

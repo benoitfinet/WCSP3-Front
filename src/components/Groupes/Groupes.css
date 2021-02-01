@@ -3,27 +3,38 @@
   text-align: center;
 }
 
+.InfiniteCarouselSlide img:hover {
+  width: 100%;
+}
+
+.Block-groupe {
+  background-color: #eef0f1;
+}
+
 #test {
   position: relative;
   top: -100px;
 }
 
-.Activiteselect .active {
-  background-color: #009378;
-  font-family: 'Francois One', sans-serif;
-  font-size: 1.5rem;
-}
-
 .Activiteselect {
-  width: 58%;
+  width: 61%;
+  background-color: white;
 }
 
-.active {
+.Gpe-active {
   border-radius: 20px;
   font-size: 20px;
   padding-left: 2%;
   padding-right: 2%;
-  color: #344454;
+  color: white;
+  font-family: 'Francois One', sans-serif;
+  font-size: 1.5rem;
+  background-color: #EFB960;
+  font-weight: 400;
+}
+
+.Gpe-active:hover {
+  color: white!important;
 }
 
 .unActive {
@@ -32,10 +43,6 @@
   padding-right: 2%;
   font-family: 'Francois One', sans-serif;
   font-size: 1.5rem;
-}
-
-#familleAmis {
-  color: #344454!important;
 }
 
 .Activites{
@@ -50,18 +57,19 @@
 }
 
 .textactivites {
-  padding-right: 3%;
-  padding-left: 3%;
-  font-family: 'Roboto';
-  font-size: 1.2em;
-  color: #344454;
-  line-height: 1.7em;
+  font-size: 20px;
+    width: 80%;
+    margin: auto;
+    color: #0e0e0e80;
+    font-family: 'Francois One', sans-serif;
 }
 
 .h1activite{
-  padding: 3% 0;
-  font-size: 4rem;
-  color: #344454;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 50px;
+  color: #7cb17e;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 
 .photoactivite{

@@ -1,16 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&family=Luckiest+Guy&display=swap');
+
 .home-title {
-  font-family: 'Francois One', sans-serif;
-  font-size: 40px;
+  font-family: 'Coda Caption', sans-serif;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 50px;
   padding-top: 3%;
+  color: #7cb17e;
 }
 
 .home-subtitle {
   margin-bottom: 2%;
   font-family: 'Francois One', sans-serif;
+  color: #ca9669;
 }
 
 .block-text-parc {
-    background-color: aliceblue;
+  background-color: #f5f5f5;
 } 
 
 .button-text-parc {
