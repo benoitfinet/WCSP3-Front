@@ -44,12 +44,16 @@ class CarouselEvent extends React.Component {
   >
     <div>
       <figure>
-        <HashLink to="/groupes/familleAmis#test">
-        <img
-          alt=''
-          src={Photo1}
-          className="img-carousel"
-        />
+        <HashLink to="/groupes/familleAmis#ancre">
+          <div className="wprock-img-zoom-hover">
+            <div className="wprock-img-zoom">
+              <img
+                alt=''
+                src={Photo1}
+                className="img-carousel"
+              />
+            </div>
+          </div>
         </HashLink>
         <div className="style-figcation">
           <figcaption>En famille et entre amis</figcaption>
@@ -59,132 +63,54 @@ class CarouselEvent extends React.Component {
 
     <div>
       <figure>
-      <HashLink to="/groupes/anniversaires#test">
-        <img
-          alt=''
-          src={Photo2}
-          className="img-carousel"
-        />
+        <HashLink to="/groupes/anniversaires#ancre">
+          <div className="wprock-img-zoom-hover">
+            <div className="wprock-img-zoom">
+              <img
+                alt=''
+                src={Photo2}
+                className="img-carousel"
+              />
+              </div>
+            </div>
+          </HashLink>
+          <div className="style-figcation">
+            <figcaption>Les Anniversaires</figcaption>
+          </div>
+      </figure>
+    </div>
+
+    <div>
+      <figure>
+        <HashLink to="/groupes/centreLoisirs#ancre">
+          <div className="wprock-img-zoom-hover">
+            <div className="wprock-img-zoom">
+              <img
+                alt=''
+                src={Photo3}
+                className="img-carousel"
+              />
+            </div>
+          </div>
         </HashLink>
         <div className="style-figcation">
-          <figcaption>Les Anniversaire</figcaption>
+          <figcaption>Les centres de loisirs et scolaires</figcaption>
         </div>
       </figure>
     </div>
 
     <div>
       <figure>
-      <HashLink to="/groupes/centreLoisirs#test">
-      <img
-        alt=''
-        src={Photo3}
-        className="img-carousel"
-      />
-      </HashLink>
-      <div className="style-figcation">
-        <figcaption>Les Centre de loisirs et scolaires</figcaption>
-      </div>
-      </figure>
-    </div>
-
-    <div>
-      <figure>
-      <HashLink to="/groupes/teamBuilding#test">
-      <img
-        alt=''
-        src={Photo4}
-        className="img-carousel"
-      />
-      </HashLink>
-      <div className="style-figcation">
-        <figcaption>Le Team building/Séminaires</figcaption>
-      </div>
-      </figure>
-    </div>
-
-    <div>
-      <figure>
-      <HashLink to="/groupes/comiteEntreprise#test">
-      <img
-        alt=''
-        src={Photo5}
-        className="img-carousel"
-      />
-      </HashLink>
-      <div className="style-figcation">
-        <figcaption>Les Comités d’entreprises et les Associations</figcaption>
-      </div>
-      </figure>
-    </div>
-
-    <div>
-      <figure>
-      <HashLink to="/groupes/EVG-EVJF#test">
-      <img
-        alt=''
-        src={Photo6}
-        className="img-carousel"
-      />
-      </HashLink>
-      <div className="style-figcation">
-        <figcaption>EVG / EVJF</figcaption>
-      </div>
-      </figure>
-    </div>
-
-    <div>
-      <figure>
-      <HashLink to="/groupes/familleAmis#test">
-        <img
-          alt=''
-          src={Photo1}
-          className="img-carousel"
-        />
-        </HashLink>
-        <div className="style-figcation">
-          <figcaption>En famille et entre amis</figcaption>
-        </div>
-      </figure>
-    </div>
-
-    <div>
-      <figure>
-      <HashLink to="/groupes/anniversaires#test">
-        <img
-          alt=''
-          src={Photo2}
-          className="img-carousel"
-        />
-        </HashLink>
-        <div className="style-figcation">
-          <figcaption>Les Anniversaire</figcaption>
-        </div>
-      </figure>
-    </div>
-
-    <div>
-      <figure>
-        <HashLink to="/groupes/centreLoisirs#test">
-        <img
-          alt=''
-          src={Photo3}
-          className="img-carousel"
-        />
-        </HashLink>
-        <div className="style-figcation">
-          <figcaption>Les Centre de loisirs et scolaires</figcaption>
-        </div>
-      </figure>
-    </div>
-
-    <div>
-      <figure>
-        <HashLink to="/groupes/teamBuilding#test">
-        <img
-          alt=''
-          src={Photo4}
-          className="img-carousel"
-        />
+        <HashLink to="/groupes/teamBuilding#ancre">
+          <div className="wprock-img-zoom-hover">
+            <div className="wprock-img-zoom">
+              <img
+                alt=''
+                src={Photo4}
+                className="img-carousel"
+              />
+            </div>
+          </div>
         </HashLink>
         <div className="style-figcation">
           <figcaption>Le Team building/Séminaires</figcaption>
@@ -194,27 +120,149 @@ class CarouselEvent extends React.Component {
 
     <div>
       <figure>
-        <HashLink to="/groupes/comiteEntreprise#test">
-        <img
-          alt=''
-          src={Photo5}
-          className="img-carousel"
-        />
+        <HashLink to="/groupes/comiteEntreprise#ancre">
+          <div className="wprock-img-zoom-hover">
+            <div className="wprock-img-zoom">
+              <img
+                alt=''
+                src={Photo5}
+                className="img-carousel"
+              />
+            </div>
+          </div>
         </HashLink>
         <div className="style-figcation">
-          <figcaption>Les Comités d’entreprises et les Associations</figcaption>
+          <figcaption>Les comités d’entreprises et les associations</figcaption>
         </div>
       </figure>
     </div>
 
     <div>
       <figure>
-      <HashLink to="/groupes/EVG-EVJF#test">
-        <img
-          alt=''
-          src={Photo6}
-          className="img-carousel"
-        />
+        <HashLink to="/groupes/EVG-EVJF#ancre">
+          <div className="wprock-img-zoom-hover">
+            <div className="wprock-img-zoom">
+              <img
+                alt=''
+                src={Photo6}
+                className="img-carousel"
+              />
+            </div>
+          </div>
+        </HashLink>
+      <div className="style-figcation">
+        <figcaption>EVG / EVJF</figcaption>
+      </div>
+      </figure>
+    </div>
+
+    <div>
+      <figure>
+        <HashLink to="/groupes/familleAmis#ancre">
+          <div className="wprock-img-zoom-hover">
+            <div className="wprock-img-zoom">
+              <img
+                alt=''
+                src={Photo1}
+                className="img-carousel"
+              />
+              </div>
+            </div>
+          </HashLink>
+          <div className="style-figcation">
+            <figcaption>En famille et entre amis</figcaption>
+          </div>
+      </figure>
+    </div>
+
+    <div>
+      <figure>
+        <HashLink to="/groupes/anniversaires#ancre">
+          <div className="wprock-img-zoom-hover">
+            <div className="wprock-img-zoom">
+              <img
+                alt=''
+                src={Photo2}
+                className="img-carousel"
+              />
+              </div>
+            </div>
+          </HashLink>
+          <div className="style-figcation">
+            <figcaption>Les Anniversaires</figcaption>
+          </div>
+      </figure>
+    </div>
+
+    <div>
+      <figure>
+        <HashLink to="/groupes/centreLoisirs#ancre">
+          <div className="wprock-img-zoom-hover">
+            <div className="wprock-img-zoom">
+              <img
+                alt=''
+                src={Photo3}
+                className="img-carousel"
+              />
+            </div>
+          </div>
+        </HashLink>
+        <div className="style-figcation">
+          <figcaption>Les centres de loisirs et scolaires</figcaption>
+        </div>
+      </figure>
+    </div>
+
+    <div>
+      <figure>
+        <HashLink to="/groupes/teamBuilding#ancre">
+          <div className="wprock-img-zoom-hover">
+            <div className="wprock-img-zoom">
+              <img
+                alt=''
+                src={Photo4}
+                className="img-carousel"
+              />
+            </div>
+          </div>
+        </HashLink>
+        <div className="style-figcation">
+          <figcaption>Le Team building/Séminaires</figcaption>
+        </div>
+      </figure>
+    </div>
+
+    <div>
+      <figure>
+        <HashLink to="/groupes/comiteEntreprise#ancre">
+          <div className="wprock-img-zoom-hover">
+            <div className="wprock-img-zoom">
+              <img
+                alt=''
+                src={Photo5}
+                className="img-carousel"
+              />
+            </div>
+          </div>
+        </HashLink>
+        <div className="style-figcation">
+          <figcaption>Les comités d’entreprises et les associations</figcaption>
+        </div>
+      </figure>
+    </div>
+
+    <div>
+      <figure>
+      <HashLink to="/groupes/EVG-EVJF#ancre">
+        <div className="wprock-img-zoom-hover">
+          <div className="wprock-img-zoom">
+            <img
+              alt=''
+              src={Photo6}
+              className="img-carousel"
+            />
+            </div>
+          </div>
         </HashLink>
         <div className="style-figcation">
           <figcaption>EVG / EVJF</figcaption>
@@ -222,7 +270,7 @@ class CarouselEvent extends React.Component {
       </figure>
     </div>
   </InfiniteCarousel>
-  <button className="button">Découvrez toutes nos offres</button>
+  <button className="button"><a href="/groupes/familleAmis" className="parc-link">Découvrez toutes nos offres</a></button>
       </div>
     );
   }

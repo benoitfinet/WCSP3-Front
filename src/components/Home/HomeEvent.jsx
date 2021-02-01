@@ -21,11 +21,11 @@ const BlogPage = () => {
           </MDBCol>
           <MDBCol lg="7">
             <a href="#!" className="black-text">
-              <h3 className="font-weight-bold mb-3">
+              <h3 className="font-weight-bold mb-3 title-event">
                 Évenement
               </h3>
             </a>
-            <h4 className="font-weight-bold mb-3 p-0">
+            <h4 className="font-weight-bold mb-3 p-0 subtitle-event">
               <strong>Nocturne</strong>
             </h4>
             <p className="home-event-para">
@@ -40,11 +40,11 @@ const BlogPage = () => {
         <MDBRow>
           <MDBCol lg="7">
             <a href="#!" className="black-text">
-              <h3 className="font-weight-bold mb-3">
+              <h3 className="font-weight-bold mb-3 title-event">
                 Offre
               </h3>
             </a>
-            <h4 className="font-weight-bold mb-3 p-0">
+            <h4 className="font-weight-bold mb-3 p-0 subtitle-event">
               <strong>Privatisez votre terrasse</strong>
             </h4>
             <p className="home-event-para">

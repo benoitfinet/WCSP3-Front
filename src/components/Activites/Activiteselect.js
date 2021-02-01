@@ -1,60 +1,48 @@
 import React, { Component } from 'react';
-
+import { HashLink as Link } from 'react-router-hash-link';
 import PropTypes from 'prop-types';
+
+import './Activiteselect.css';
 
 class Activiteselect extends Component {
   render () {
     return (
       <div className="Activiteselect">
-        <button
-          id="parcours-acrobatiques"
-          onClick={this.props.handleChangeTab}
-          className={this.props.active === 'parcours-acrobatiques' ? 'active' : 'unActive'}
+        <Link to="/Activites/parcours-acrobatiques" id="parcours-acrobatiques" className={this.props.active === 'parcours-acrobatiques' ? 'Gpe-active' : 'unActive'}
+        onClick={this.props.handleChangeTab}
         >
-          Parcours acrobatiques en hauteur
-        </button>
-        <button
-          id="escape-game"
-          onClick={this.props.handleChangeTab}
-          className={this.props.active === 'escape-game' ? 'active' : 'unActive'}
+          Parcours acrobatiques
+        </Link>
+        <Link to="/Activites/escape-game" id="escape-game" className={this.props.active === 'escape-game' ? 'Gpe-active' : 'unActive'}
+        onClick={this.props.handleChangeTab}
         >
           Escape game
-        </button>
-        <button
-          id="parcours-enigmes"
-          onClick={this.props.handleChangeTab}
-          className={this.props.active === 'parcours-enigmes' ? 'active' : 'unActive'}
+        </Link>
+        <Link to="/Activites/parcours-enigme" id="parcours-enigme" className={this.props.active === 'parcours-enigme' ? 'Gpe-active' : 'unActive'}
+        onClick={this.props.handleChangeTab}
         >
           Parcours d'énigmes
-        </button>
-        <button
-          id="chasse-tresor"
-          onClick={this.props.handleChangeTab}
-          className={this.props.active === 'chasse-tresor' ? 'active' : 'unActive'}
+        </Link>
+        <Link to="/Activites/chasse-tresor" id="chasse-tresor" className={this.props.active === 'chasse-tresor' ? 'Gpe-active' : 'unActive'}
+        onClick={this.props.handleChangeTab}
         >
           Chasse au trésor
-        </button>
-        <button
-          id="atout-spider"
-          onClick={this.props.handleChangeTab}
-          className={this.props.active === 'atout-spider' ? 'active' : 'unActive'}
+        </Link>
+        <Link to="/Activites/spider-filet" id="spider-filet" className={this.props.active === 'spider-filet' ? 'Gpe-active' : 'unActive'}
+        onClick={this.props.handleChangeTab}
         >
-          L'atour spider / Aire de jeux enfants
-        </button>
-        <button
-          id="laser-game"
-          onClick={this.props.handleChangeTab}
-          className={this.props.active === 'laser-game' ? 'active' : 'unActive'}
+          Spider filet / Aire de jeux enfants
+        </Link>
+        <Link to="/Activites/laser-game" id="laser-game" className={this.props.active === 'laser-game' ? 'Gpe-active' : 'unActive'}
+        onClick={this.props.handleChangeTab}
         >
-          Laser game
-        </button>
-        <button
-          id="mur-escalade"
-          onClick={this.props.handleChangeTab}
-          className={this.props.active === 'mur-escalade' ? 'active' : ''}
+          Laser Game
+        </Link>
+        <Link to="/Activites/murs-escalade" id="murs-escalade" className={this.props.active === 'murs-escalade' ? 'Gpe-active' : 'unActive'}
+        onClick={this.props.handleChangeTab}
         >
-          Mur d'escalade
-        </button>
+          Murs d'escalade
+        </Link>
       </div>
     );
   }

@@ -1,8 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&display=swap');
+
+.test-deux {
+  color: #655a49!important;
+}
 
 .test {
   background-color: white;
   padding: 5px;
+}
+
+.test a {
+  font-family: 'Boogaloo', cursive;
 }
 
 .block-logo {
@@ -49,7 +59,7 @@ li {
 }
 
 .test:first-child a {
-  padding-top: 1%!important;
+  padding-top: 1px!important;
   padding-bottom: 2%!important;
   padding-right: 0!important;
   padding-left: 0!important;
@@ -58,12 +68,12 @@ li {
 .test:nth-child(2) a {
   padding-top: 1%!important;
   padding-bottom: 2%!important;
-  padding-right: 0!important;
+  padding-right: 13px!important;
   padding-left: 0!important;
 }
 
 .test:nth-child(3) a {
-  padding-left: 37px!important;
+  padding-left: 46px!important;
   padding-right: 26px!important;
 }
 
@@ -305,32 +315,56 @@ nav {
 
 @media screen and (min-width: 945px) {
   .test:nth-child(2) a {
-    padding-top: 3%!important;
-    padding-bottom: 7%!important;
+    padding-top: 3px!important;
+    padding-bottom: 4px!important;
     padding-right: 0!important;
     padding-left: 0!important;
   }
   .test:first-child a {
-    padding-top: 3%!important;
-    padding-bottom: 7%!important;
+    padding-top: 3px!important;
+    padding-bottom: 4px!important;
     padding-right: 0!important;
     padding-left: 0!important;
   }
 }
 
+@media screen and (min-width: 1033px) {
+  .test:nth-child(8) a {
+    padding-top: 10px!important;
+    padding-bottom: 10px!important;
+  }
+  .test:nth-child(9) a {
+    padding-top: 10px!important;
+    padding-bottom: 10px!important;
+  }
+}
+
+@media screen and (min-width: 1015px) {
+  .test:nth-child(8) a {
+    padding-top: 10px!important;
+    padding-bottom: 10px!important;
+  }
+  .test:nth-child(9) a {
+    padding-top: 10px!important;
+    padding-bottom: 10px!important;
+  }
+}
+
 @media screen and (min-width: 1100px) {
   .test:nth-child(2) a {
-    padding-top: 8%!important;
-    padding-bottom: 18%!important;
+    padding-top: 6px!important;
+    padding-bottom: 6px!important;
     padding-right: 0!important;
     padding-left: 0!important;
+    color: #45846e!important;
   }
 
   .test:first-child a {
-    padding-top: 8%!important;
-    padding-bottom: 18%!important;
+    padding-top: 6px!important;
+    padding-bottom: 6px!important;
     padding-right: 0!important;
     padding-left: 0!important;
+    color: #45846e!important;
   }
 }
 
@@ -419,6 +453,7 @@ nav {
   border-bottom-left-radius: 90px 55px;
   border-top-right-radius: 90px 55px;
   border-top-left-radius: 20px 135px;
+  display: none;
 }
 
 .contentbackground {

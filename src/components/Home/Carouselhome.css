@@ -7,5 +7,34 @@
 }
 
 .title-carousel-home {
-  font-size: 40px;
+  font-family: 'Luckiest Guy', cursive;
+    font-size: 50px;
+    color: #7cb17e;
 }
+
+.carousel-caption {
+  font-family: 'Luckiest Guy', cursive;
+}
+
+.carousel .carousel-control-prev-icon {
+  background-size: 106px;
+}
+
+.carousel .carousel-control-next-icon {
+  background-size: 106px;
+}
+
+.carousel .carousel-control-next-icon {
+  width: 50px!important;
+  height: 65px!important;
+}
+
+.carousel .carousel-control-prev-icon {
+  width: 50px!important;
+  height: 65px!important;
+}
+
+.h3-responsive {
+  font-size: 4rem!important;
+}
+

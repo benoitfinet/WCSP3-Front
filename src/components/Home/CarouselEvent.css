@@ -1,6 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&family=Luckiest+Guy&display=swap');
+
+.wprock-img-zoom-hover .wprock-img-zoom {
+  overflow: hidden;
+  position: relative; 
+}
+.wprock-img-zoom-hover .wprock-img-zoom img {
+  max-width: 100%;
+  -moz-transition: all 0.8s;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+.wprock-img-zoom-hover .wprock-img-zoom * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.wprock-img-zoom-hover:hover .wprock-img-zoom img {
+  -moz-transform: scale(1.06);
+  -webkit-transform: scale(1.06);
+  transform: scale(1.06);
+}
+
 .home-title-carouselEvent {
-  padding-top: 2%;
-  font-size: 40px;
+  font-family: 'Luckiest Guy', cursive;
+    font-size: 50px;
+    padding-top: 4%;
+    color: #7cb17e;
 }
 
 .img-carousel {
@@ -9,7 +36,8 @@
 
 figcaption {
   margin: auto;
-  font-weight: bold;
+  font-family: 'Luckiest Guy', cursive;
+  color: #3b3b44e0;
 }
 
 .style-figcation {
@@ -32,11 +60,11 @@ figcaption {
 .block-carousel-event {
   margin-top: 4%;
   margin-bottom: 4%;
-  background-color: aliceblue;
+  background-color: #f5f5f5;
 }
 
 .InfiniteCarouselSlide {
-  background-color: aliceblue;
+  background-color: #f5f5f5;
 }
 
 .button {

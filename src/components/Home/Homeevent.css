@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 #testcard{
     box-shadow: none;
     margin-top:0!important;
@@ -15,4 +18,18 @@
 
 .home-event-para {
     font-weight: 100;
+    color: #0e0e0e80;
+}
+
+.title-event {
+    font-size: 40px;
+    font-family: 'Coda Caption', sans-serif!important;
+  font-family: 'Luckiest Guy', cursive!important;
+  color: #7cb17e;
+}
+
+.subtitle-event {
+    font-family: 'Francois One', sans-serif;
+    color: #ca9669;
+  font-size: 30px;
 }
