@@ -2,9 +2,6 @@ import React from 'react';
 
 import { MDBRow, MDBCol, MDBCard, MDBCardBody, MDBMask, MDBView } from 'mdbreact';
 
-import Image1 from './ImgHome/flyernocturne.gif';
-import Image2 from './ImgHome/Atout branchers parcours enfants Piccolo 2.JPG';
-
 import './Homeevent.css';
 
 class BlogPage extends React.Component {
@@ -36,7 +33,7 @@ class BlogPage extends React.Component {
         <MDBRow>
           <MDBCol lg="5">
             <MDBView className="rounded z-depth-2 mb-lg-0 mb-4" hover waves>
-              <img className="img-fluid" src={Image1} alt="image d'un homme faisant de l'accrobranche de nuit"/>
+              <img className="img-fluid" src={homes.length !== 0 && homes[3].subtext} alt="image d'un homme faisant de l'accrobranche de nuit"/>
               <a href="#!">
                 <MDBMask overlay="white-slight" />
               </a>
@@ -77,7 +74,7 @@ class BlogPage extends React.Component {
             <MDBView className="rounded z-depth-2 mb-lg-0 mb-4" hover waves>
               <img
                 className="img-fluid"
-                src={Image2}
+                src={homes.length !== 0 && homes[3].subtext}
                 alt="Image de terrasse en forêt"
               />
               <a href="#!">
