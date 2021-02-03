@@ -5,9 +5,10 @@
 }
 
 .cldSeason {
-    margin-bottom: 3%;
-    position: relative;
-    top: 174px;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 50px;
+    padding-top: 3%;
+    color: #7cb17e;
 }
 .cldPageTitle {
     font-size: 40px;
@@ -19,23 +20,26 @@
 }
 
 .parkSchedule {
-    position: relative;
-    top: 168px;
+    padding-top: 3%;
+    padding-bottom: 4%;
 }
 
 .cldInfoText {
-    position: relative;
-    top: 220px;
-    margin-bottom: 40%;
+    margin-bottom: 6%;
 }
 
 .cldInfoText p {
-    font-size: 17px;
+    font-size: 20px;
+    width: 80%;
+    margin: auto;
+    color: #0e0e0e80;
+    font-family: 'Boogaloo', cursive;
 }
 
 .cldInfoText h3 {
-    font-size: 22px;
-    font-weight: bold;
+    margin-bottom: 2%;
+    color: #ca9669;
+    font-family: 'Boogaloo', cursive;
 }
 
 .cldBody {

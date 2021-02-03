@@ -8,7 +8,6 @@
 .event-link{
     color: white;
     text-decoration: none;
-
 }
 
 .event-link:hover{
@@ -23,13 +22,12 @@
 
 .title-event {
     font-size: 40px;
-    font-family: 'Coda Caption', sans-serif!important;
   font-family: 'Luckiest Guy', cursive!important;
   color: #7cb17e;
 }
 
 .subtitle-event {
-    font-family: 'Francois One', sans-serif;
+    font-family: 'Boogaloo', cursive;
     color: #ca9669;
   font-size: 30px;
 }

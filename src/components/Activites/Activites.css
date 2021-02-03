@@ -34,21 +34,25 @@
   margin-top: 3%;
 }
 
-.Activites{
+.Activites {
   background-size: 100%;
   padding: 0;
   margin: 0;
   font-family: 'Londrina Solid';
   padding-top: 3%;
+  padding-bottom: 4%;
   background-repeat: no-repeat;
-  margin-bottom: 6%;
 }
 
 .Activiteselect {
-  border: 1px solid #009378;
+  border: 1px solid;
   border-radius: 30px;
   margin: auto;
   margin-top: 1%;
+  width: 61%;
+  background-color: white;
+  position: relative;
+  top: -93px;
 }
 
 .textactivites {
@@ -57,8 +61,8 @@
 
 .card-activite {
   border: 1px solid #c8ced2;
-  margin: 2%;
-  width: 25%;
+  margin: 3%;
+  width: 27%;
   border-radius: 15px;
   height: 550px;
   box-shadow: 6px 5px 5px #f1eeee;
@@ -84,11 +88,10 @@
 }
 
 .Activites-content {
-  width: 67%;
+  width: 75%;
   margin: auto;
   border: 1px solid #d0c6c68c;
   background-color: white;
-  margin-bottom: 5%;
   border-radius: 30px;
   padding: 2%;
   box-shadow: 0 0 10px #acb9bf96;
@@ -96,11 +99,15 @@
   top: -25px;
 }
 
+.block-text-bouton {
+  margin: auto;
+}
+
 /* ---------- Trait de séparation ligne + rond ---------- */
 
 .trait
 {
-  width: 30%;
+  width: 20%;
   height: 1px;
   background-color: rgba(0,0,0,0.3);
   margin: auto;
@@ -141,10 +148,6 @@
 
 .photoactivite{
   height: 28rem!important;
-  margin: auto;
-  padding: 3%;
-  width: 97%!important;
-  border-radius: 47px;
 }
 
 .photo-card {
@@ -200,11 +203,5 @@
   }
   .textback{
     width: 240px
-  }
-}
-
-@media screen and (max-width: 1560px) {
-  .Activites{
-    background-image: none;
   }
 }

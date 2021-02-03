@@ -1,63 +1,63 @@
 import Footer from '../Footer/Footer';
-
 import './Map.css';
+import Navbar from '../Nav/Navbar';
+import PhotoBanner from '../Nav/img/background-activite.jpg';
 
 import PhotoMap from '../Home/ImgHome/map.png';
 
 const Map = () => {
   return (
     <div>
-        <div className="mapBody">
-          <div className="mapContent">
-          <div>
-          <div className="textback">
-            <h2 className="home-title">La carte</h2>
-            <div className="trait_et_rond">
-      <div className="trait"></div>
-      <div className="rond_bleu"></div>
-    </div>
-            <p className="text-map">
-              Atout branches vous acceuil dans le Parc naturel du Gâtinais français
-            </p>
-            <p className="text-map">
-              Notre adresse : Route de Boutigny, 91490 Milly-la-Forêt
-            </p>
-            <a href="https://www.google.fr/maps/place/Atout+Branches/@48.3936706,2.4418254,13z/data=!4m5!3m4!1s0x47e5eaf727d334c5:0x9944747c258b3223!8m2!3d48.4086668!4d2.4491385" target="blank">
-            <img className="img-fluid" src={PhotoMap} alt="Carte de Milly-la-Forêt"/>
-            </a>
-            <p className="text-map">
-              Code + Google: CF38+CP Milly-la-Forêt
-            </p>
-            <p className="text-map">
-              Coordonnées géographiques : 48.40365082524155, 2.466910482299927
-            </p>
-          </div>
-      </div>
-    <div className="map-layout">
-      <div className="textback">
-        <h2 className="home-title">L’accès en voiture:</h2>
-        <div className="trait_et_rond">
-      <div className="trait"></div>
-      <div className="rond_bleu"></div>
-    </div>
-        <p className="text-map">A 1 H 30 de Lille par l’autoroute A 25 puis l’autoroute A 16 direction Calais/Boulogne sur mer.
-          <br></br>
-          A 1 H 30 d’Arras par l’autoroute A 26 puis N 42 à partir de Saint Omer, puis arrivé à BOULOGNE SUR MER prendre l’autoroute A 16 direction Calais.
-          <br></br>
-          A 2 H 15 de Bruxelles par l‘autoroute E 40/A 10 puis l’autoroute A 16 direction Calais /Boulogne sur mer.
-          <br></br>
-          A 2 H 30 de Paris par l’autoroute A 16 direction calais/ Amiens.
-          <br></br>
-          Pour accéder à nos appartements, depuis l’autoroute A 16 , prendre la sortie N°32 – Wimereux Sud.
-          <br></br>
-          Prenez la direction de Wimereux.
-          <br></br>
-          Au premier rond-point dans Wimereux, prenez la troisième route à droite (Avenue Foch). Allez tout droit sur 300 mètres. La rue des Anglais est une rue perpendiculaire. Tournez à gauche à l’avenue  de Calais, puis prenez la première à gauche.
-          <br></br>
-          La résidence  est dans une impasse menant à la digue.
-        </p>
-      </div>
-    </div>
+       <Navbar imgbanner={PhotoBanner} textbanner="Tarifs" />
+        <div className="Activites">
+          <div className="Activitespadding">
+            <div className="Activites-content">
+              <h2 className="home-title">La carte</h2>
+              <div className="trait_et_rond">
+                <div className="trait"></div>
+                <div className="rond_bleu"></div>
+              </div>
+              <p className="text-map">
+                Atout branches vous acceuil dans le Parc naturel du Gâtinais français
+              </p>
+              <p className="text-map">
+                Notre adresse : Route de Boutigny, 91490 Milly-la-Forêt
+              </p>
+              <a href="https://www.google.fr/maps/place/Atout+Branches/@48.3936706,2.4418254,13z/data=!4m5!3m4!1s0x47e5eaf727d334c5:0x9944747c258b3223!8m2!3d48.4086668!4d2.4491385" target="blank">
+              <img className="img-fluid" src={PhotoMap} alt="Carte de Milly-la-Forêt"/>
+              </a>
+              <p className="text-map">
+                Code + Google: CF38+CP Milly-la-Forêt
+              </p>
+              <p className="text-map">
+                Coordonnées géographiques : 48.40365082524155, 2.466910482299927
+              </p>
+
+              <div className="map-layout">
+                <div className="textback">
+                  <h2 className="home-title">L’accès en voiture:</h2>
+                  <div className="trait_et_rond">
+                    <div className="trait"></div>
+                    <div className="rond_bleu"></div>
+                  </div>
+              <p className="text-map">A 1 H 30 de Lille par l’autoroute A 25 puis l’autoroute A 16 direction Calais/Boulogne sur mer.
+                <br></br>
+                A 1 H 30 d’Arras par l’autoroute A 26 puis N 42 à partir de Saint Omer, puis arrivé à BOULOGNE SUR MER prendre l’autoroute A 16 direction Calais.
+                <br></br>
+                A 2 H 15 de Bruxelles par l‘autoroute E 40/A 10 puis l’autoroute A 16 direction Calais /Boulogne sur mer.
+                <br></br>
+                A 2 H 30 de Paris par l’autoroute A 16 direction calais/ Amiens.
+                <br></br>
+                Pour accéder à nos appartements, depuis l’autoroute A 16 , prendre la sortie N°32 – Wimereux Sud.
+                <br></br>
+                Prenez la direction de Wimereux.
+                <br></br>
+                Au premier rond-point dans Wimereux, prenez la troisième route à droite (Avenue Foch). Allez tout droit sur 300 mètres. La rue des Anglais est une rue perpendiculaire. Tournez à gauche à l’avenue  de Calais, puis prenez la première à gauche.
+                <br></br>
+                La résidence  est dans une impasse menant à la digue.
+              </p>
+              </div>
+            </div>
     <div className="map-layout">
       <div className="textback">
         <h2 className="home-title">L’accès en train  et en bus :</h2>
@@ -92,11 +92,12 @@ const Map = () => {
         <br></br>
         Hors saison estivale, il est  très facile de trouver des places de parkings à proximité de l’appartement.
       </p>
-      </div>
-    </div>
-    </div>
-    </div>
-    <Footer />
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <Footer />
   </div>
   );
 };

@@ -27,7 +27,7 @@ class Activiteselect extends Component {
         onClick={this.props.handleChangeTab}
         >
           Chasse au trésor
-        </Link>
+        </Link><br/>
         <Link to="/Activites/spider-filet" id="spider-filet" className={this.props.active === 'spider-filet' ? 'Gpe-active' : 'unActive'}
         onClick={this.props.handleChangeTab}
         >

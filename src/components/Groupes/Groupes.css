@@ -11,28 +11,20 @@
   background-color: #eef0f1;
 }
 
-#test {
+#ancre {
   position: relative;
-  top: -100px;
-}
-
-.Activiteselect {
-  width: 61%;
-  background-color: white;
-  position: relative;
-  top: -93px;
+  top: -170px;
 }
 
 .Gpe-active {
   border-radius: 20px;
-  font-size: 20px;
   padding-left: 2%;
   padding-right: 2%;
   color: white;
-  font-family: 'Francois One', sans-serif;
   font-size: 1.5rem;
   background-color: #EFB960;
   font-weight: 400;
+  font-family: 'Boogaloo', cursive;
 }
 
 .Gpe-active:hover {
@@ -45,25 +37,15 @@
   padding-right: 2%;
   font-family: 'Francois One', sans-serif;
   font-size: 1.5rem;
-}
-
-.Activites{
-  background-size: 100%;
-  padding: 0;
-  margin: 0;
-  font-family: 'Londrina Solid';
-  padding-top: 3%;
-  background-repeat: no-repeat;
-  padding-bottom: 6%;
-  background-color: #eef1f3;
+  font-family: 'Boogaloo', cursive;
 }
 
 .textactivites {
   font-size: 20px;
-    width: 80%;
-    margin: auto;
-    color: #0e0e0e80;
-    font-family: 'Francois One', sans-serif;
+  width: 80%;
+  margin: auto;
+  color: #0e0e0e80;
+  font-family: 'Boogaloo', cursive;
 }
 
 .h1activite{
