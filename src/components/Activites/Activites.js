@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Navbar from '../Nav/Navbar';
 
 import Activiteselect from './Activiteselect';
 import Footer from '../Footer/Footer';
@@ -10,7 +9,7 @@ import Photo3 from '../../img/photos atout branches/parcours2.JPG';
 import Photo4 from '../../img/photos atout branches/escalade.jpeg';
 import Photo5 from '../../img/photos atout branches/team.JPG';
 import Photo6 from '../../img/photos atout branches/tyro.jpg';
-
+import Navbar from '../Nav/Navbar';
 import PhotoBanner from '../Nav/img/background-activite.jpg';
 
 import './Activites.css';
@@ -117,7 +116,10 @@ const EscapeGame = () =>
     </div>
     <div className="block-img-para">
       <img alt="photo" className="photoactivite" src={Photo2}></img>
-      <p className="textactivites">Un ESCAPE GAME 100% naturel, saurez-vous trouver le refuge et y entrer vous avez 1h pour cela.Fouillez la forêt à la recherche des objets indispensables pour trouver et déverrouiller la porte d'accès.Le jeu se déroule uniquement au sol et s'adresse à tous, adultes et enfants à partir de 10 ansNous conseillons de constituer une équipe de 3 à 6 joueurs.<br/>Une aventure ludique et sportive qui fera appel à toute votre ingéniosité.<br/>Réservation téléphonique ou par mail obligatoire par avance.</p>
+      <div className="block-text-bouton">
+        <p className="textactivites">Un ESCAPE GAME 100% naturel, saurez-vous trouver le refuge et y entrer vous avez 1h pour cela.Fouillez la forêt à la recherche des objets indispensables pour trouver et déverrouiller la porte d'accès.Le jeu se déroule uniquement au sol et s'adresse à tous, adultes et enfants à partir de 10 ansNous conseillons de constituer une équipe de 3 à 6 joueurs.<br/>Une aventure ludique et sportive qui fera appel à toute votre ingéniosité.<br/>Réservation téléphonique ou par mail obligatoire par avance.</p>
+        <button className="button"><a href="/Reservation" className="parc-link">Réservation</a></button>
+      </div>
     </div>
   </div>;
 
@@ -130,11 +132,14 @@ const ParcoursEnigmes = () =>
     </div>
     <div className="block-img-para">
       <img alt="photo" className="photoactivite" src={Photo3}></img>
-      <p className="textactivites">Testez vos capacités d'orientation et votre perspicacité avec les parcours d'énigmes
-        Un livret de jeu vous donne toutes les instructions pour parcourir la forêt en résolvant les énigmes.
-        Idéal pour jouer en groupes jusqu'à 5 personnes par groupe
-        Très apprécié pour les anniversaires.
-      </p>
+      <div className="block-text-bouton">
+        <p className="textactivites">Testez vos capacités d'orientation et votre perspicacité avec les parcours d'énigmes
+          Un livret de jeu vous donne toutes les instructions pour parcourir la forêt en résolvant les énigmes.
+          Idéal pour jouer en groupes jusqu'à 5 personnes par groupe
+          Très apprécié pour les anniversaires.
+        </p>
+        <button className="button"><a href="/Reservation" className="parc-link">Réservation</a></button>
+      </div>
     </div>
   </div>;
 
@@ -147,11 +152,14 @@ const ChasseTresor = () =>
     </div>
     <div className="block-img-para">
       <img alt="photo" className="photoactivite" src={Photo4}></img>
-      <p className="textactivites">La chasse au trésor qui fait appel votre maitrise de l'orientation.
-        Retrouvez les coffres forts cachés dans le parc pour reconstituer la clé du mystère.
-        Idéal pour jouer en groupes pour compléter les anniversaires par exemple.
-        Nous mettons un coffre à votre disposition si vous souhaitez prévoir des récompenses pour les participants
-      </p>
+      <div className="block-text-bouton">
+        <p className="textactivites">La chasse au trésor qui fait appel votre maitrise de l'orientation.
+          Retrouvez les coffres forts cachés dans le parc pour reconstituer la clé du mystère.
+          Idéal pour jouer en groupes pour compléter les anniversaires par exemple.
+          Nous mettons un coffre à votre disposition si vous souhaitez prévoir des récompenses pour les participants
+        </p>
+        <button className="button"><a href="/Reservation" className="parc-link">Réservation</a></button>
+      </div>
     </div>
   </div>;
 
@@ -164,8 +172,10 @@ const AireDeJeux = () =>
     </div>
     <div className="block-img-para">
       <img alt="photo" className="photoactivite" src={Photo5}></img>
-      <p className="textactivites">Cette activité sans baudrier, l’Atout Spider permet de se déplacer et jouer en toute sécurité sur un filet géant telle une toile d’araignée. Vous retrouverez autour de l’Atout spider différents jeux pour vos enfants (tyrolienne, slackline, Ninja Warrior)<br/>Enfants à partir de 4 ans et jusqu’à 12 ans.
-    </p>
+      <div className="block-text-bouton">
+        <p className="textactivites">Cette activité sans baudrier, l’Atout Spider permet de se déplacer et jouer en toute sécurité sur un filet géant telle une toile d’araignée. Vous retrouverez autour de l’Atout spider différents jeux pour vos enfants (tyrolienne, slackline, Ninja Warrior)<br/>Enfants à partir de 4 ans et jusqu’à 12 ans.</p>
+        <button className="button"><a href="/Reservation" className="parc-link">Réservation</a></button>
+      </div>
     </div>
   </div>;
 
@@ -178,7 +188,10 @@ const LaserGame = () =>
     </div>
     <div className="block-img-para">
       <img alt="photo" className="photoactivite" src={Photo6}></img>
-      <p className="textactivites">Le laser game est devenu à la mode en raison de son côté ludique, stratégique et divertissant, le laser Game est un jeu dans lequel deux équipes de joueurs ou unités s’affrontent dans une simulation de tir. Au travers différents scénarios, l’idée est de marquer le maximum de points en touchant les adversaires.Muni d’une arme laser et d’un plastron, le laser Game est une activité sportive 100% sécu.<br/> A partir de 7 ans, de 6 à 20 personnes,<br/>Réservation téléphonique ou par mail obligatoire par avance.</p>
+      <div className="block-text-bouton">
+        <p className="textactivites">Le laser game est devenu à la mode en raison de son côté ludique, stratégique et divertissant, le laser Game est un jeu dans lequel deux équipes de joueurs ou unités s’affrontent dans une simulation de tir. Au travers différents scénarios, l’idée est de marquer le maximum de points en touchant les adversaires.Muni d’une arme laser et d’un plastron, le laser Game est une activité sportive 100% sécu.<br/> A partir de 7 ans, de 6 à 20 personnes,<br/>Réservation téléphonique ou par mail obligatoire par avance.</p>
+        <button className="button"><a href="/Reservation" className="parc-link">Réservation</a></button>
+      </div>
     </div>
   </div>;
 
@@ -191,7 +204,10 @@ const MurEscalade = () =>
     </div>
   <div className="block-img-para">
     <img alt="photo" className="photoactivite" src={Photo6}></img>
-    <p className="textactivites">Équipés du système d’assurage Trublue® et de votre baudrier, Deux murs d’escalades sont à votre disposition. Un mur enfant d’une hauteur de 7 mètres et un mur adulte d’une hauteur de 12 mètres vous attendent pour un défi vertical. Une expérience de grimpe unique pour tous qui s’adapte aux différents niveaux de pratique en intégrant une valeur ancestrale de l’escalade, le dépassement de soi.<br/>A partir de 4 ans.</p>
+    <div className="block-text-bouton">
+      <p className="textactivites">Équipés du système d’assurage Trublue® et de votre baudrier, Deux murs d’escalades sont à votre disposition. Un mur enfant d’une hauteur de 7 mètres et un mur adulte d’une hauteur de 12 mètres vous attendent pour un défi vertical. Une expérience de grimpe unique pour tous qui s’adapte aux différents niveaux de pratique en intégrant une valeur ancestrale de l’escalade, le dépassement de soi.<br/>A partir de 4 ans.</p>
+      <button className="button"><a href="/Reservation" className="parc-link">Réservation</a></button>
+    </div>
   </div>
 </div>;
 
@@ -239,7 +255,7 @@ class Activites extends Component {
   render () {
     return (
       <div>
-        <Navbar imgbanner={PhotoBanner} />
+        <Navbar imgbanner={PhotoBanner} textbanner="Activités" />
         <div id="ancre"></div>
         <div className="Activites">
           <div className="Activitespadding">

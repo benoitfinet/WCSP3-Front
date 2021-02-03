@@ -2,6 +2,8 @@ table, tr, td {
   border: solid 1px black;
 }
 
+
+
 table {
   margin: auto;
   width: 70%;
@@ -15,29 +17,59 @@ table {
   background-color: #eef1f3;
 }
 
-.block-page-tarif {
-  width: 85%;
+.para-tarifs {
+  font-size: 20px;
+  width: 80%;
   margin: auto;
-  border: 1px solid #d0c6c68c;
-  background-color: white;
-  margin-top: 2%;
-  border-radius: 3px;
-  padding: 4%;
-  margin-bottom: 7%;
+  color: #0e0e0e80;
+  font-family: 'Boogaloo', cursive;
+}
+
+.block-page-tarif {
+  background-size: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Londrina Solid';
+  padding-top: 3%;
+  padding-bottom: 4%;
+  background-repeat: no-repeat;
 }
 
 .title-tarif {
-  margin-top: 5%;
-  margin-bottom: 2%;
-  font-size: 3.5rem;
-  color: #344454;
-  font-family: 'Francois One', sans-serif;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 50px;
+  color: #7cb17e;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 
 .secondary-title {
-  margin-top: 2%;
   margin-bottom: 2%;
-  text-transform: uppercase;
-  color: #344454;
-  font-family: 'Francois One', sans-serif;
+  color: #ca9669;
+  font-family: 'Boogaloo', cursive;
+  margin-top: 3%;
+}
+
+.tarifs-select {
+  border: 1px solid;
+  border-radius: 30px;
+  margin: auto;
+  margin-top: 1%;
+  width: 25%;
+  background-color: white;
+  position: relative;
+  top: -83px;
+  padding: 0.5%;
+}
+
+table td {
+  font-size: 20px;
+    width: 80%;
+    margin: auto;
+    color: #0e0e0e80;
+    font-family: 'Boogaloo', cursive;
+}
+
+table {
+  border-radius: 50px;
 }

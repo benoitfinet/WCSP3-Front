@@ -1,15 +1,17 @@
 import Footer from '../Footer/Footer';
-
 import './Parc.css';
 import PhotoMap from './ParcImg/Parcour aérien en hauteur.jpeg';
+import Navbar from '../Nav/Navbar';
+import PhotoBanner from '../Nav/img/background-activite.jpg';
 
 const Parc = () => {
   return (
-    <div className="block-parc">
-    <div className="pagesBody">
-      <div className="pagesContent">
-        <div className="parc-layout">
-            <div className="textback">
+    <div>
+        <Navbar imgbanner={PhotoBanner} textbanner="Nos horaires" />
+            <div className="Activites">
+                  <div className="Activites-content">
+                  <div className="Activitespadding">
+                  <div className="block-parc">
               <h2 className="home-title">Le Parc</h2>
               <div className="trait_et_rond">
       <div className="trait"></div>
@@ -53,7 +55,8 @@ const Parc = () => {
       </div>
     </div>
     <Footer />
-    </div>
+        </div>
   );
 };
+
 export default Parc;

@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&family=Luckiest+Guy&display=swap');
 
 .home-title {
-  font-family: 'Coda Caption', sans-serif;
   font-family: 'Luckiest Guy', cursive;
   font-size: 50px;
   padding-top: 3%;
@@ -12,8 +11,8 @@
 
 .home-subtitle {
   margin-bottom: 2%;
-  font-family: 'Francois One', sans-serif;
   color: #ca9669;
+  font-family: 'Boogaloo', cursive;
 }
 
 .block-text-parc {
