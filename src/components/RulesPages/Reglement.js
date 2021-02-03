@@ -1,4 +1,3 @@
-import Navbar from '../Home/Navbar';
 import Footer from '../Footer/Footer';
 
 import './RulesPages.css';
@@ -6,7 +5,6 @@ import './RulesPages.css';
 function Reglement () {
   return (
     <div>
-        <Navbar title="Réglement intérieur"/>
         <div className="pagesBody">
             <div className="pagesContent">
             <br></br>L’ACCES AU PARC, A TOUTES LES ZONES D’ACTIVITES ET AUX STRUCTURES EN HAUTEUR

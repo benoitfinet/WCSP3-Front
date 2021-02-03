@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
+import Navbar from '../Nav/Navbar';
 
 import Activiteselect from './Activiteselect';
-import Navbar from '../Home/Navbar';
 import Footer from '../Footer/Footer';
 import PropTypes from 'prop-types';
-
 import Photo1 from '../../img/photos atout branches/laser game.jpeg';
 import Photo2 from '../../img/photos atout branches/parcours.jpg';
 import Photo3 from '../../img/photos atout branches/parcours2.JPG';
 import Photo4 from '../../img/photos atout branches/escalade.jpeg';
 import Photo5 from '../../img/photos atout branches/team.JPG';
 import Photo6 from '../../img/photos atout branches/tyro.jpg';
+
+import PhotoBanner from '../Nav/img/background-activite.jpg';
 
 import './Activites.css';
 
@@ -238,7 +239,7 @@ class Activites extends Component {
   render () {
     return (
       <div>
-        <Navbar title="Activités"/>
+        <Navbar imgbanner={PhotoBanner} />
         <div id="ancre"></div>
         <div className="Activites">
           <div className="Activitespadding">

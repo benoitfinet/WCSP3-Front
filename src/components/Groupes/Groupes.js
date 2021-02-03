@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import Groupesselect from './Groupesselect';
-import Navbar from '../Home/Navbar';
 import Footer from '../Footer/Footer';
 import PropTypes from 'prop-types';
 
@@ -174,7 +173,6 @@ class Groupes extends Component {
     return (
       <div>
         <div className="Block-groupe">
-        <Navbar title="Offres de groupes"/>
         <div id="ancre"></div>
           <div className="Activitespadding">
             <Groupesselect

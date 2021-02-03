@@ -19,6 +19,8 @@
 .Activiteselect {
   width: 61%;
   background-color: white;
+  position: relative;
+  top: -93px;
 }
 
 .Gpe-active {
@@ -133,6 +135,6 @@
 @media screen and (max-width: 1560px) {
   .Activites{
     background-image: none;
-    background-color: #eef0f1;
+    background-color: #f7f7f7;
   }
 }

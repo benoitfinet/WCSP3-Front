@@ -1,4 +1,3 @@
-import Navbar from '../Home/Navbar';
 import Footer from '../Footer/Footer';
 
 import './RulesPages.css';
@@ -6,7 +5,6 @@ import './RulesPages.css';
 function Mentions () {
   return (
     <div>
-        <Navbar title="Mentions légales"/>
         <div className="pagesBody">
             <div className="pagesContent">
 <br></br><br></br>

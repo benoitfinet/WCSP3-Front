@@ -1,4 +1,3 @@
-import Navbar from '../Home/Navbar';
 import Footer from '../Footer/Footer';
 
 import './RulesPages.css';
@@ -6,7 +5,6 @@ import './RulesPages.css';
 function Politique () {
   return (
     <div>
-        <Navbar title="Politique de confidentialité"/>
         <div className="pagesBody">
             <div className="pagesContent">
             <br></br>Bienvenue sur la page de la politique de confidentialité d’ Atout Branches qui respecte votre vie privée et s’engage à protéger vos données personnelles.<br></br>

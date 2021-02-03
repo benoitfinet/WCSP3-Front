@@ -1,4 +1,3 @@
-import Navbar from '../Home/Navbar';
 import Footer from '../Footer/Footer';
 
 import './Parc.css';
@@ -7,7 +6,6 @@ import PhotoMap from './ParcImg/Parcour aérien en hauteur.jpeg';
 const Parc = () => {
   return (
     <div className="block-parc">
-      <Navbar title="Le parc"/>
     <div className="pagesBody">
       <div className="pagesContent">
         <div className="parc-layout">

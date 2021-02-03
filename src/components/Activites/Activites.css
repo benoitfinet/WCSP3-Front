@@ -49,7 +49,6 @@
   border-radius: 30px;
   margin: auto;
   margin-top: 1%;
-  margin-bottom: 5%;
 }
 
 .textactivites {
@@ -85,14 +84,16 @@
 }
 
 .Activites-content {
-  width: 85%;
+  width: 67%;
   margin: auto;
   border: 1px solid #d0c6c68c;
   background-color: white;
-  margin-top: 2%;
   margin-bottom: 5%;
-  border-radius: 3px;
+  border-radius: 30px;
   padding: 2%;
+  box-shadow: 0 0 10px #acb9bf96;
+  position: relative;
+  top: -25px;
 }
 
 /* ---------- Trait de séparation ligne + rond ---------- */
@@ -139,10 +140,11 @@
 }
 
 .photoactivite{
-  height: auto;
-  width: 700px;
-  border-radius: 30px 30px 30px 30px;
-  margin-top: 3%;
+  height: 28rem!important;
+  margin: auto;
+  padding: 3%;
+  width: 97%!important;
+  border-radius: 47px;
 }
 
 .photo-card {

@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Navbar from '../Home/Navbar';
 import Footer from '../Footer/Footer';
 
 import './Tarifs.css';
@@ -9,7 +8,6 @@ class Tarifs extends React.Component {
   render () {
     return (
       <div className="tarif-page">
-        <Navbar title="Tarifs"/>
         <div className="block-page-tarif">
         <h1 className="title-tarif">Tarifs individuels</h1>
         <div className="trait_et_rond">

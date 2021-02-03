@@ -1,4 +1,3 @@
-import Navbar from '../Home/Navbar';
 import Footer from '../Footer/Footer';
 
 import './Map.css';
@@ -8,7 +7,6 @@ import PhotoMap from '../Home/ImgHome/map.png';
 const Map = () => {
   return (
     <div>
-      <Navbar title="Où nous trouver"/>
         <div className="mapBody">
           <div className="mapContent">
           <div>
