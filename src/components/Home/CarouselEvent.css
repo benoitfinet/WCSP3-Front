@@ -27,7 +27,7 @@
   font-family: 'Luckiest Guy', cursive;
   font-size: 50px;
   padding-top: 4%;
-  color: #7cb17e;
+  color: #5f8e61;
 }
 
 .img-carousel {
@@ -35,9 +35,11 @@
 }
 
 figcaption {
+  font-size: 20px;
+  width: 80%;
   margin: auto;
-  font-family: 'Luckiest Guy', cursive;
-  color: #3b3b44e0;
+  color: #0e0e0ead;
+  font-family: 'Boogaloo', cursive;
 }
 
 .style-figcation {

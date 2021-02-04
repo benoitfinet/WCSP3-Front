@@ -6,7 +6,6 @@ import Photo1 from '../../img/photos atout branches/laser game.jpeg';
 import Photo2 from '../../img/photos atout branches/parcours.jpg';
 import Photo3 from '../../img/photos atout branches/parcours2.JPG';
 import Photo4 from '../../img/photos atout branches/escalade.jpeg';
-import Photo5 from '../../img/photos atout branches/team.JPG';
 import Photo6 from '../../img/photos atout branches/tyro.jpg';
 
 import './Carousel.css';
@@ -20,7 +19,7 @@ const CarouselPage = () => {
         <h3 className="home-subtitle">Garantie 100% FUN</h3>
         <MDBCarousel
         activeItem={1}
-        length={7}
+        length={5}
         showControls={true}
         showIndicators={true}
         className="z-depth-1"
@@ -87,22 +86,6 @@ const CarouselPage = () => {
             </HashLink>
           </MDBCarouselItem>
           <MDBCarouselItem itemId="5">
-          <HashLink to="/Activites/spider-filet#ancre">
-            <MDBView>
-              <img
-                className="d-block w-100"
-                src={Photo5}
-                alt="Third slide"
-              />
-            <MDBMask overlay="black-strong" />
-            </MDBView>
-            <MDBCarouselCaption>
-              <h3 className="h3-responsive">Spider filet / aire de jeux enfants</h3>
-            </MDBCarouselCaption>
-            </HashLink>
-          </MDBCarouselItem>
-
-          <MDBCarouselItem itemId="6">
           <HashLink to="/Activites/laser-game#ancre">
             <MDBView>
               <img
@@ -114,21 +97,6 @@ const CarouselPage = () => {
             </MDBView>
             <MDBCarouselCaption>
               <h3 className="h3-responsive">Laser Game</h3>
-            </MDBCarouselCaption>
-            </HashLink>
-          </MDBCarouselItem>
-          <MDBCarouselItem itemId="7">
-          <HashLink to="/Activites/murs-escalade#ancre">
-            <MDBView>
-              <img
-                className="d-block w-100"
-                src={Photo3}
-                alt="Third slide"
-              />
-            <MDBMask overlay="black-strong" />
-            </MDBView>
-            <MDBCarouselCaption>
-              <h3 className="h3-responsive">Murs d’escalade</h3>
             </MDBCarouselCaption>
             </HashLink>
           </MDBCarouselItem>

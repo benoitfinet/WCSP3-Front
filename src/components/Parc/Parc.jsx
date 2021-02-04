@@ -7,21 +7,15 @@ import PhotoBanner from '../Nav/img/background-activite.jpg';
 const Parc = () => {
   return (
     <div>
-        <Navbar imgbanner={PhotoBanner} textbanner="Nos horaires" />
+        <Navbar imgbanner={PhotoBanner} textbanner="Le parc" />
             <div className="Activites">
                   <div className="Activites-content">
                   <div className="Activitespadding">
                   <div className="block-parc">
-              <h2 className="home-title">Le Parc</h2>
-              <div className="trait_et_rond">
-      <div className="trait"></div>
-      <div className="rond_bleu"></div>
-    </div>
-              <p className="text-parc">Alti’Max est le nouveau parc d’activités de loisirs ludo sportives situé au cœur du bassin rambolitain et du Parc naturel régional de la Haute Vallée de Chevreuse, véritable poumon vert au sud-ouest de l’Ile-de-France.<br></br>
-                    Nous accueillons petits et grands pour une journée inoubliables sur les thèmes sports nature.<br></br>
-                    Venez-vous ressourcer dans ce cadre magnifique et réveiller vos sens, les activités que nous vous proposons sont imaginés de manière à s’adapter à tout le monde dans le respect de la nature et de notre eco system.<br></br>
-                    Des aires de pique-nique avec des tables et bancs sont à votre disposition gratuitement.<br></br>
-                    Vous pouvez également privatiser votre terrasse aérienne.
+              <p className="text-parc">Atout Branches est un parc d’activités de loisirs ludo sportives situé à Milly la Forêt au cœur du Parc Naturel Régional du Gâtinais Français, véritable poumon vert au sud de l’Ile-de-France.<br/>
+              Nous accueillons petits et grands pour une journée inoubliables sur les thèmes sports, nature, sensations et réflexions.<br/>
+              Venez-vous ressourcer dans ce cadre magnifique et réveiller vos sens, les activités que nous vous proposons sont imaginés de manière à s’adapter à tout le monde et dans le respect de la nature et de notre eco system.<br/>
+              Une buvette, aires de repos et pique-nique et un chalet sanitaire sont à votre disposition.
               </p>
             </div>
         </div>

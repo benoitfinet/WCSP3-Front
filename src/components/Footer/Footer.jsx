@@ -7,10 +7,10 @@ import './Footer.css';
 
 const Footer = () => {
   return (
-    <MDBFooter color="unique-color-dark" className="page-footer font-small pt-0">
+    <MDBFooter color="unique-color-dark" className="page-footer font-small pt-0 test-background">
       <div style={{ backgroundColor: '#545454' }}>
         <MDBContainer fluid className="text-center text-md-left">
-          <MDBRow className="py-4 d-flex align-items-center">
+          <MDBRow className="py-4 d-flex align-items-center" id="test-display">
             <MDBCol md="6" lg="5" className="text-center">
               <h6 className="mb-0 white-text">
                 RÉSEAUX SOCIAUX ET LABELS
@@ -27,16 +27,18 @@ const Footer = () => {
           </MDBRow>
         </MDBContainer>
       </div>
-      <MDBContainer className="mt-5 mb-4 text-center text-md-left">
-        <MDBRow className="mt-3">
+      <MDBContainer className="mt-5 mb-4 text-center text-md-left" id="margin-hide">
+        <MDBRow className="mt-3" id="margin-none">
         <MDBCol md="3" lg="4" xl="3" className="mb-4">
             <h6 className="text-uppercase font-weight-bold">
               <strong>Atout Branches</strong>
             </h6>
             <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style={{ width: '60px' }} />
             <p>
-                Alti’Max est le nouveau parc d’activités de loisirs ludo sportives situé au cœur du bassin rambolitain et du Parc naturel régional de la Haute Vallée de Chevreuse, véritable poumon vert au sud-ouest de l’Ile-de-France.
-                Nous accueillons petits et grands pour une journée inoubliables sur les thèmes sports nature.
+            Atout Branches est un parc d’activités de loisirs ludo sportives situé à Milly la Forêt au cœur du Parc Naturel Régional du Gâtinais Français, véritable poumon vert au sud de l’Ile-de-France.<br/>
+Nous accueillons petits et grands pour une journée inoubliables sur les thèmes sports, nature, sensations et réflexions.<br/>
+Venez-vous ressourcer dans ce cadre magnifique et réveiller vos sens, les activités que nous vous proposons sont imaginés de manière à s’adapter à tout le monde et dans le respect de la nature et de notre eco system.<br/>
+Une buvette, aires de repos et pique-nique et un chalet sanitaire sont à votre disposition.
             </p>
           </MDBCol>
           <MDBCol md="2" lg="2" xl="2" className="mb-4">
@@ -48,7 +50,7 @@ const Footer = () => {
               <a href="#!">Tarifs Buvette</a>
             </p>
             <p>
-              <a href="#!">Evénements</a>
+              <a href="#">Evénements</a>
             </p>
             <p>
               <a href="#!">Nos Engagements</a>
@@ -66,7 +68,7 @@ const Footer = () => {
               <a href="#!">Consulter la brochure</a>
             </p>
             <p>
-              <a href="/Ounoustrouver">Où nous trouver?</a>
+              <a href="/nous-trouver" className="parc-link">Où nous trouver?</a>
             </p>
             <p>
               <a href="/Parc">Voir le plan du parc</a>
@@ -96,7 +98,7 @@ const Footer = () => {
           </MDBCol>
         </MDBRow>
       </MDBContainer>
-      <div className="footer-copyright text-center py-3">
+      <div className="footer-copyright text-center py-3" id="hide-background-color">
         <MDBContainer fluid>
           <p>
             <a href="/Mentions">Mentions légales</a> - <a href="/Politique">Politique de confidentialité</a>

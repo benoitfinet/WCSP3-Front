@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 class Activiteselect extends Component {
   render () {
     return (
-      <div className="Activiteselect">
+      <div className="Groupeselect">
         <Link to="/groupes/familleAmis" id="familleAmis" className={this.props.active === 'familleAmis' ? 'Gpe-active' : 'unActive'}
         onClick={this.props.handleChangeTab}
         >
