@@ -7,46 +7,46 @@ class Activiteselect extends Component {
     return (
       <div className="Activiteselect">
         <button
-          id="lasergame"
+          id="anniversaires"
           onClick={this.props.handleChangeTab}
-          className={this.props.active === 'lasergame' ? 'active' : ''}
-        >
-          Familles / Amis
-        </button>
-        <button
-          id="orientation"
-          onClick={this.props.handleChangeTab}
-          className={this.props.active === 'orientation' ? 'active' : ''}
+          className={this.props.active === 'anniversaires' ? 'active' : ''}
         >
           Anniversaires
         </button>
         <button
-          id="altispider"
+          id="associations"
           onClick={this.props.handleChangeTab}
-          className={this.props.active === 'altispider' ? 'active' : ''}
-        >
-          Scolaires
-        </button>
-        <button
-          id="escalade"
-          onClick={this.props.handleChangeTab}
-          className={this.props.active === 'escalade' ? 'active' : ''}
-        >
-          Séminaires
-        </button>
-        <button
-          id="airedejeux"
-          onClick={this.props.handleChangeTab}
-          className={this.props.active === 'airedejeux' ? 'active' : ''}
+          className={this.props.active === 'associations' ? 'active' : ''}
         >
           CE / Assos
         </button>
         <button
-          id="parcours"
+          id="mariages"
           onClick={this.props.handleChangeTab}
-          className={this.props.active === 'parcours' ? 'active' : ''}
+          className={this.props.active === 'mariages' ? 'active' : ''}
         >
           EVG / EVJF
+        </button>
+        <button
+          id="familles"
+          onClick={this.props.handleChangeTab}
+          className={this.props.active === 'familles' ? 'active' : ''}
+        >
+          Familles / Amis
+        </button>
+        <button
+          id="ecoles"
+          onClick={this.props.handleChangeTab}
+          className={this.props.active === 'ecoles' ? 'active' : ''}
+        >
+          Scolaires
+        </button>
+        <button
+          id="seminaires"
+          onClick={this.props.handleChangeTab}
+          className={this.props.active === 'seminaires' ? 'active' : ''}
+        >
+          Séminaires
         </button>
       </div>
     );

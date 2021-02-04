@@ -2,13 +2,6 @@ import React from 'react';
 
 import { MDBCarousel, MDBCarouselCaption, MDBCarouselInner, MDBCarouselItem, MDBView, MDBMask, MDBContainer } from 'mdbreact';
 
-import Photo1 from '../../img/photos atout branches/laser game.jpeg';
-import Photo2 from '../../img/photos atout branches/parcours.jpg';
-import Photo3 from '../../img/photos atout branches/parcours2.JPG';
-import Photo4 from '../../img/photos atout branches/escalade.jpeg';
-import Photo5 from '../../img/photos atout branches/team.JPG';
-import Photo6 from '../../img/photos atout branches/tyro.jpg';
-
 import './Carousel.css';
 import './Carouselhome.css';
 
@@ -51,78 +44,78 @@ class CarouselPage extends React.Component {
           <MDBView>
             <img
               className="d-block w-100"
-              src={Photo1}
+              src={homes.length !== 0 && homes[5].subtext}
               alt="First slide"
             />
           <MDBMask overlay="black-light" />
           </MDBView>
           <MDBCarouselCaption>
-            <h3 className="h3-responsive">Laser Game</h3>
+            <h3 className="h3-responsive">{homes.length !== 0 && homes[5].subtitle}</h3>
           </MDBCarouselCaption>
         </MDBCarouselItem>
         <MDBCarouselItem itemId="2">
           <MDBView>
             <img
               className="d-block w-100"
-              src={Photo2}
+              src={homes.length !== 0 && homes[6].subtext}
               alt="Second slide"
             />
           <MDBMask overlay="black-strong" />
           </MDBView>
           <MDBCarouselCaption>
-            <h3 className="h3-responsive">Orientation</h3>
+            <h3 className="h3-responsive">{homes.length !== 0 && homes[6].subtitle}</h3>
           </MDBCarouselCaption>
         </MDBCarouselItem>
         <MDBCarouselItem itemId="3">
           <MDBView>
             <img
               className="d-block w-100"
-              src={Photo3}
+              src={homes.length !== 0 && homes[7].subtext}
               alt="Third slide"
             />
           <MDBMask overlay="black-slight" />
           </MDBView>
           <MDBCarouselCaption>
-            <h3 className="h3-responsive">AltiSpider</h3>
+            <h3 className="h3-responsive">{homes.length !== 0 && homes[7].subtitle}</h3>
           </MDBCarouselCaption>
         </MDBCarouselItem>
         <MDBCarouselItem itemId="4">
           <MDBView>
             <img
               className="d-block w-100"
-              src={Photo4}
+              src={homes.length !== 0 && homes[8].subtext}
               alt="Third slide"
             />
           <MDBMask overlay="black-slight" />
           </MDBView>
           <MDBCarouselCaption>
-            <h3 className="h3-responsive">Escalade</h3>
+            <h3 className="h3-responsive">{homes.length !== 0 && homes[8].subtitle}</h3>
           </MDBCarouselCaption>
         </MDBCarouselItem>
         <MDBCarouselItem itemId="5">
           <MDBView>
             <img
               className="d-block w-100"
-              src={Photo5}
+              src={homes.length !== 0 && homes[9].subtext}
               alt="Third slide"
             />
           <MDBMask overlay="black-slight" />
           </MDBView>
           <MDBCarouselCaption>
-            <h3 className="h3-responsive">Aire de jeux</h3>
+            <h3 className="h3-responsive">{homes.length !== 0 && homes[9].subtitle}</h3>
           </MDBCarouselCaption>
         </MDBCarouselItem>
         <MDBCarouselItem itemId="6">
           <MDBView>
             <img
               className="d-block w-100"
-              src={Photo6}
+              src={homes.length !== 0 && homes[10].subtext}
               alt="Third slide"
             />
           <MDBMask overlay="black-slight" />
           </MDBView>
           <MDBCarouselCaption>
-            <h3 className="h3-responsive">Parcours</h3>
+            <h3 className="h3-responsive">{homes.length !== 0 && homes[10].subtitle}</h3>
           </MDBCarouselCaption>
         </MDBCarouselItem>
       </MDBCarouselInner>
