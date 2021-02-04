@@ -15,7 +15,7 @@ const TarifsIndividuels = () =>
                 <div className="trait"></div>
                 <div className="rond_bleu"></div>
               </div>
-              <h2 className="secondary-title">Parcours acrobatiques en hauteur (accès aux murs d’escalade et à l’aire de jeux enfants)</h2>
+              <h2 className="secondary-title">Parcours acrobatiques en hauteur</h2>
               <table>
                 <tr>
                   <td><span className="head-title">Pitchoun</span><br/>Enfant de 2 à 5 ans<br/>Parcours Piccolo, Pitchoun et Colibri</td>
@@ -38,8 +38,7 @@ const TarifsIndividuels = () =>
                   <td>25,00€</td>
                 </tr>
                 <tr>
-                  <td><span className="head-title">Nocturne
-                  </span></td>
+                  <td><span className="head-title">Nocturne</span><br/>À partir de 10 ans</td>
                   <td>30,00€</td>
                 </tr>
               </table>

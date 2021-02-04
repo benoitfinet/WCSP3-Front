@@ -27,21 +27,11 @@ class Activiteselect extends Component {
         onClick={this.props.handleChangeTab}
         >
           Chasse au trésor
-        </Link><br/>
-        <Link to="/Activites/spider-filet" id="spider-filet" className={this.props.active === 'spider-filet' ? 'Gpe-active' : 'unActive'}
-        onClick={this.props.handleChangeTab}
-        >
-          Spider filet / Aire de jeux enfants
         </Link>
         <Link to="/Activites/laser-game" id="laser-game" className={this.props.active === 'laser-game' ? 'Gpe-active' : 'unActive'}
         onClick={this.props.handleChangeTab}
         >
           Laser Game
-        </Link>
-        <Link to="/Activites/murs-escalade" id="murs-escalade" className={this.props.active === 'murs-escalade' ? 'Gpe-active' : 'unActive'}
-        onClick={this.props.handleChangeTab}
-        >
-          Murs d'escalade
         </Link>
       </div>
     );

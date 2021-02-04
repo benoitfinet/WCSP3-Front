@@ -1,6 +1,54 @@
+#linkmap {
+    position: relative;
+    top: -300px;
+}
+
 .mb-4 {
     margin-left: 30px;
     margin-right: 30px;
+}
+
+#hide-background-color {
+    background-color: rgb(41 38 38 / 0%)!important;
+}
+
+.test-background {
+    background-image: url("./img/IMAGE_1.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+.test-background::before{
+    background-color: rgba(0, 0, 0, 0.527);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+
+.padding-none {
+    padding: none;
+}
+
+#margin-hide {
+    margin-top: 0!important; 
+}
+
+#test-display {
+    display: none!important;
+}
+
+#margin-none {
+    margin-top: 0!important;
+}
+
+.mt-3, .my-3 {
+    padding-top: 7%!important;
+}
+
+footer.page-footer .footer-copyright {
+    background-color: rgb(41 38 38 / 64%)!important;
 }
 
 @media screen and (max-width: 990px) {

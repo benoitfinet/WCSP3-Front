@@ -8,7 +8,7 @@ import PhotoMap from '../Home/ImgHome/map.png';
 const Map = () => {
   return (
     <div>
-       <Navbar imgbanner={PhotoBanner} textbanner="Tarifs" />
+       <Navbar imgbanner={PhotoBanner} textbanner="Nous trouver" />
         <div className="Activites">
           <div className="Activitespadding">
             <div className="Activites-content">
@@ -18,7 +18,7 @@ const Map = () => {
                 <div className="rond_bleu"></div>
               </div>
               <p className="text-map">
-                Atout branches vous acceuil dans le Parc naturel du Gâtinais français
+              Atout Branches vous accueil dans la forêt du Parc naturel régional du Gâtinais français sur la commune de Milly la Forêt.
               </p>
               <p className="text-map">
                 Notre adresse : Route de Boutigny, 91490 Milly-la-Forêt

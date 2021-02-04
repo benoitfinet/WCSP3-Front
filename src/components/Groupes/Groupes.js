@@ -100,7 +100,7 @@ const TeamBuilding = () =>
         <p className="textactivites">Nous accueillons les Petites et Moyennes Entreprises pour une journée team-building ou séminaire en semaines.<br></br><br></br>
           Face aux succès et à la demande importante de la part des entreprises, de nombreuses variantes sont venues compléter les possibilités d’animations Team-building ou de séminaire.<br></br><br></br>
           Nos activités et nos parcours progressifs répondent à vos besoins de créativité, de coopération, d’émulation de groupe, de cohésion d’équipe, d’intégration de forces vives, de mobilisation et remotivation des troupes, et bien sûr de détente et de sensations fortes !
-          <br></br><br></br>Mettez vos équipes en défi, organisation d'olympiades avec nos activités : Parcours acrobatiques en hauteur, Laser Game, Courses d’orientation, Murs d’escalade.
+          <br></br><br></br>Mettez vos équipes en défi, organisation d'olympiades avec nos activités : Parcours acrobatiques en hauteur, Laser Game.
           Notre traiteur local vous propose différentes formules pour votre déjeuner : Apéritif dinatoire, cocktail, buffet.
         </p>
         <button className="button"><a href="/Reservation" className="parc-link">Réservation</a></button>
@@ -136,8 +136,8 @@ const EVG = () =>
       <img alt="photo" className="photoactivite" src={Photo6}></img>
       <div className="block-text-bouton">
         <p className="textactivites">Fêtez votre enterrement de vie de célibataire en pleine forêt.<br></br><br></br>
-          Un(e) de vos proches se marie ? Enterrez sa vie de jeune fille ou de garçon au Parc Alti’Max pour passer une journée forte d’émotions !<br></br><br></br>
-          A vous de choisir l'activité qui mettra le ou la futur(e) marié(e) au défi : Parcours acrobatiques en hauteur, Laser Game, Courses d’orientation, Murs d’escalade.<br></br><br></br>
+          Un(e) de vos proches se marie ? Enterrez sa vie de jeune fille ou de garçon au Parc Atout branches pour passer une journée forte d’émotions !<br></br><br></br>
+          A vous de choisir l'activité qui mettra le ou la futur(e) marié(e) au défi : Parcours acrobatiques en hauteur, Laser Game.<br></br><br></br>
           Alti’Max offrira au futur(e) marié(e) sa place d’accrobranche. En option, nous pouvons vous proposer du Champagne.
         </p>
         <button className="button"><a href="/Reservation" className="parc-link">Réservation</a></button>

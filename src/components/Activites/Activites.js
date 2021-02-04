@@ -163,22 +163,6 @@ const ChasseTresor = () =>
     </div>
   </div>;
 
-const AireDeJeux = () =>
-  <div>
-    <h1 className="h1activite">L'atout spider / L'aire de jeux enfants</h1>
-    <div className="trait_et_rond">
-      <div className="trait"></div>
-      <div className="rond_bleu"></div>
-    </div>
-    <div className="block-img-para">
-      <img alt="photo" className="photoactivite" src={Photo5}></img>
-      <div className="block-text-bouton">
-        <p className="textactivites">Cette activité sans baudrier, l’Atout Spider permet de se déplacer et jouer en toute sécurité sur un filet géant telle une toile d’araignée. Vous retrouverez autour de l’Atout spider différents jeux pour vos enfants (tyrolienne, slackline, Ninja Warrior)<br/>Enfants à partir de 4 ans et jusqu’à 12 ans.</p>
-        <button className="button"><a href="/Reservation" className="parc-link">Réservation</a></button>
-      </div>
-    </div>
-  </div>;
-
 const LaserGame = () =>
   <div>
     <h1 className="h1activite">Le laser game</h1>
@@ -194,22 +178,6 @@ const LaserGame = () =>
       </div>
     </div>
   </div>;
-
-const MurEscalade = () =>
-<div>
-  <h1 className="h1activite">Les murs d'escalade</h1>
-  <div className="trait_et_rond">
-      <div className="trait"></div>
-      <div className="rond_bleu"></div>
-    </div>
-  <div className="block-img-para">
-    <img alt="photo" className="photoactivite" src={Photo6}></img>
-    <div className="block-text-bouton">
-      <p className="textactivites">Équipés du système d’assurage Trublue® et de votre baudrier, Deux murs d’escalades sont à votre disposition. Un mur enfant d’une hauteur de 7 mètres et un mur adulte d’une hauteur de 12 mètres vous attendent pour un défi vertical. Une expérience de grimpe unique pour tous qui s’adapte aux différents niveaux de pratique en intégrant une valeur ancestrale de l’escalade, le dépassement de soi.<br/>A partir de 4 ans.</p>
-      <button className="button"><a href="/Reservation" className="parc-link">Réservation</a></button>
-    </div>
-  </div>
-</div>;
 
 const Error = () => (
   <p>
@@ -241,12 +209,8 @@ class Activites extends Component {
         return <ParcoursEnigmes />;
       case 'chasse-tresor':
         return <ChasseTresor />;
-      case 'spider-filet':
-        return <AireDeJeux />;
       case 'laser-game':
         return <LaserGame />;
-      case 'murs-escalade':
-        return <MurEscalade />;
       default:
         return <Error />;
     }

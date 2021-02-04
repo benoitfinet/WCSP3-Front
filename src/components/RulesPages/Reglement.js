@@ -16,19 +16,16 @@ La pratique des activités sont physiques, le non-respect des règles peut entra
 DESCRIPTION DE LA PRATIQUE ET DES ACTIVITES<br></br>
 <br></br>
 Atout Branches est un parc à espace d’activités ludique permettant aux pratiquants des faire plusieurs activités :<br></br>
-- Parcours acrobatiques en hauteur et VERTIJUMP saut de 12 mètres.<br></br>
+- Parcours acrobatiques en hauteur.<br></br>
 - Escape Game 100% naturel.<br></br>
 - Parcours d'énigmes.<br></br>
 - Chasse au trésor.<br></br>
-- Atout Spider / aire de jeux enfants.<br></br>
 - Laser Game.<br></br>
-- Murs d’escalade.<br></br>
 <br></br>
 - Les parcours acrobatiques en hauteur (PAH), permettent aux pratiquants de cheminer en hauteur de façon autonome et plus ou moins acrobatique, sur et entre les arbres ou autres supports naturels ou non.<br></br>
-Le parc se compose de plus de 100 ateliers répartis sur 12 parcours de difficultés croissantes.<br></br><br></br> NOUVEAUTE 2021 : 1 parcours Pitchoun et 1 parcours Rouge N°2<br></br><br></br>
+Le parc se compose de plus de 100 ateliers répartis sur 11 parcours de difficultés croissantes.<br></br><br></br> NOUVEAUTE 2021 : parcours Pitchoun<br></br><br></br>
 Tous les parcours exceptés pitchoune sont équipés d’une ligne de vie continue, garantissant une sécurité des participants tout au long de l’activité.<br></br>
 Les parcours sont distingués par leurs noms, des chiffres et codes couleurs indiqués par des pancartes à chaque début de parcours.<br></br>
-<br></br>VERTIJUMP, Une attraction indépendante du parcours. Vous montez à 12 mètres pour un saut avec une chute libre de plusieurs mètres. Oserez sauter ?<br></br>
 <br></br>
 - Un escape Game 100% naturel, Un ESCAPE GAME 100% naturel, saurez-vous trouver le refuge et y entrer vous avez 1h pour cela.<br></br>
 Fouillez la forêt à la recherche des objets indispensables pour trouver et déverrouiller la porte d'accès.<br></br>
@@ -39,11 +36,9 @@ Un livret de jeu vous donne toutes les instructions pour parcourir la forêt en 
 - Une chasse au trésor, La chasse au trésor qui fait appel votre maitrise de l'orientation.<br></br>
 Retrouvez les coffres forts cachés dans le parc pour reconstituer la clé du mystère.<br></br>
 <br></br>
-- l’Atout Spider / aire de jeux enfants, 100 mètres carré de filets suspendu permet de se déplacer et jouer en toute sécurité. tyrolienne, slackline, Ninja Warrior. NOUVEAUTE 2021.<br></br>
 <br></br><br></br>
 - Le laser Game, une activité ludique et sportive à pratiquer en famille, entre amis ou collaborateurs.<br></br> Uniquement des rayons infrarouges sont émis depuis le fusil laser, vous êtes donc virtuellement touché, aucuns risques de blessures avec les billes.<br></br> Les différents scénarios permettent une variante des jeux. Ils permettent de renouveler l’expérience Laser Game en procurant de nouvelles sensations à travers des rôles à jouer. NOUVEAUTE 2021.
 <br></br><br></br>
- - Les murs d’escalade, une expérience de grimpe unique pour tous qui s’adapte aux différents niveaux de pratique en intégrant une valeur ancestrale de l’escalade, le dépassement de soi. NOUVEAUTE 2021.
  <br></br><br></br>
 Toutes ces activités proposés par Atout Branches développent l’équilibre, la concentration, la psychomotricité, le mental, enseigne l'autonomie, aiguise la prise de décision, apprend à penser et à agir sous pression, augmente le niveau de condition physique, développe l'estime de soi.<br></br>
 Le suivi de ces consignes est obligatoire en toutes circonstances.<br></br>
