@@ -19,7 +19,7 @@
 }
 
 .test-background::before{
-    background-color: rgba(0, 0, 0, 0.527);
+    background-color: rgba(44, 23, 4, 0.356);
     content: '';
     display: block;
     height: 100%;
@@ -49,6 +49,11 @@
 
 footer.page-footer .footer-copyright {
     background-color: rgb(41 38 38 / 64%)!important;
+}
+
+.mentions-legales {
+    position: absolute;
+    bottom: 0;
 }
 
 @media screen and (max-width: 990px) {
