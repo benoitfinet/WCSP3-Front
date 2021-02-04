@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
 import Groupesselect from './Groupesselect';
-import Navbar from '../Home/Navbar';
 import Footer from '../Footer/Footer';
+import PropTypes from 'prop-types';
+import Navbar from '../Nav/Navbar';
+import PhotoBanner from '../Nav/img/backgroundparcours.jpg';
 
 import Annivs from './Annivs';
 import Assocs from './Assocs';
@@ -14,15 +17,15 @@ import './Groupes.css';
 
 const Anniversaires = () => <Annivs />;
 
-const Associations = () => <Assocs />;
+const ComiteEntreprise = () => <Assocs />;
 
-const Mariages = () => <EvgEvjf />;
+const EVG = () => <EvgEvjf />;
 
-const Familles = () => <Famille />;
+const FamilleAmis = () => <Famille />;
 
-const Ecoles = () => <Scolaires />;
+const CentreLoisir = () => <Scolaires />;
 
-const Seminaires = () => <Seminaire />;
+const TeamBuilding = () => <Seminaire />;
 
 const Error = () => (
   <p>
@@ -34,7 +37,7 @@ class Groupes extends Component {
   constructor (props) {
     super(props);
     this.state = {
-      activeId: 'anniversaires'
+      activeId: this.props.match.params.activity
     };
     this.handleChangeTab = this.handleChangeTab.bind(this);
   }
@@ -46,35 +49,36 @@ class Groupes extends Component {
 
   getTabContent () {
     switch (this.state.activeId) {
+      case 'familleAmis':
+        return <FamilleAmis />;
       case 'anniversaires':
         return <Anniversaires />;
-      case 'associations':
-        return <Associations />;
-      case 'mariages':
-        return <Mariages />;
-      case 'familles':
-        return <Familles />;
-      case 'ecoles':
-        return <Ecoles />;
-      case 'seminaires':
-        return <Seminaires />;
+      case 'centreLoisirs':
+        return <CentreLoisir />;
+      case 'teamBuilding':
+        return <TeamBuilding />;
+      case 'comiteEntreprise':
+        return <ComiteEntreprise />;
+      case 'EVG-EVJF':
+        return <EVG />;
       default:
         return <Error />;
     }
   }
 
   render () {
+    console.log(this.props.match);
     return (
       <div>
-        <Navbar title="Offres de groupes"/>
+        <Navbar imgbanner={PhotoBanner} textbanner="Groupes" />
+        <div id="ancre"></div>
         <div className="Activites">
           <div className="Activitespadding">
-            <Groupesselect
-              active={this.state.activeId}
-              handleChangeTab={this.handleChangeTab}
-            />
-            <div className="Activites-content">{this.getTabContent()}
-            </div>
+          <Groupesselect
+            active={this.state.activeId}
+            handleChangeTab={this.handleChangeTab}
+          />
+          <div className="Activites-content">{this.getTabContent()}</div>
           </div>
         </div>
         <Footer />
@@ -83,4 +87,9 @@ class Groupes extends Component {
   }
 }
 
-export default Groupes;
+Groupes.propTypes = {
+  match: PropTypes.object,
+  params: PropTypes.string
+};
+
+export default withRouter(Groupes);

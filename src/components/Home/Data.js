@@ -20,12 +20,12 @@ export const links = [
   },
   {
     id: 4,
-    url: '/activites',
+    url: '/Activites/parcours-acrobatiques',
     text: 'activités'
   },
   {
     id: 5,
-    url: '/groupes',
+    url: '/groupes/familleAmis',
     text: 'Groupes'
   },
   {
@@ -35,7 +35,7 @@ export const links = [
   },
   {
     id: 7,
-    url: '/Tarifs',
+    url: '/tarifs/tarifsIndividuels',
     text: 'Tarifs'
   },
   {
@@ -45,7 +45,7 @@ export const links = [
   },
   {
     id: 9,
-    url: '/Ounoustrouver',
+    url: '/nous-trouver',
     text: 'Nous trouver'
   },
   {

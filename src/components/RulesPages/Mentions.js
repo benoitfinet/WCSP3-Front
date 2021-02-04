@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Navbar from '../Home/Navbar';
 import Footer from '../Footer/Footer';
 
 import './RulesPages.css';
@@ -29,7 +28,6 @@ class Mentions extends React.Component {
 
     return (
     <div>
-        <Navbar title="Mentions légales"/>
         <div className="pagesBody">
             <div className="pagesContent">
             {infos.length !== 0 && infos[2].description}

@@ -1,21 +1,20 @@
-import Navbar from './Navbar';
+import NavbarHome from './NavHome/NavbarHome.js';
 import Carousel from './Carouselhome';
-import Button from './Button';
 import HomeEvent from './HomeEvent';
 import Footer from '../Footer/Footer';
-import Indexcards from './Indexcards';
+import CarouselEvent from './CarouselEvent';
 import Textparc from './Textparc';
+import Photo1 from './NavHome/img/backgroundhome.jpeg';
 
 import './Home.css';
 
 function Home () {
   return (
     <div>
-      <Navbar title="Eveille tes sens"/>
+      <NavbarHome imgbanner={Photo1}/>
       <Textparc className="textparc"/>
       <Carousel className="carousel" />
-      <Button className="button" />
-      <Indexcards />
+      <CarouselEvent />
       <HomeEvent />
       <Footer />
     </div>

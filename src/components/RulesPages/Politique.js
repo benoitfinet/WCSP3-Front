@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Navbar from '../Home/Navbar';
 import Footer from '../Footer/Footer';
 
 import './RulesPages.css';
@@ -28,7 +27,6 @@ class Politique extends React.Component {
     const { infos } = this.state;
     return (
     <div>
-        <Navbar title="Politique de confidentialité"/>
         <div className="pagesBody">
             <div className="pagesContent">
             {infos.length !== 0 && infos[1].description}

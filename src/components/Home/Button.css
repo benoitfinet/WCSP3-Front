@@ -13,9 +13,12 @@
     border-radius: 20px;
     font-size: 16px;
     margin: 4px 2px;
-    cursor: pointer;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
+    position: relative;
+    bottom: -31px;
+    text-transform: uppercase;
+    font-family: 'Boogaloo', cursive;
   }
 
 .parc-link{

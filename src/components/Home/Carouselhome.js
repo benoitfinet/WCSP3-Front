@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { HashLink } from 'react-router-hash-link';
 import { MDBCarousel, MDBCarouselCaption, MDBCarouselInner, MDBCarouselItem, MDBView, MDBMask, MDBContainer } from 'mdbreact';
 
 import './Carousel.css';
@@ -41,6 +41,7 @@ class CarouselPage extends React.Component {
     >
       <MDBCarouselInner>
         <MDBCarouselItem itemId="1">
+        <HashLink to="/Activites/parcours-acrobatiques#ancre">
           <MDBView>
             <img
               className="d-block w-100"
@@ -52,8 +53,10 @@ class CarouselPage extends React.Component {
           <MDBCarouselCaption>
             <h3 className="h3-responsive">{homes.length !== 0 && homes[5].subtitle}</h3>
           </MDBCarouselCaption>
+          </HashLink>
         </MDBCarouselItem>
         <MDBCarouselItem itemId="2">
+        <HashLink to="/Activites/escape-game#ancre">
           <MDBView>
             <img
               className="d-block w-100"
@@ -65,8 +68,10 @@ class CarouselPage extends React.Component {
           <MDBCarouselCaption>
             <h3 className="h3-responsive">{homes.length !== 0 && homes[6].subtitle}</h3>
           </MDBCarouselCaption>
+          </HashLink>
         </MDBCarouselItem>
         <MDBCarouselItem itemId="3">
+        <HashLink to="/Activites/parcours-enigme#ancre">
           <MDBView>
             <img
               className="d-block w-100"
@@ -78,8 +83,10 @@ class CarouselPage extends React.Component {
           <MDBCarouselCaption>
             <h3 className="h3-responsive">{homes.length !== 0 && homes[7].subtitle}</h3>
           </MDBCarouselCaption>
+          </HashLink>
         </MDBCarouselItem>
         <MDBCarouselItem itemId="4">
+        <HashLink to="/Activites/chasse-tresor#ancre">
           <MDBView>
             <img
               className="d-block w-100"
@@ -91,8 +98,10 @@ class CarouselPage extends React.Component {
           <MDBCarouselCaption>
             <h3 className="h3-responsive">{homes.length !== 0 && homes[8].subtitle}</h3>
           </MDBCarouselCaption>
+          </HashLink>
         </MDBCarouselItem>
         <MDBCarouselItem itemId="5">
+        <HashLink to="/Activites/spider-filet#ancre">
           <MDBView>
             <img
               className="d-block w-100"
@@ -104,8 +113,10 @@ class CarouselPage extends React.Component {
           <MDBCarouselCaption>
             <h3 className="h3-responsive">{homes.length !== 0 && homes[9].subtitle}</h3>
           </MDBCarouselCaption>
+          </HashLink>
         </MDBCarouselItem>
         <MDBCarouselItem itemId="6">
+        <HashLink to="/Activites/murs-escalade#ancre">
           <MDBView>
             <img
               className="d-block w-100"
@@ -117,6 +128,7 @@ class CarouselPage extends React.Component {
           <MDBCarouselCaption>
             <h3 className="h3-responsive">{homes.length !== 0 && homes[10].subtitle}</h3>
           </MDBCarouselCaption>
+          </HashLink>
         </MDBCarouselItem>
       </MDBCarouselInner>
     </MDBCarousel>

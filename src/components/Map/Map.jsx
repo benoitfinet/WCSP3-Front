@@ -1,7 +1,6 @@
-import Navbar from '../Home/Navbar';
 import Footer from '../Footer/Footer';
-
 import './Map.css';
+import Navbar from '../Nav/Navbar';
 
 import React, { Component } from 'react';
 
@@ -60,11 +59,11 @@ class Map extends Component {
       <h2 className="titles">{findus.length !== 0 && findus[3].title}</h2>
       <p className="text-map">{findus.length !== 0 && findus[3].text}
       </p>
-      </div>
-    </div>
-    </div>
-    </div>
-    <Footer />
+  </div>
+  </div>
+  </div>
+  </div>
+  <Footer />
   </div>
       );
     }

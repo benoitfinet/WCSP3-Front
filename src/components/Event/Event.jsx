@@ -1,4 +1,3 @@
-import Navbar from '../Home/Navbar';
 import Footer from '../Footer/Footer';
 
 import Photo1 from './EventImg/Atout Branches soirée nocturne 2.JPG';
@@ -6,7 +5,6 @@ import Photo1 from './EventImg/Atout Branches soirée nocturne 2.JPG';
 const Event = () => {
   return (
     <div>
-        <Navbar title="Évènements" />
     <div className="Activites">
     <div className="Activites-content">
     <h1 className="h1activite">Tous nos Évènements</h1>

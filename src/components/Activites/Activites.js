@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 
 import Activiteselect from './Activiteselect';
-import Navbar from '../Home/Navbar';
 import Footer from '../Footer/Footer';
 import Parcours from './Parcours';
 import Escape from './EscapeGame';
+import PropTypes from 'prop-types';
+import Navbar from '../Nav/Navbar';
+import PhotoBanner from '../Nav/img/background-activite.jpg';
 
 import './Activites.css';
 import Enigmes from './Enigmes';
@@ -36,7 +38,7 @@ class Activites extends Component {
   constructor (props) {
     super(props);
     this.state = {
-      activeId: 'parcours-acrobatiques'
+      activeId: this.props.match.params.activity
     };
     this.handleChangeTab = this.handleChangeTab.bind(this);
   }
@@ -52,15 +54,15 @@ class Activites extends Component {
         return <ParcoursAcrobatiques />;
       case 'escape-game':
         return <EscapeGame />;
-      case 'parcours-enigmes':
+      case 'parcours-enigme':
         return <ParcoursEnigmes />;
       case 'chasse-tresor':
         return <ChasseTresor />;
-      case 'atout-spider':
+      case 'spider-filet':
         return <AireDeJeux />;
       case 'laser-game':
         return <LaserGame />;
-      case 'mur-escalade':
+      case 'murs-escalade':
         return <MurEscalade />;
       default:
         return <Error />;
@@ -70,7 +72,8 @@ class Activites extends Component {
   render () {
     return (
       <div>
-        <Navbar title="Activités"/>
+        <Navbar imgbanner={PhotoBanner} textbanner="Activités" />
+        <div id="ancre"></div>
         <div className="Activites">
           <div className="Activitespadding">
           <Activiteselect
@@ -85,5 +88,10 @@ class Activites extends Component {
     );
   }
 }
+
+Activites.propTypes = {
+  match: PropTypes.object,
+  params: PropTypes.string
+};
 
 export default Activites;

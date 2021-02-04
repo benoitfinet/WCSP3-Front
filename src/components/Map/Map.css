@@ -3,8 +3,9 @@
   }
 
 .text-map{
-    margin: auto;
-    color: #8B4513;
+  margin: auto;
+  color: #3a342f;
+  font-family: 'Francois One', sans-serif;
 }
 
 .img-fluid {
