@@ -2,6 +2,16 @@
   font-family: 'Francois One', sans-serif;
 }
 
+#ancre-engagement {
+  position: relative;
+  top: -170px;
+}
+
+#ancre-plan {
+  position: relative;
+  top: -170px;
+}
+
 .titles{
     padding: 3% 0;
     text-align: center;

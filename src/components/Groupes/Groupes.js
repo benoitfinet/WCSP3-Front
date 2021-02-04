@@ -118,7 +118,7 @@ const ComiteEntreprise = () =>
     <div className="block-img-para">
       <img alt="photo" className="photoactivite" src={Photo5}></img>
       <div className="block-text-bouton">
-        <p className="textactivites">Mettez vos équipes en défi, organisation d'olympiades avec nos activités : Parcours acrobatiques en hauteur, Laser Game, Courses d’orientation, Murs d’escalade.
+        <p className="textactivites">Mettez vos équipes en défi, organisation d'olympiades avec nos activités : Parcours acrobatiques en hauteur, Laser Game.
         <br></br><br></br>Notre traiteur local vous propose différentes formules pour votre déjeuner : Apéritif dinatoire, cocktail, buffet.</p>
         <button className="button"><a href="/Reservation" className="parc-link">Réservation</a></button>
       </div>
@@ -138,7 +138,7 @@ const EVG = () =>
         <p className="textactivites">Fêtez votre enterrement de vie de célibataire en pleine forêt.<br></br><br></br>
           Un(e) de vos proches se marie ? Enterrez sa vie de jeune fille ou de garçon au Parc Atout branches pour passer une journée forte d’émotions !<br></br><br></br>
           A vous de choisir l'activité qui mettra le ou la futur(e) marié(e) au défi : Parcours acrobatiques en hauteur, Laser Game.<br></br><br></br>
-          Alti’Max offrira au futur(e) marié(e) sa place d’accrobranche. En option, nous pouvons vous proposer du Champagne.
+          Atout branches offrira au futur(e) marié(e) sa place d’accrobranche. En option, nous pouvons vous proposer du Champagne.
         </p>
         <button className="button"><a href="/Reservation" className="parc-link">Réservation</a></button>
       </div>

@@ -1,0 +1,48 @@
+.tableau-reglement {
+  width: 100%;
+  padding: 2%;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+
+.td-reglement {
+  padding: 1%;
+  width: 11%;
+}
+
+.th-reglement {
+  border: solid 1px black;
+  margin: auto;
+    color: #0e0e0ead;
+    font-family: 'Boogaloo', cursive;
+    padding: 1%;
+}
+
+table th {
+  border: solid 1px black;
+  margin: auto;
+  color: #0e0e0ead;
+  font-family: 'Boogaloo', cursive;
+  padding: 1%;
+}
+
+.para-reglement {
+  text-align: left;
+  font-size: 20px;
+  color: #0e0e0ead;
+  font-family: 'Boogaloo', cursive;
+  font-weight: lighter;
+}
+
+span {
+  font-weight: bold;
+}
+
+.title-reglement {
+  margin-bottom: 2%;
+  color: #ca9669;
+  font-family: 'Boogaloo', cursive;
+  margin-top: 3%;
+  text-transform: uppercase;
+}
+

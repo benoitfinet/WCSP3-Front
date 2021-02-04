@@ -1,6 +1,6 @@
 
 import React from 'react';
-
+import { HashLink } from 'react-router-hash-link';
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from 'mdbreact';
 
 import './Footer.css';
@@ -47,14 +47,14 @@ Une buvette, aires de repos et pique-nique et un chalet sanitaire sont à votre 
             </h6>
             <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style={{ width: '60px' }} />
             <p>
-              <a href="#!">Tarifs Buvette</a>
+              <a href="/buvette">Tarifs Buvette</a>
             </p>
             <p>
               <a href="#">Evénements</a>
             </p>
-            <p>
-              <a href="#!">Nos Engagements</a>
-            </p>
+            <HashLink to="/Parc#ancre-engagement">
+              <p>Nos engagements</p>
+            </HashLink>
             <p>
               <a href="/Reglement">Réglement intérieur</a>
             </p>
@@ -67,21 +67,21 @@ Une buvette, aires de repos et pique-nique et un chalet sanitaire sont à votre 
             <p>
               <a href="#!">Consulter la brochure</a>
             </p>
-            <p>
-              <a href="/nous-trouver" className="parc-link">Où nous trouver?</a>
-            </p>
-            <p>
-              <a href="/Parc">Voir le plan du parc</a>
-            </p>
-            <p>
-              <a href="/Horaires">Calendrier et horaires</a>
-            </p>
-            <p>
-              <a href="/Faq">FAQ</a>
-            </p>
-            <p>
-              <a href="/Tarifs">Tarifs</a>
-            </p>
+            <HashLink to="/nous-trouver#ancre-plan-acces-park">
+              <p>Où nous trouver ?</p>
+            </HashLink>
+            <HashLink to="/Parc#ancre-plan">
+              <p>Plan du parc</p>
+            </HashLink>
+            <HashLink to="/Horaires#ancre-calendrier">
+              <p>Calendrier et horaires</p>
+            </HashLink>
+            <HashLink to="/Faq#ancre-faq">
+              <p>Organiser votre journée</p>
+            </HashLink>
+            <HashLink to="/tarifs/tarifsIndividuels#ancre-tarifs">
+              <p>Tarifs</p>
+            </HashLink>
             <p>
               <a href="#!">Billeterie</a>
             </p>

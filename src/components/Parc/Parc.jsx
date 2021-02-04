@@ -22,20 +22,23 @@ const Parc = () => {
         <div className="parc-layout">
           <div className="textback">
           <h2 className="home-title">Le plan du Parc</h2>
+          <div id="ancre-plan"></div>
           <div className="trait_et_rond">
       <div className="trait"></div>
       <div className="rond_bleu"></div>
     </div>
             <p className="text-parc">Atout branches vous acceuil dans le Parc naturel du Gâtinais français
             </p>
+            <img className="img-fluid" src={PhotoMap} alt="Carte de Milly-la-Forêt"/>
             <p className="text-parc">Voici le plan du Parc pour vous repérer!
             </p>
-            <img className="img-fluid" src={PhotoMap} alt="Carte de Milly-la-Forêt"/>
           </div>
         </div>
         <div className="parc-layout">
             <div className="textback">
               <h2 className="home-title">Nos Engagements</h2>
+              <div id="ancre-engagement"></div>
+              <div id="ancre-engagement"></div>
               <div className="trait_et_rond">
       <div className="trait"></div>
       <div className="rond_bleu"></div>

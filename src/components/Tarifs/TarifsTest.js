@@ -144,6 +144,7 @@ class TarifsTest extends Component {
         <Navbar imgbanner={PhotoBanner} textbanner="Tarifs" />
         <div className="Activites">
           <div className="Activitespadding">
+          <div id="ancre-tarifs"></div>
           <TarifsSelect
             active={this.state.activeId}
             handleChangeTab={this.handleChangeTab}

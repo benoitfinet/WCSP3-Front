@@ -12,6 +12,7 @@ function CalendarBody () {
                   <div className="Activites-content">
                   <div className="Activitespadding">
                   <h2 className="cldSeason">Calendrier 2021</h2>
+                  <div id="ancre-calendrier"></div>
     <img className='parkSchedule' src={Saison2021} alt='saison 2021' />
         <div className='cldInfoText'>
           <h3>Le parc est ouvert de Mars jusqu’aux vacances de la Toussaint</h3>

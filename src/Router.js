@@ -9,6 +9,7 @@ import Reglement from './components/RulesPages/Reglement';
 import Parc from './components/Parc/Parc';
 import TarifsTest from './components/Tarifs/TarifsTest';
 import Event from './components/Event/Event';
+import Buvette from './components/Buvette/Buvette';
 
 import { Switch, Route } from 'react-router-dom';
 import CalendarPage from './components/Calendar/CalendarPage.jsx';
@@ -30,6 +31,7 @@ const RouterWebSite = () => {
       <Route path="/Parc" component={Parc} />
       <Route path="/Tarifs/:tarifs" component={TarifsTest} />
       <Route path="/Event" component={Event} />
+      <Route path="/Buvette" component={Buvette} />
     </Switch>
   );
 };

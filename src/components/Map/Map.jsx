@@ -12,6 +12,7 @@ const Map = () => {
         <div className="Activites">
           <div className="Activitespadding">
             <div className="Activites-content">
+              <div id="ancre-plan-acces-park"></div>
               <h2 className="home-title">La carte</h2>
               <div className="trait_et_rond">
                 <div className="trait"></div>

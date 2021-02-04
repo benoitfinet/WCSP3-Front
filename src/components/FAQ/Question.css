@@ -1,5 +1,5 @@
 .block-questions {
-  width: 55%;
+  width: 82%;
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -24,8 +24,12 @@
   text-transform: uppercase;
   margin-bottom: 0;
   margin-top: 0;
-  font-size: 15px;
   text-align: initial;
+  font-size: 20px;
+  width: 80%;
+  margin: auto;
+  color: #0e0e0ead;
+  font-family: 'Boogaloo', cursive;
 }
 
 .block-questions-arrows {
@@ -47,6 +51,7 @@
   border-top: 5px solid;
   margin-left: 3.5%;
   cursor: pointer;
+  margin: auto;
 }
 
 .arrow-right {
@@ -57,6 +62,7 @@
   border-left: 5px solid;
   margin-left: 4%;
   cursor: pointer;
+  margin: auto;
 }
 
 .hide {
@@ -69,8 +75,9 @@
   margin-right: 5%;
   margin-top: 0;
   margin-bottom: 3.2%;
-  -webkit-animation: fadeIn 0.5s;
   animation: fadeIn 0.5s;
+  color: #0e0e0ead;
+  font-family: 'Boogaloo', cursive;
 }
 
 @-webkit-keyframes fadeIn {

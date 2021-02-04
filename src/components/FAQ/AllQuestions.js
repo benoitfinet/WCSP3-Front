@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+import Navbar from '../Nav/Navbar';
+import PhotoBanner from '../Nav/img/background-activite.jpg';
 import Faq from './Question';
 import questions from './Faq';
 import Footer from '../Footer/Footer';
@@ -44,12 +45,20 @@ class AllQuestions extends React.Component {
   render () {
     return (
       <div>
-      <div className="block-faq">
-        {this.state.questions.map((question) => (
-          <Faq question={question} handleShow={this.handleShow} key={question.question} />
-        ))}
-      </div>
-      <Footer />
+        <Navbar imgbanner={PhotoBanner} textbanner="Orgniser votre journée" />
+        <div className="Activites">
+            <div className="Activitespadding">
+              <div className="Activites-content">
+              <div id="ancre-faq"></div>
+                <div className="block-faq">
+                  {this.state.questions.map((question) => (
+                    <Faq question={question} handleShow={this.handleShow} key={question.question} />
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        <Footer />
       </div>
     );
   }
