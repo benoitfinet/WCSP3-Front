@@ -11,9 +11,7 @@ import PhotoBanner from '../Nav/img/background-activite.jpg';
 import './Activites.css';
 import Enigmes from './Enigmes';
 import Tresors from './Tresors';
-import AiresDeJeux from './AiresDejeux';
 import LaserGames from './LaserGame';
-import Escalade from './Escalade';
 
 const ParcoursAcrobatiques = () => <Parcours />;
 const EscapeGame = () => <Escape />;
@@ -22,11 +20,7 @@ const ParcoursEnigmes = () => <Enigmes />;
 
 const ChasseTresor = () => <Tresors />;
 
-const AireDeJeux = () => <AiresDeJeux />;
-
 const LaserGame = () => <LaserGames />;
-
-const MurEscalade = () => <Escalade />;
 
 const Error = () => (
   <p>
@@ -58,12 +52,8 @@ class Activites extends Component {
         return <ParcoursEnigmes />;
       case 'chasse-tresor':
         return <ChasseTresor />;
-      case 'spider-filet':
-        return <AireDeJeux />;
       case 'laser-game':
         return <LaserGame />;
-      case 'murs-escalade':
-        return <MurEscalade />;
       default:
         return <Error />;
     }

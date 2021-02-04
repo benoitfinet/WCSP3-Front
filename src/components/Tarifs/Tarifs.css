@@ -21,7 +21,7 @@ table {
   font-size: 20px;
   width: 80%;
   margin: auto;
-  color: #0e0e0e80;
+  color: #0e0e0ead;
   font-family: 'Boogaloo', cursive;
 }
 
@@ -38,7 +38,7 @@ table {
 .title-tarif {
   font-family: 'Luckiest Guy', cursive;
   font-size: 50px;
-  color: #7cb17e;
+  color: #5f8e61;
   padding-top: 3%;
   padding-bottom: 3%;
 }
@@ -48,6 +48,7 @@ table {
   color: #ca9669;
   font-family: 'Boogaloo', cursive;
   margin-top: 3%;
+  text-transform: uppercase;
 }
 
 .tarifs-select {
@@ -66,7 +67,7 @@ table td {
   font-size: 20px;
     width: 80%;
     margin: auto;
-    color: #0e0e0e80;
+    color: #0e0e0ead;
     font-family: 'Boogaloo', cursive;
 }
 

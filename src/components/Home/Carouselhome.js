@@ -34,7 +34,7 @@ class CarouselPage extends React.Component {
       <h3 className="home-subtitle">{homes.length !== 0 && homes[4].subtitle}</h3>
       <MDBCarousel
       activeItem={1}
-      length={6}
+      length={5}
       showControls={true}
       showIndicators={true}
       className="z-depth-1"
@@ -112,21 +112,6 @@ class CarouselPage extends React.Component {
           </MDBView>
           <MDBCarouselCaption>
             <h3 className="h3-responsive">{homes.length !== 0 && homes[9].subtitle}</h3>
-          </MDBCarouselCaption>
-          </HashLink>
-        </MDBCarouselItem>
-        <MDBCarouselItem itemId="6">
-        <HashLink to="/Activites/murs-escalade#ancre">
-          <MDBView>
-            <img
-              className="d-block w-100"
-              src={homes.length !== 0 && homes[10].subtext}
-              alt="Third slide"
-            />
-          <MDBMask overlay="black-slight" />
-          </MDBView>
-          <MDBCarouselCaption>
-            <h3 className="h3-responsive">{homes.length !== 0 && homes[10].subtitle}</h3>
           </MDBCarouselCaption>
           </HashLink>
         </MDBCarouselItem>

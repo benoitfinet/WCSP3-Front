@@ -3,6 +3,18 @@
   text-align: center;
 }
 
+.Groupeselect {
+  border: 1px solid;
+  border-radius: 30px;
+  margin: auto;
+  margin-top: 1%;
+  width: 61%;
+  background-color: white;
+  position: relative;
+  top: -108px;
+  padding: 1%;
+}
+
 .InfiniteCarouselSlide img:hover {
   width: 100%;
 }
@@ -44,14 +56,14 @@
   font-size: 20px;
   width: 80%;
   margin: auto;
-  color: #0e0e0e80;
+  color: #0e0e0ead;
   font-family: 'Boogaloo', cursive;
 }
 
 .h1activite{
   font-family: 'Luckiest Guy', cursive;
   font-size: 50px;
-  color: #7cb17e;
+  color: #5f8e61;
   padding-top: 3%;
   padding-bottom: 3%;
 }
