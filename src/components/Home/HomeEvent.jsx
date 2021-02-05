@@ -49,7 +49,7 @@ class BlogPage extends React.Component {
             <MDBView className="rounded z-depth-2 mb-lg-0 mb-4" hover waves>
               <img
                 className="img-fluid"
-                src={homes.length !== 0 && homes[2].subtext}
+                src={homes.length !== 0 && homes[3].subtext}
                 alt="Image de terrasse en forêt"
               />
               <a href="#!">

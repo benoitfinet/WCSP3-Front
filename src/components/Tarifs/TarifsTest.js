@@ -4,7 +4,6 @@ import TarifsSelect from './TarifsSelect';
 import Footer from '../Footer/Footer';
 import PropTypes from 'prop-types';
 import Navbar from '../Nav/Navbar';
-import PhotoBanner from '../Nav/img/backgroundtarifs.jpg';
 import TarifsIndivs from './TarifsIndiv';
 import TarifsGroups from './TarifsGroups';
 
@@ -24,7 +23,8 @@ class TarifsTest extends Component {
   constructor (props) {
     super(props);
     this.state = {
-      activeId: this.props.match.params.tarifs
+      activeId: this.props.match.params.tarifs,
+      photo: []
     };
     this.handleChangeTab = this.handleChangeTab.bind(this);
   }
@@ -45,11 +45,25 @@ class TarifsTest extends Component {
     }
   }
 
+  getHome = () => {
+    fetch('http://localhost:5000/photo/')
+      .then((res) => res.json())
+      .then((data) => {
+        this.setState({
+          photo: data
+        });
+      });
+  };
+
+  componentDidMount () {
+    this.getHome();
+  }
+
   render () {
-    console.log(this.props.match);
+    const { photo } = this.state;
     return (
       <div>
-        <Navbar imgbanner={PhotoBanner} textbanner="Tarifs" />
+        <Navbar imgbanner={photo.length !== 0 && photo[2].location} textbanner="Tarifs" />
         <div className="Activites">
           <div className="Activitespadding">
           <div id="ancre-tarifs"></div>

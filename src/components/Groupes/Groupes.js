@@ -4,7 +4,6 @@ import Groupesselect from './Groupesselect';
 import Footer from '../Footer/Footer';
 import PropTypes from 'prop-types';
 import Navbar from '../Nav/Navbar';
-import PhotoBanner from '../Nav/img/backgroundparcours.jpg';
 
 import Annivs from './Annivs';
 import Assocs from './Assocs';
@@ -37,7 +36,8 @@ class Groupes extends Component {
   constructor (props) {
     super(props);
     this.state = {
-      activeId: this.props.match.params.activity
+      activeId: this.props.match.params.activity,
+      photo: []
     };
     this.handleChangeTab = this.handleChangeTab.bind(this);
   }
@@ -66,11 +66,25 @@ class Groupes extends Component {
     }
   }
 
+  getHome = () => {
+    fetch('http://localhost:5000/photo/')
+      .then((res) => res.json())
+      .then((data) => {
+        this.setState({
+          photo: data
+        });
+      });
+  };
+
+  componentDidMount () {
+    this.getHome();
+  }
+
   render () {
-    console.log(this.props.match);
+    const { photo } = this.state;
     return (
       <div>
-        <Navbar imgbanner={PhotoBanner} textbanner="Groupes" />
+        <Navbar imgbanner={photo.length !== 0 && photo[1].location} textbanner="Groupes" />
         <div id="ancre"></div>
         <div className="Activites">
           <div className="Activitespadding">

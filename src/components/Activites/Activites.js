@@ -6,7 +6,6 @@ import Parcours from './Parcours';
 import Escape from './EscapeGame';
 import PropTypes from 'prop-types';
 import Navbar from '../Nav/Navbar';
-import PhotoBanner from '../Nav/img/background-activite.jpg';
 
 import './Activites.css';
 import Enigmes from './Enigmes';
@@ -32,7 +31,8 @@ class Activites extends Component {
   constructor (props) {
     super(props);
     this.state = {
-      activeId: this.props.match.params.activity
+      activeId: this.props.match.params.activity,
+      photo: []
     };
     this.handleChangeTab = this.handleChangeTab.bind(this);
   }
@@ -59,10 +59,25 @@ class Activites extends Component {
     }
   }
 
+  getHome = () => {
+    fetch('http://localhost:5000/photo/')
+      .then((res) => res.json())
+      .then((data) => {
+        this.setState({
+          photo: data
+        });
+      });
+  };
+
+  componentDidMount () {
+    this.getHome();
+  }
+
   render () {
+    const { photo } = this.state;
     return (
       <div>
-        <Navbar imgbanner={PhotoBanner} textbanner="Activités" />
+        <Navbar imgbanner={photo.length !== 0 && photo[0].location} textbanner="Activités" />
         <div id="ancre"></div>
         <div className="Activites">
           <div className="Activitespadding">

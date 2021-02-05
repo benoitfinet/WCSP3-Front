@@ -9,6 +9,8 @@ import { PostEditGroupes, PostListGroupes } from './Groupes';
 import { PostEditFindus, PostListFindus } from './Findus';
 import { PostEditHoraires, PostListHoraires } from './Horaires';
 import { PostEditTarifs, PostListTarifs } from './Tarifs';
+import { PostEditParc, PostListParc } from './Parc';
+import { PostEditPhoto, PostListPhoto } from './Photo';
 import PostIcon from '@material-ui/icons/Book';
 import Dashboard from './Dashboard';
 
@@ -22,6 +24,8 @@ function AppReactadmin () {
      <Resource name='findus' list={PostListFindus} edit={PostEditFindus} icon={PostIcon} />
      <Resource name='horaires' list={PostListHoraires} edit={PostEditHoraires} icon={PostIcon} />
      <Resource name='tarifs' list={PostListTarifs} edit={PostEditTarifs} icon={PostIcon} />
+     <Resource name='parc' list={PostListParc} edit={PostEditParc} icon={PostIcon} />
+     <Resource name='photo' list={PostListPhoto} edit={PostEditPhoto} icon={PostIcon} />
     </Admin>
   );
 }

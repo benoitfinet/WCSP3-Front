@@ -1,7 +1,6 @@
 import React from 'react';
 import './CalendarPage.css';
 import Navbar from '../Nav/Navbar';
-import PhotoBanner from '../Nav/img/background-activite.jpg';
 
 class CalendarBody extends React.Component {
   state = {
@@ -26,7 +25,7 @@ class CalendarBody extends React.Component {
     const { horaires } = this.state;
     return (
       <div>
-        <Navbar imgbanner={PhotoBanner} textbanner="Nos horaires" />
+        <Navbar imgbanner={horaires.length !== 0 && horaires[1].image} textbanner="Nos horaires" />
             <div className="Activites">
                   <div className="Activites-content">
                   <div className="Activitespadding">

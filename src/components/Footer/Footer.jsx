@@ -5,8 +5,28 @@ import { MDBCol, MDBContainer, MDBRow, MDBFooter } from 'mdbreact';
 
 import './Footer.css';
 
-const Footer = () => {
-  return (
+class Footer extends React.Component {
+  state = {
+    info: []
+  };
+
+    getHome = () => {
+      fetch('http://localhost:5000/info/')
+        .then((res) => res.json())
+        .then((data) => {
+          this.setState({
+            info: data
+          });
+        });
+    };
+
+    componentDidMount () {
+      this.getHome();
+    }
+
+    render () {
+      const { info } = this.state;
+      return (
     <MDBFooter color="unique-color-dark" className="page-footer font-small pt-0 test-background">
       <div style={{ backgroundColor: '#545454' }}>
         <MDBContainer fluid className="text-center text-md-left">
@@ -35,10 +55,7 @@ const Footer = () => {
             </h6>
             <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style={{ width: '60px' }} />
             <p>
-            Atout Branches est un parc d’activités de loisirs ludo sportives situé à Milly la Forêt au cœur du Parc Naturel Régional du Gâtinais Français, véritable poumon vert au sud de l’Ile-de-France.<br/>
-Nous accueillons petits et grands pour une journée inoubliables sur les thèmes sports, nature, sensations et réflexions.<br/>
-Venez-vous ressourcer dans ce cadre magnifique et réveiller vos sens, les activités que nous vous proposons sont imaginés de manière à s’adapter à tout le monde et dans le respect de la nature et de notre eco system.<br/>
-Une buvette, aires de repos et pique-nique et un chalet sanitaire sont à votre disposition.
+            {info.length !== 0 && info[3].description}
             </p>
           </MDBCol>
           <MDBCol md="2" lg="2" xl="2" className="mb-4">
@@ -106,7 +123,7 @@ Une buvette, aires de repos et pique-nique et un chalet sanitaire sont à votre 
         </MDBContainer>
       </div>
     </MDBFooter>
-  );
-};
-
+      );
+    }
+}
 export default Footer;
