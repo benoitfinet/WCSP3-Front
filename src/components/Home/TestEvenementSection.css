@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+#testcard{
+    box-shadow: none;
+    margin-top:0!important;
+}
+.event-link{
+    color: white;
+    text-decoration: none;
+}
+
+.event-link:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.home-evenement-para {
+    font-weight: 100;
+    color: white;
+    font-family: 'Boogaloo', cursive;
+    font-size: 20px;
+}
+
+.title-event {
+  font-size: 50px;
+  font-family: 'Luckiest Guy', cursive!important;
+  color: #3b735c;
+}
+
+.subtitle-event {
+    font-family: 'Boogaloo', cursive;
+    color: #ca9669;
+  font-size: 30px;
+}
+
+#block-evenement {
+  background-color: #3b735c;
+  margin-top: 0!important;
+  padding-top: 4%;
+  position: initial;
+}
+
+.title-evenement {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 50px;
+  padding-top: 3%;
+  color: white;
+}

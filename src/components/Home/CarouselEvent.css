@@ -27,7 +27,10 @@
   font-family: 'Luckiest Guy', cursive;
   font-size: 50px;
   padding-top: 4%;
-  color: #5f8e61;
+  font-family: 'Luckiest Guy', cursive;
+    font-size: 50px;
+    padding-top: 4%;
+    color: #3b735c;
 }
 
 .img-carousel {
@@ -60,11 +63,29 @@ figcaption {
 }
 
 .block-carousel-event {
-  margin-top: 4%;
-  margin-bottom: 4%;
+  padding-top: 2%;
+  padding-bottom: 1.5%;
   background-color: #f5f5f5;
 }
 
 .InfiniteCarouselSlide {
   background-color: #f5f5f5;
+}
+
+.button-carousel-event {
+  background-color: #e0af5d;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 20px;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  position: relative;
+  bottom: -52px;
+  text-transform: uppercase;
+  font-family: 'Boogaloo', cursive;
 }

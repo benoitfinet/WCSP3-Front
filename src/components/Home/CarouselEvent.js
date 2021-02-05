@@ -270,7 +270,7 @@ class CarouselEvent extends React.Component {
       </figure>
     </div>
   </InfiniteCarousel>
-  <button className="button"><a href="/groupes/familleAmis" className="parc-link">Découvrez toutes nos offres</a></button>
+  <button className="button-carousel-event"><a href="/groupes/familleAmis" className="parc-link">Découvrez toutes nos offres</a></button>
       </div>
     );
   }

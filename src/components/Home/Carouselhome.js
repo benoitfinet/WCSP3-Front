@@ -103,7 +103,7 @@ const CarouselPage = () => {
         </MDBCarouselInner>
       </MDBCarousel>
       </MDBContainer>
-      <button className="button"><a href="/Activites/parcours-acrobatiques" className="parc-link">Découvrez toutes nos activités</a></button>
+      <button className="button-carousel-home"><a href="/Activites/parcours-acrobatiques" className="parc-link">Découvrez toutes nos activités</a></button>
     </div>
   );
 };

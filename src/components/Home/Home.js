@@ -6,6 +6,8 @@ import CarouselEvent from './CarouselEvent';
 import Textparc from './Textparc';
 import Photo1 from './NavHome/img/backgroundhome.jpeg';
 
+import TestEvenementSection from './TestEvenementSection';
+
 import './Home.css';
 
 function Home () {
@@ -15,6 +17,7 @@ function Home () {
       <Textparc className="textparc"/>
       <Carousel className="carousel" />
       <CarouselEvent />
+      <TestEvenementSection />
       <HomeEvent />
       <Footer />
     </div>
