@@ -1,17 +1,34 @@
 import React from 'react';
 import './CalendarPage.css';
 
-function CldPageInfo () {
-  return (
+class CldPageInfo extends React.Component {
+  state = {
+    horaires: []
+  };
+
+  getHome = () => {
+    fetch('http://localhost:5000/horaires/')
+      .then((res) => res.json())
+      .then((data) => {
+        this.setState({
+          horaires: data
+        });
+      });
+  };
+
+  componentDidMount () {
+    this.getHome();
+  }
+
+  render () {
+    const { horaires } = this.state;
+    return (
         <div className='cldInfo'>
-              <h2 className="home-title">Info Covid</h2>
-              <p className='cldPageInfo'>Le gouvernement a autorisé notre réouverture dans le respect de règles sanitaires strictes.
-                Les gestes barrières habituels sont complétés par des règles adaptées aux spécificités de
-                notre parc, elles sont décrites ci-dessous et sont susceptibles d'évoluer en fonction des
-                contraintes que nous rencontrerons.
+              <h2>{horaires.length !== 0 && horaires[0].title}</h2>
+              <p className='cldPageInfo'>{horaires.length !== 0 && horaires[0].text}
               </p>
         </div>
-  );
+    );
+  }
 }
-
 export default CldPageInfo;

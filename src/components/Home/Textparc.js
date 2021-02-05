@@ -1,19 +1,37 @@
+import React from 'react';
+
 import './Button.css';
 
-import './Textparc.css';
+class Textparc extends React.Component {
+  state = {
+    homes: []
+  };
 
-function Textparc () {
-  return (
-        <div className="block-text-parc">
-            <h2 className="home-title">Atout branches</h2>
-            <h3 className="home-subtitle">Au coeur du Parc naturel régional du Gâtinais français</h3>
-            <p className="home-para">Atout Branches est un parc d’activités de loisirs ludo sportives situé à Milly la Forêt au cœur du Parc Naturel Régional du Gâtinais Français, véritable poumon vert au sud de l’Ile-de-France.<br/>
-              Nous accueillons petits et grands pour une journée inoubliables sur les thèmes sports, nature, sensations et réflexions.<br/>
-              Venez-vous ressourcer dans ce cadre magnifique et réveiller vos sens, les activités que nous vous proposons sont imaginés de manière à s’adapter à tout le monde et dans le respect de la nature et de notre eco system.<br/>
-              Une buvette, aires de repos et pique-nique et un chalet sanitaire sont à votre disposition.</p>
+  getHome = () => {
+    fetch('http://localhost:5000/home/')
+      .then((res) => res.json())
+      .then((data) => {
+        this.setState({
+          homes: data
+        });
+      });
+  };
+
+  componentDidMount () {
+    this.getHome();
+  }
+
+  render () {
+    const { homes } = this.state;
+
+    return (
+        <div>
+            <h2 className="home-title">{homes.length !== 0 && homes[0].title}</h2>
+            <h3 className="home-subtitle">{homes.length !== 0 && homes[0].subtitle}</h3>
+            <p className="home-para">{homes.length !== 0 && homes[0].text}</p>
             <button className="button"><a href="/Parc" className="parc-link">Découvrir le parc</a></button>
         </div>
-  );
+    );
+  }
 }
-
 export default Textparc;

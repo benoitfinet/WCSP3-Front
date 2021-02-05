@@ -1,3 +1,5 @@
+import React from 'react';
+
 import Footer from '../Footer/Footer';
 import Navbar from '../Nav/Navbar';
 import PhotoBanner from '../Nav/img/background-activite.jpg';
@@ -5,8 +7,29 @@ import PhotoBanner from '../Nav/img/background-activite.jpg';
 import './Reglement.css';
 import './RulesPages.css';
 
-function Reglement () {
-  return (
+class Reglement extends React.Component {
+  state = {
+    infos: []
+  };
+
+  getInfo = () => {
+    fetch('http://localhost:5000/info')
+      .then((res) => res.json())
+      .then((data) => {
+        this.setState({
+          infos: data
+        });
+      });
+  };
+
+  componentDidMount () {
+    this.getInfo();
+  }
+
+  render () {
+    const { infos } = this.state;
+
+    return (
     <div>
        <Navbar imgbanner={PhotoBanner} textbanner="Reglement intérieur" />
         <div className="Activites">
@@ -140,12 +163,15 @@ function Reglement () {
                   - Irrespectueuses envers le personnel du parc, des installations ou de l’environnement.<br></br>
                   La direction peut prendre et faire appliquer toute décisions qui lui semble justifié.<br></br>
                   </p>
+        <div className="pagesBody">
+            <div className="pagesContent">
+            {infos.length !== 0 && infos[2].description}
             </div>
           </div>
         </div>
         <Footer />
-    </div>
-  );
+    </div></div></div>
+    );
+  }
 }
-
 export default Reglement;
