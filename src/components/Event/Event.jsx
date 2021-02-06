@@ -1,10 +1,12 @@
 import Footer from '../Footer/Footer';
-
+import Navbar from '../Nav/Navbar';
+import PhotoBanner from '../Nav/img/8.jpeg';
 import Photo1 from './EventImg/Atout Branches soirée nocturne 2.JPG';
 
 const Event = () => {
   return (
     <div>
+      <Navbar imgbanner={PhotoBanner} textbanner="Nos évènements" />
     <div className="Activites">
     <div className="Activites-content">
     <h1 className="h1activite">Tous nos Évènements</h1>
@@ -27,10 +29,6 @@ const Event = () => {
     <div className="first-block-img-para">
         <p className="textactivites">Privatisation du parc ou pour toutes demandes particulières, contactez-nous : contact@atoutbranches.com
         </p>
-    </div>
-    <div className="trait_et_rond">
-      <div className="trait"></div>
-      <div className="rond_bleu"></div>
     </div>
   </div>
   </div>

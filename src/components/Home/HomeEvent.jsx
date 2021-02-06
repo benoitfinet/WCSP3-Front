@@ -20,11 +20,10 @@ const BlogPage = () => {
               <strong>Privatisez votre terrasse</strong>
             </h4>
             <p className="home-event-para">
-                Privatisez votre terrasse Vous pouvez privatiser votre terrasse aérienne à la journée.
+                Vous pouvez privatiser votre terrasse aérienne à la journée.
                 Equipé d’une table, de bancs et d’un coffre fermé par cadenas afin d’y déposer vos affaires.
                 Vous pourrez ainsi profiter de votre pause déjeuner, gouter ou anniversaire en hauteur avec la vue sur le parc et à l’écart.
             </p>
-            <button className="button">En savoir plus</button>
           </MDBCol>
           <MDBCol lg="5">
             <MDBView className="rounded z-depth-2 mb-lg-0 mb-4" hover waves>

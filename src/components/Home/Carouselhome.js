@@ -2,11 +2,11 @@ import React from 'react';
 import { HashLink } from 'react-router-hash-link';
 import { MDBCarousel, MDBCarouselCaption, MDBCarouselInner, MDBCarouselItem, MDBView, MDBMask, MDBContainer } from 'mdbreact';
 
-import Photo1 from '../../img/photos atout branches/laser game.jpeg';
-import Photo2 from '../../img/photos atout branches/parcours.jpg';
-import Photo3 from '../../img/photos atout branches/parcours2.JPG';
-import Photo4 from '../../img/photos atout branches/escalade.jpeg';
-import Photo6 from '../../img/photos atout branches/tyro.jpg';
+import Photo1 from '../../img/6.jpeg';
+import Photo2 from '../../img/7.jpeg';
+import Photo3 from '../../img/8.jpeg';
+import Photo4 from '../../img/9.jpeg';
+import Photo6 from '../../img/10.jpeg';
 
 import './Carousel.css';
 import './Carouselhome.css';
@@ -16,7 +16,7 @@ const CarouselPage = () => {
     <div className="block-caroussel">
       <MDBContainer className="carousel">
         <h2 className="title-carousel-home">Nos activites</h2>
-        <h3 className="home-subtitle">Garantie 100% FUN</h3>
+        <h3 className="home-subtitle-carousel">Garantie 100% FUN</h3>
         <MDBCarousel
         activeItem={1}
         length={5}
@@ -33,7 +33,7 @@ const CarouselPage = () => {
                 src={Photo1}
                 alt="First slide"
               />
-            <MDBMask overlay="black-strong" />
+            <MDBMask overlay="light" />
             </MDBView>
             <MDBCarouselCaption>
               <h3 className="h3-responsive">Parcours acrobatiques</h3>
@@ -48,7 +48,7 @@ const CarouselPage = () => {
                 src={Photo2}
                 alt="Second slide"
               />
-            <MDBMask overlay="black-strong" />
+            <MDBMask overlay="light" />
             </MDBView>
             <MDBCarouselCaption>
               <h3 className="h3-responsive">Escape Game</h3>
@@ -63,7 +63,7 @@ const CarouselPage = () => {
                 src={Photo3}
                 alt="Third slide"
               />
-            <MDBMask overlay="black-strong" />
+            <MDBMask overlay="light" />
             </MDBView>
             <MDBCarouselCaption>
               <h3 className="h3-responsive">Parcours d’énigmes</h3>
@@ -78,7 +78,7 @@ const CarouselPage = () => {
                 src={Photo4}
                 alt="Third slide"
               />
-            <MDBMask overlay="black-strong" />
+            <MDBMask overlay="light" />
             </MDBView>
             <MDBCarouselCaption>
               <h3 className="h3-responsive">Chasse au trésor</h3>
@@ -93,7 +93,7 @@ const CarouselPage = () => {
                 src={Photo6}
                 alt="Third slide"
               />
-            <MDBMask overlay="black-strong" />
+            <MDBMask overlay="light" />
             </MDBView>
             <MDBCarouselCaption>
               <h3 className="h3-responsive">Laser Game</h3>

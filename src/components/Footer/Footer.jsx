@@ -1,12 +1,14 @@
-
 import React from 'react';
 import { HashLink } from 'react-router-hash-link';
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from 'mdbreact';
+import plan from './img/plan.pdf';
+import MentionsLegales from '../MentionsLegales/MentionsLegales';
 
 import './Footer.css';
 
 const Footer = () => {
   return (
+    <div>
     <MDBFooter color="unique-color-dark" className="page-footer font-small pt-0 test-background">
       <div style={{ backgroundColor: '#545454' }}>
         <MDBContainer fluid className="text-center text-md-left">
@@ -37,8 +39,6 @@ const Footer = () => {
             <p>
             Atout Branches est un parc d’activités de loisirs ludo sportives situé à Milly la Forêt au cœur du Parc Naturel Régional du Gâtinais Français, véritable poumon vert au sud de l’Ile-de-France.<br/>
 Nous accueillons petits et grands pour une journée inoubliables sur les thèmes sports, nature, sensations et réflexions.<br/>
-Venez-vous ressourcer dans ce cadre magnifique et réveiller vos sens, les activités que nous vous proposons sont imaginés de manière à s’adapter à tout le monde et dans le respect de la nature et de notre eco system.<br/>
-Une buvette, aires de repos et pique-nique et un chalet sanitaire sont à votre disposition.
             </p>
           </MDBCol>
           <MDBCol md="2" lg="2" xl="2" className="mb-4">
@@ -46,9 +46,9 @@ Une buvette, aires de repos et pique-nique et un chalet sanitaire sont à votre 
               <strong><a href="/Parc">Le parc</a></strong>
             </h6>
             <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style={{ width: '60px' }} />
-            <p>
-              <a href="/buvette">Tarifs Buvette</a>
-            </p>
+            <HashLink to="/Parc#ancre-buvette">
+              <p>Notre buvette</p>
+            </HashLink>
             <p>
               <a href="#">Evénements</a>
             </p>
@@ -70,9 +70,9 @@ Une buvette, aires de repos et pique-nique et un chalet sanitaire sont à votre 
             <HashLink to="/nous-trouver#ancre-plan-acces-park">
               <p>Où nous trouver ?</p>
             </HashLink>
-            <HashLink to="/Parc#ancre-plan">
-              <p>Plan du parc</p>
-            </HashLink>
+            <p>
+              <a href={plan} target="blank">Plan du parc</a>
+            </p>
             <HashLink to="/Horaires#ancre-calendrier">
               <p>Calendrier et horaires</p>
             </HashLink>
@@ -98,14 +98,9 @@ Une buvette, aires de repos et pique-nique et un chalet sanitaire sont à votre 
           </MDBCol>
         </MDBRow>
       </MDBContainer>
-      <div className="footer-copyright text-center py-3" id="hide-background-color">
-        <MDBContainer fluid>
-          <p>
-            <a href="/Mentions">Mentions légales</a> - <a href="/Politique">Politique de confidentialité</a>
-          </p>
-        </MDBContainer>
-      </div>
     </MDBFooter>
+    <MentionsLegales />
+    </div>
   );
 };
 

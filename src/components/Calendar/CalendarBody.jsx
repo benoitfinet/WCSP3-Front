@@ -1,7 +1,7 @@
 import React from 'react';
 import './CalendarPage.css';
 import Navbar from '../Nav/Navbar';
-import PhotoBanner from '../Nav/img/background-activite.jpg';
+import PhotoBanner from '../Nav/img/9.jpeg';
 import Saison2021 from './CalendarPic/saison_2021.jpg';
 
 function CalendarBody () {

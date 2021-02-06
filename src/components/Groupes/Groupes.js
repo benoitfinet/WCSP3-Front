@@ -4,8 +4,9 @@ import Groupesselect from './Groupesselect';
 import Footer from '../Footer/Footer';
 import PropTypes from 'prop-types';
 import Navbar from '../Nav/Navbar';
-import PhotoBanner from '../Nav/img/backgroundparcours.jpg';
+import PhotoBanner from '../Nav/img/13.jpeg';
 
+import carteAnniversaire from './img/carte-anniversaire.pdf';
 import Photo1 from '../../img/photos atout branches/laser game.jpeg';
 import Photo2 from '../../img/photos atout branches/parcours.jpg';
 import Photo3 from '../../img/photos atout branches/parcours2.JPG';
@@ -41,32 +42,21 @@ const Anniversaires = () =>
       <div className="trait"></div>
       <div className="rond_bleu"></div>
     </div>
-    <div className="textback">
-      <p className="textactivites">Vous bénéficiez: <br></br><br></br>
-        D’une réservation pour un minimum de 6 enfants et d’une prise en charge de votre groupe dès votre arrivée.
-        D’une table privatisée qui vous est réservée pour une durée de 3h pour organiser l’anniversaire.
-        Une prise en charge du groupe de l’accueil jusqu’à la fin du parcours d’initiation.
-        Le groupe peut alors s’élancer sur les parcours dans les arbres pendant environ 1h30 - 2h.
-        D’un carton d'invitation à remettre à vos amis. Ce carton vous permet de préciser la date, l’adresse et les consignes liées à notre activité.
-        Une entrée est offerte pour un adulte (un parent ou un ami) pour chacune des formules.
-        D’une entrée à 50% pour l’enfant qui a fêté son anniversaire et qui reviendra dans l’année.
-        <br></br><br></br>
-        Formule avec goûter : <br></br><br></br> Tarifs normale de l’entrée plus un supplément de 6 € par enfant dès 6 enfants et de 5 € par enfants dès 10 enfants.
-        Table réservé, gâteau au chocolat, bougies et fontaine, boissons au choix à confirmer sur place, un cornet de bonbons par enfant et tout le nécessaire au goûter + en cadeau, une entrée à tarif réduit de 50 % pour l’enfant qui a fêté son anniversaire et qui reviendra dans l’année.
-        <br></br><br></br>
-        Formule sans goûter : <br></br><br></br> Tarifs normale de l’entrée plus un supplément de 10 € table réservé + en cadeau, une entrée à tarif réduit de 50 % pour l’enfant qui a fêté son anniversaire et qui reviendra dans l’année.
-        vous êtes libre d’apporter ce que vous souhaitez.
-        <br></br><br></br>
-        Vous pouvez privatiser avec une supplément votre terrasse aérienne.
-        <br></br><br></br>
-        Pour réserver, rien de plus simple :
-        Allez sur l'onglet "billetterie en ligne "acompte anniversaire".
-        Votre réservation se fera directement en ligne en choisissant votre créneau.
-        Pour le paiement de l'acompte, merci de régler directement via la plateforme de paiement en ligne à la suite de votre réservation (70€).
-        Le reste dû sera à payer sur le parc le jour de votre sortie (montant calculé sur le nombre d'enfants réellement présents le jour de l'anniversaire avec un minimum de 6 enfants).
+    <div className="block-img-para">
+      <img alt="photo" className="photoactivite" src={Photo2}></img>
+      <div className="block-text-bouton">
+      <p className="textactivites"><span id="services-anniversaire">Vous bénéficiez:</span><br></br><br></br>
+      D’une réservation pour un minimum de 6 enfants et d’une prise en charge de votre groupe dès votre arrivée.<br/><br/>
+      D’une table privatisée qui vous est réservée pour une durée de 3h pour organiser l’anniversaire.<br/><br/>
+      Le groupe peut alors s’élancer sur les parcours dans les arbres pendant environ 1h30 - 2h.<br/><br/>
+      D’un carton d'invitation à remettre à vos amis. Ce carton vous permet de préciser la date, l’adresse et les consignes liées à notre activité. (obtenez votre <a href={carteAnniversaire} target="blank">carte d'invitation</a> !)<br/><br/>
+      Une entrée est offerte pour un adulte (un parent ou un ami) pour chacune des formules.<br/><br/>
+      D’une entrée à prix réduit de 50% pour l’enfant qui a fêté son anniversaire et qui reviendra dans l’année.<br/>
+      Pour encore plus de sensations, vous pouvez privatiser avec un supplément votre terrasse aérienne.
       </p>
+      <button className="button"><a href="/Reservation" className="parc-link">Réservation</a></button>
+      </div>
     </div>
-    <img alt="photo" className="photoactivite" src={Photo2}></img>
   </div>;
 
 const CentreLoisir = () =>

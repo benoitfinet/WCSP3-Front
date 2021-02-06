@@ -1,10 +1,14 @@
 import Footer from '../Footer/Footer';
+import Navbar from '../Nav/Navbar';
+import ImgBanner from './img/IMAGE_2.jpg';
 
 import './RulesPages.css';
 
 function Mentions () {
   return (
     <div>
+      <div id="ancre-mentions"></div>
+      <Navbar imgbanner={ImgBanner} textbanner="Mentions légales" />
         <div className="pagesBody">
             <div className="pagesContent">
 <br></br><br></br>

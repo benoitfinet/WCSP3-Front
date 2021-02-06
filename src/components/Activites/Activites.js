@@ -10,7 +10,7 @@ import Photo4 from '../../img/photos atout branches/escalade.jpeg';
 import Photo5 from '../../img/photos atout branches/team.JPG';
 import Photo6 from '../../img/photos atout branches/tyro.jpg';
 import Navbar from '../Nav/Navbar';
-import PhotoBanner from '../Nav/img/background-activite.jpg';
+import PhotoBanner from '../Nav/img/6.jpeg';
 
 import './Activites.css';
 
@@ -221,15 +221,15 @@ class Activites extends Component {
       <div>
         <Navbar imgbanner={PhotoBanner} textbanner="Activités" />
         <div id="ancre"></div>
-        <div className="Activites">
-          <div className="Activitespadding">
-          <Activiteselect
-            active={this.state.activeId}
-            handleChangeTab={this.handleChangeTab}
-          />
-          <div className="Activites-content">{this.getTabContent()}</div>
-          </div>
-        </div>
+         <div className="background-tree">
+            <Activiteselect
+              active={this.state.activeId}
+              handleChangeTab={this.handleChangeTab}
+            />
+            <div className="activite-contenu">
+              <div className="Activites-content">{this.getTabContent()}</div>
+            </div>
+         </div>
         <Footer />
       </div>
     );

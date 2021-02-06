@@ -1,0 +1,14 @@
+.background-color {
+  background-color: rgb(53, 55, 70);
+}
+
+.background-color a {
+  color: white;
+  text-decoration: none;
+  margin: 0;
+}
+
+.background-color a p {
+  margin: 0;
+  padding: 5px;
+}

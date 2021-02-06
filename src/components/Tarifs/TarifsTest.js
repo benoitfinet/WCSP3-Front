@@ -4,7 +4,7 @@ import TarifsSelect from './TarifsSelect';
 import Footer from '../Footer/Footer';
 import PropTypes from 'prop-types';
 import Navbar from '../Nav/Navbar';
-import PhotoBanner from '../Nav/img/backgroundtarifs.jpg';
+import PhotoBanner from '../Nav/img/10.jpeg';
 
 import './Tarifs.css';
 

@@ -25,7 +25,7 @@ const TestEvenementSection = () => {
                 Évenement
               </h3>
             </a>
-            <h4 className="font-weight-bold mb-3 p-0 subtitle-event">
+            <h4 className="font-weight-bold mb-3 p-0 subtitle-event" id="titre-evenement">
               <strong>Nocturne</strong>
             </h4>
             <p className="home-evenement-para">

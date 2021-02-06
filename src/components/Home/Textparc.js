@@ -11,6 +11,10 @@ function Textparc () {
               Nous accueillons petits et grands pour une journée inoubliables sur les thèmes sports, nature, sensations et réflexions.<br/>
               Venez-vous ressourcer dans ce cadre magnifique et réveiller vos sens, les activités que nous vous proposons sont imaginés de manière à s’adapter à tout le monde et dans le respect de la nature et de notre eco system.<br/>
               Une buvette, aires de repos et pique-nique et un chalet sanitaire sont à votre disposition.</p>
+            <div className="block-ouverture">
+              <h3>Nouveau propriétaire !</h3>
+              <h4> Ouverture du parc saison 2021 le samedi 17 avril </h4>
+            </div>
             <button className="button"><a href="/Parc" className="parc-link">Découvrir le parc</a></button>
         </div>
   );

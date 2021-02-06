@@ -1,10 +1,14 @@
 import Footer from '../Footer/Footer';
+import Navbar from '../Nav/Navbar';
+import ImgBanner from './img/IMAGE_4.jpg';
 
 import './RulesPages.css';
 
 function Politique () {
   return (
     <div>
+       <div id="ancre-politique"></div>
+      <Navbar imgbanner={ImgBanner} textbanner="Politique de confidentialité" />
         <div className="pagesBody">
             <div className="pagesContent">
             <br></br>Bienvenue sur la page de la politique de confidentialité d’ Atout Branches qui respecte votre vie privée et s’engage à protéger vos données personnelles.<br></br>

@@ -7,10 +7,16 @@
   margin: auto;
 }
 
+.home-subtitle-carousel {
+  margin-bottom: 2%;
+  color: white;
+  font-family: 'Boogaloo', cursive;
+}
+
 .block-caroussel {
   padding-top: 4.5%;
   padding-bottom: 11%;
-  background-color: #3b735c;
+  background-color: #4fa582;
 }
 
 .title-carousel-home {
@@ -42,7 +48,7 @@
 }
 
 .h3-responsive {
-  font-size: 4rem!important;
+  font-size: 2rem!important;
 }
 
 .button-carousel-home {
