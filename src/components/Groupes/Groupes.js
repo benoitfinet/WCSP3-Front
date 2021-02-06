@@ -7,12 +7,12 @@ import Navbar from '../Nav/Navbar';
 import PhotoBanner from '../Nav/img/13.jpeg';
 
 import carteAnniversaire from './img/carte-anniversaire.pdf';
-import Photo1 from '../../img/photos atout branches/laser game.jpeg';
-import Photo2 from '../../img/photos atout branches/parcours.jpg';
-import Photo3 from '../../img/photos atout branches/parcours2.JPG';
-import Photo4 from '../../img/photos atout branches/escalade.jpeg';
-import Photo5 from '../../img/photos atout branches/team.JPG';
-import Photo6 from '../../img/photos atout branches/tyro.jpg';
+import Photo1 from '../../img/9.jpeg';
+import Photo2 from '../../img/10.jpeg';
+import Photo3 from '../../img/11.jpeg';
+import Photo4 from '../../img/12.jpeg';
+import Photo5 from '../../img/13.jpeg';
+import Photo6 from '../../img/14.jpeg';
 
 import './Groupes.css';
 
