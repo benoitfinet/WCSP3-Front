@@ -2,7 +2,6 @@ import Footer from '../Footer/Footer';
 import Navbar from '../Nav/Navbar';
 import PhotoBanner from '../Nav/img/IMAGE_2.jpg';
 
-import './Reglement.css';
 import './RulesPages.css';
 
 function Reglement () {

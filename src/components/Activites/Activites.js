@@ -76,7 +76,7 @@ const ParcoursAcrobatiques = () =>
       </div>
       <div className="card-activite">
         <img alt="photo" className="photo-card" src={Photo3}></img>
-        <h3 className="parcour-titre">Parcours ROUGE n° 1 et n° 2 (NOUVEAUTE 2021)</h3>
+        <h3 className="parcour-titre">Parcours ROUGE</h3>
         <p>De 4 à 11 mètres de haut, des sensations garanties avec la diversité des passages aériens. Un raccourci au milieu vous laissera le choix entre le circuit long ou court.<br/><br/>Taille requise : 1m40.</p>
       </div>
       <div className="card-activite">
@@ -93,11 +93,6 @@ const ParcoursAcrobatiques = () =>
         <img alt="photo" className="photo-card" src={Photo1}></img>
         <h3 className="parcour-titre">Parcours EBENE</h3>
         <p>Circuit court mais qui vous demandera beaucoup de force dans les bras. Encore des émotions pour finir avec un saut de tarzan impressionnant.<br/><br/>Taille requise : 1m60<br/>Accessible à partir de 15 ans.</p>
-      </div>
-      <div className="card-activite">
-        <img alt="photo" className="photo-card" src={Photo2}></img>
-        <h3 className="parcour-titre">VERTIJUMP</h3>
-        <p>Une attraction indépendante du parcours. Vous montez à 12 mètres pour un saut avec une chute libre de plusieurs mètres. Oserez sauter ?</p>
       </div>
       <div className="card-activite">
         <img alt="photo" className="photo-card" src={Photo3}></img>
@@ -133,9 +128,9 @@ const ParcoursEnigmes = () =>
     <div className="block-img-para">
       <img alt="photo" className="photoactivite" src={Photo3}></img>
       <div className="block-text-bouton">
-        <p className="textactivites">Testez vos capacités d'orientation et votre perspicacité avec les parcours d'énigmes
+        <p className="textactivites">Testez vos capacités d'orientation et votre perspicacité avec les 3 parcours d'énigmes que nous vous proposons. (Touristique - Expolrateurs - Reflexions).
           Un livret de jeu vous donne toutes les instructions pour parcourir la forêt en résolvant les énigmes.
-          Idéal pour jouer en groupes jusqu'à 5 personnes par groupe
+          Idéal pour jouer en groupes jusqu'à 5 personnes par groupe.<br/>
           Très apprécié pour les anniversaires.
         </p>
         <button className="button"><a href="/Reservation" className="parc-link">Réservation</a></button>
@@ -154,6 +149,7 @@ const ChasseTresor = () =>
       <img alt="photo" className="photoactivite" src={Photo4}></img>
       <div className="block-text-bouton">
         <p className="textactivites">La chasse au trésor qui fait appel votre maitrise de l'orientation.
+          Nous vous proposons deux chasses au trésor.
           Retrouvez les coffres forts cachés dans le parc pour reconstituer la clé du mystère.
           Idéal pour jouer en groupes pour compléter les anniversaires par exemple.
           Nous mettons un coffre à votre disposition si vous souhaitez prévoir des récompenses pour les participants
@@ -178,6 +174,24 @@ const LaserGame = () =>
       </div>
     </div>
   </div>;
+
+const ChasseAuMot = () =>
+<div>
+  <h1 className="h1activite">Chasse au mot</h1>
+  <div className="trait_et_rond">
+    <div className="trait"></div>
+    <div className="rond_bleu"></div>
+  </div>
+  <div className="block-img-para">
+    <img alt="photo" className="photoactivite" src={Photo3}></img>
+    <div className="block-text-bouton">
+      <p className="textactivites">Muni d'une carte, les enfants accompagné d'un adulte devront utiliser leur sens de l'orientation afin de rechercher dans le parc les endroits ou sont cachées des lettres afin de reconstituer un mots.
+Nous vous proposons deux chasses au mot.
+      </p>
+      <button className="button"><a href="/Reservation" className="parc-link">Réservation</a></button>
+    </div>
+  </div>
+</div>;
 
 const Error = () => (
   <p>
@@ -211,6 +225,8 @@ class Activites extends Component {
         return <ChasseTresor />;
       case 'laser-game':
         return <LaserGame />;
+      case 'chasse-mot':
+        return <ChasseAuMot />;
       default:
         return <Error />;
     }

@@ -84,8 +84,11 @@ const TeamBuilding = () =>
       <div className="trait"></div>
       <div className="rond_bleu"></div>
     </div>
-    <div className="block-img-para">
-      <img alt="photo" className="photoactivite" src={Photo4}></img>
+    <div className="block-img-para-teambuilding">
+      <div className="block-img-teambuilding">
+        <img alt="photo" className="photoactivite" src={Photo1}></img>
+        <img alt="photo" className="photoactivite" src={Photo4}></img>
+      </div>
       <div className="block-text-bouton">
         <p className="textactivites">Nous accueillons les Petites et Moyennes Entreprises pour une journée team-building ou séminaire en semaines.<br></br><br></br>
           Face aux succès et à la demande importante de la part des entreprises, de nombreuses variantes sont venues compléter les possibilités d’animations Team-building ou de séminaire.<br></br><br></br>

@@ -33,6 +33,11 @@ class Activiteselect extends Component {
         >
           Laser Game
         </Link>
+        <Link to="/Activites/chasse-mot" id="chasse-mot" className={this.props.active === 'chasse-mot' ? 'Gpe-active' : 'unActive'}
+        onClick={this.props.handleChangeTab}
+        >
+          Chasse au mot
+        </Link>
       </div>
     );
   }

@@ -19,7 +19,7 @@ const CarouselPage = () => {
         <h3 className="home-subtitle-carousel">Garantie 100% FUN</h3>
         <MDBCarousel
         activeItem={1}
-        length={5}
+        length={6}
         showControls={true}
         showIndicators={true}
         className="z-depth-1"
@@ -97,6 +97,21 @@ const CarouselPage = () => {
             </MDBView>
             <MDBCarouselCaption>
               <h3 className="h3-responsive">Laser Game</h3>
+            </MDBCarouselCaption>
+            </HashLink>
+          </MDBCarouselItem>
+          <MDBCarouselItem itemId="6">
+          <HashLink to="/Activites/chasse-mot#ancre">
+            <MDBView>
+              <img
+                className="d-block w-100"
+                src={Photo6}
+                alt="Third slide"
+              />
+            <MDBMask overlay="light" />
+            </MDBView>
+            <MDBCarouselCaption>
+              <h3 className="h3-responsive">Chasse au mot</h3>
             </MDBCarouselCaption>
             </HashLink>
           </MDBCarouselItem>

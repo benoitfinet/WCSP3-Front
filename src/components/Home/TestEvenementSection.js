@@ -29,7 +29,7 @@ const TestEvenementSection = () => {
               <strong>Nocturne</strong>
             </h4>
             <p className="home-evenement-para">
-                Atout branches propose des mois de Mai à Septembre une soirée nocturne tous les premiers samedi du mois et à partir de 6 ans.
+                Atout branches propose des mois de Mai à Septembre une soirée nocturne tous les premiers samedi du mois et à partir de 10 ans.
                 Réservation obligatoire, places limitées.<br/><br/>
                 Fête des mères et fête de pères. 50% sur le prix de l’entrée pour le parent pratiquant sous condition de venir en famille de trois personnes minimum.<br/><br/> Privatisation du parc ou pour toutes demandes particulières, contactez-nous : contact@atoutbranches.com
             </p>
