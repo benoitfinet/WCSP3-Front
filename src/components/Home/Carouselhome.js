@@ -2,8 +2,6 @@ import React from 'react';
 import { HashLink } from 'react-router-hash-link';
 import { MDBCarousel, MDBCarouselCaption, MDBCarouselInner, MDBCarouselItem, MDBView, MDBMask, MDBContainer } from 'mdbreact';
 
-import Photo6 from '../../img/10.jpeg';
-
 import './Carousel.css';
 import './Carouselhome.css';
 
@@ -122,13 +120,13 @@ class CarouselPage extends React.Component {
             <MDBView>
               <img
                 className="d-block w-100"
-                src={Photo6}
+                src={homes.length !== 0 && homes[12].subtext}
                 alt="Third slide"
               />
             <MDBMask overlay="light" />
             </MDBView>
             <MDBCarouselCaption>
-              <h3 className="h3-responsive">Chasse au mot</h3>
+              <h3 className="h3-responsive">{homes.length !== 0 && homes[12].subtitle}</h3>
             </MDBCarouselCaption>
             </HashLink>
           </MDBCarouselItem>

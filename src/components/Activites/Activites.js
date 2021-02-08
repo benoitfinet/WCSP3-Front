@@ -5,7 +5,7 @@ import Footer from '../Footer/Footer';
 import Parcours from './Parcours';
 import Escape from './EscapeGame';
 import PropTypes from 'prop-types';
-import Photo3 from '../../img/11.jpeg';
+import Chasse from './Escalade';
 import Navbar from '../Nav/Navbar';
 
 import './Activites.css';
@@ -14,6 +14,7 @@ import Tresors from './Tresors';
 import LaserGames from './LaserGame';
 
 const ParcoursAcrobatiques = () => <Parcours />;
+
 const EscapeGame = () => <Escape />;
 
 const ParcoursEnigmes = () => <Enigmes />;
@@ -22,23 +23,7 @@ const ChasseTresor = () => <Tresors />;
 
 const LaserGame = () => <LaserGames />;
 
-const ChasseAuMot = () =>
-<div>
-  <h1 className="h1activite">Chasse au mot</h1>
-  <div className="trait_et_rond">
-    <div className="trait"></div>
-    <div className="rond_bleu"></div>
-  </div>
-  <div className="block-img-para">
-    <img alt="photo" className="photoactivite" src={Photo3}></img>
-    <div className="block-text-bouton">
-      <p className="textactivites">Muni d'une carte, les enfants accompagné d'un adulte devront utiliser leur sens de l'orientation afin de rechercher dans le parc les endroits ou sont cachées des lettres afin de reconstituer un mots.
-Nous vous proposons deux chasses au mot.
-      </p>
-      <button className="button"><a href="/Reservation" className="parc-link">Réservation</a></button>
-    </div>
-  </div>
-</div>;
+const ChasseAuMot = () => <Chasse />;
 
 const Error = () => (
   <p>

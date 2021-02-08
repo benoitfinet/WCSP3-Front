@@ -24,9 +24,12 @@ class Tresors extends Component {
       return (
         <div>
     <h1 className="h1activite">{groupes.length !== 0 && groupes[1].title}</h1>
+    <h2>{groupes.length !== 0 && groupes[6].text}</h2>
     <div className="textback">
       <p className="textactivites">{groupes.length !== 0 && groupes[1].text}
-      </p>
+      </p><br></br>
+      <p>{groupes.length !== 0 && groupes[6].image} <a href={groupes.length !== 0 && groupes[1].image} target="blank">{groupes.length !== 0 && groupes[7].image}</a></p>
+      <p>{groupes.length !== 0 && groupes[7].text}</p>
     </div>
     <img alt="photo" className="photoactivite" src={groupes.length !== 0 && groupes[1].image}></img>
   </div>

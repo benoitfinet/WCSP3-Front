@@ -47,20 +47,6 @@ class Map extends Component {
         </p>
       </div>
     </div>
-    <div className="map-layout">
-      <div className="textback">
-        <h2 className="titles">{findus.length !== 0 && findus[2].title}</h2>
-        <p className="text-map">{findus.length !== 0 && findus[2].text}
-        </p>
-      </div>
-    </div>
-    <div className="map-layout">
-      <div className="textback">
-      <h2 className="titles">{findus.length !== 0 && findus[3].title}</h2>
-      <p className="text-map">{findus.length !== 0 && findus[3].text}
-      </p>
-  </div>
-  </div>
   </div>
   </div>
   <Footer />
