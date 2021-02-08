@@ -16,7 +16,7 @@ class CarouselEvent extends React.Component {
   };
 
   getInfo = () => {
-    fetch('http://localhost:5000/home')
+    fetch('http://localhost:5000/home/')
       .then((res) => res.json())
       .then((data) => {
         this.setState({

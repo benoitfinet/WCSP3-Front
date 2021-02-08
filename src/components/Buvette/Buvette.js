@@ -6,7 +6,26 @@ import PhotoBanner from '../Nav/img/background-activite.jpg';
 import './Buvette.css';
 
 class Buvette extends React.Component {
+  state = {
+    infos: []
+  };
+
+  getInfo = () => {
+    fetch('http://localhost:5000/info/')
+      .then((res) => res.json())
+      .then((data) => {
+        this.setState({
+          infos: data
+        });
+      });
+  };
+
+  componentDidMount () {
+    this.getInfo();
+  }
+
   render () {
+    const { infos } = this.state;
     return (
       <div>
          <Navbar imgbanner={PhotoBanner} textbanner="Notre buvette" />
@@ -14,10 +33,8 @@ class Buvette extends React.Component {
           <div className="Activitespadding">
             <div className="Activites-content">
               <div className="block-img-text">
-                <img src={PhotoBanner} className="img-buvette" alt=""/>
-                <p className="para-buvette">Après l'effort, le réconfort. Vous avez besoin de recharger les batteries.<br/>
-                  Situé au cœur du parc, notre espace buvette et snacking ombragé n’est pas seulement réservé qu’aux pratiquants des activités. Nous vous attendrons avec plaisir pour une petite pause gourmande au niveau du chalet d’accueil/buvette.<br/>
-                  Des aires de pique-nique avec des tables et bancs sont à votre disposition gratuitement.
+                <img src={infos.length !== 0 && infos[11].image} className="img-buvette" alt=""/>
+                <p className="para-buvette">{infos.length !== 0 && infos[11].subtitle}
                 </p>
               </div>
             </div>

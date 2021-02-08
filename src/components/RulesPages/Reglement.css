@@ -32,6 +32,7 @@ table th {
   color: #0e0e0ead;
   font-family: 'Boogaloo', cursive;
   font-weight: lighter;
+  white-space: pre-line;
 }
 
 span {
@@ -46,3 +47,7 @@ span {
   text-transform: uppercase;
 }
 
+.imageinfos {
+  width: 80%;
+  height: auto;
+}
