@@ -1,7 +1,8 @@
-
 import React from 'react';
 import { HashLink } from 'react-router-hash-link';
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from 'mdbreact';
+import plan from './img/plan.pdf';
+import MentionsLegales from '../MentionsLegales/MentionsLegales';
 
 import './Footer.css';
 
@@ -27,6 +28,7 @@ class Footer extends React.Component {
     render () {
       const { info } = this.state;
       return (
+        <div>
     <MDBFooter color="unique-color-dark" className="page-footer font-small pt-0 test-background">
       <div style={{ backgroundColor: '#545454' }}>
         <MDBContainer fluid className="text-center text-md-left">
@@ -63,9 +65,9 @@ class Footer extends React.Component {
               <strong><a href="/Parc">Le parc</a></strong>
             </h6>
             <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style={{ width: '60px' }} />
-            <p>
-              <a href="/buvette">Tarifs Buvette</a>
-            </p>
+            <HashLink to="/Parc#ancre-buvette">
+              <p>Notre buvette</p>
+            </HashLink>
             <p>
               <a href="#">Evénements</a>
             </p>
@@ -87,9 +89,9 @@ class Footer extends React.Component {
             <HashLink to="/nous-trouver#ancre-plan-acces-park">
               <p>Où nous trouver ?</p>
             </HashLink>
-            <HashLink to="/Parc#ancre-plan">
-              <p>Plan du parc</p>
-            </HashLink>
+            <p>
+              <a href={plan} target="blank">Plan du parc</a>
+            </p>
             <HashLink to="/Horaires#ancre-calendrier">
               <p>Calendrier et horaires</p>
             </HashLink>
@@ -115,14 +117,9 @@ class Footer extends React.Component {
           </MDBCol>
         </MDBRow>
       </MDBContainer>
-      <div className="footer-copyright text-center py-3" id="hide-background-color">
-        <MDBContainer fluid>
-          <p>
-            <a href="/Mentions">Mentions légales</a> - <a href="/Politique">Politique de confidentialité</a>
-          </p>
-        </MDBContainer>
-      </div>
     </MDBFooter>
+    <MentionsLegales />
+    </div>
       );
     }
 }

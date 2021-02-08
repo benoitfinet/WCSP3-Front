@@ -2,9 +2,8 @@ import React from 'react';
 
 import Footer from '../Footer/Footer';
 import Navbar from '../Nav/Navbar';
-import PhotoBanner from '../Nav/img/background-activite.jpg';
+import PhotoBanner from '../Nav/img/IMAGE_2.jpg';
 
-import './Reglement.css';
 import './RulesPages.css';
 
 class Reglement extends React.Component {

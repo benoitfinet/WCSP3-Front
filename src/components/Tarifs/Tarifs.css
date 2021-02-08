@@ -24,7 +24,7 @@ table {
   font-size: 20px;
   width: 80%;
   margin: auto;
-  color: #0e0e0ead;
+  color: #344454;
   font-family: 'Boogaloo', cursive;
 }
 
@@ -41,7 +41,7 @@ table {
 .title-tarif {
   font-family: 'Luckiest Guy', cursive;
   font-size: 50px;
-  color: #5f8e61;
+  color: #4fa582;
   padding-top: 3%;
   padding-bottom: 3%;
 }
@@ -70,7 +70,7 @@ table td {
   font-size: 20px;
     width: 80%;
     margin: auto;
-    color: #0e0e0ead;
+    color: #344454;
     font-family: 'Boogaloo', cursive;
 }
 

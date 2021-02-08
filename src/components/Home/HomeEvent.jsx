@@ -43,7 +43,6 @@ class BlogPage extends React.Component {
             <p className="home-event-para">
             {homes.length !== 0 && homes[3].text}
             </p>
-            <button className="button">En savoir plus</button>
           </MDBCol>
           <MDBCol lg="5">
             <MDBView className="rounded z-depth-2 mb-lg-0 mb-4" hover waves>

@@ -2,6 +2,24 @@
   font-family: 'Francois One', sans-serif;
 }
 
+.block-img-text-buvette {
+  display: flex;
+}
+
+.text-parc-buvette {
+  width: 40%;
+  padding: 2%;
+  margin: auto;
+  color: #344454;
+  font-family: 'Boogaloo', cursive;
+}
+
+.img-buvette {
+  width: 40%;
+  margin: auto;
+  padding: 2%;
+}
+
 #ancre-engagement {
   position: relative;
   top: -170px;
@@ -25,11 +43,16 @@
   padding: 10px;
 }
 
+#ancre-buvette {
+  position: relative;
+  top: -170px;
+}
+
 .text-parc {
   font-size: 20px;
     width: 80%;
     margin: auto;
-    color: #0e0e0e80;
+    color: #344454;
     font-family: 'Boogaloo', cursive;
     padding-top: 2%;
 }

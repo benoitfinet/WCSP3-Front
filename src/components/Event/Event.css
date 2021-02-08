@@ -3,6 +3,34 @@
     text-align: center;
   }
   
+.card-event {
+  display: flex;
+  padding-bottom: 2%;
+}
+
+.photo-card-event {
+  width: 40%;
+  padding: 2%;
+  margin: auto;
+}
+
+.title-event-page {
+  margin-bottom: 2%;
+  color: #ca9669;
+  font-family: 'Boogaloo', cursive;
+}
+
+.para-event-page {
+  color: #344454;
+  font-family: 'Boogaloo', cursive;
+}
+
+.block-title-para-event {
+  width: 40%;
+  padding: 2%;
+  margin: auto;
+}
+
   .Activites{
     background-size: 100%;
     padding: 0;
@@ -24,9 +52,12 @@
   }
   
   .h1activite{
-    padding: 3% 0;
-    font-size: 4rem;
-    color: #344454;
+    font-family: "Luckiest Guy",cursive;
+    color: #4fa582;
+    padding-top: 1%;
+    padding-bottom: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
     
   .Activiteselect button.active {

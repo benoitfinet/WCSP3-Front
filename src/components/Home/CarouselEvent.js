@@ -2,11 +2,11 @@ import React from 'react';
 import InfiniteCarousel from 'react-leaf-carousel';
 import PropTypes from 'prop-types';
 import { HashLink } from 'react-router-hash-link';
-import Photo1 from '../../img/photos atout branches/laser game.jpeg';
-import Photo3 from '../../img/photos atout branches/parcours2.JPG';
-import Photo4 from '../../img/photos atout branches/escalade.jpeg';
-import Photo5 from '../../img/photos atout branches/team.JPG';
-import Photo6 from '../../img/photos atout branches/tyro.jpg';
+import Photo1 from '../../img/6.jpeg';
+import Photo3 from '../../img/12.jpeg';
+import Photo4 from '../../img/13.jpeg';
+import Photo5 from '../../img/10.jpeg';
+import Photo6 from '../../img/9.jpeg';
 
 import './CarouselEvent.css';
 

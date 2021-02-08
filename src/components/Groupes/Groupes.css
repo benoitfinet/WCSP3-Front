@@ -56,16 +56,17 @@
   font-size: 20px;
   width: 80%;
   margin: auto;
-  color: #0e0e0ead;
+  color: #344454;
   font-family: 'Boogaloo', cursive;
 }
 
 .h1activite{
   font-family: 'Luckiest Guy', cursive;
-  font-size: 50px;
-  color: #5f8e61;
-  padding-top: 3%;
+  color: #4fa582;
+  padding-top: 1%;
   padding-bottom: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .photoactivite{
@@ -80,6 +81,33 @@
 .textactivites{
   margin: auto;
 }
+
+#services-anniversaire {
+  margin-bottom: 2%;
+  font-size: 25px;
+  color: #ca9669;
+  font-family: 'Boogaloo', cursive;
+}
+
+.carte-anniversaire {
+  background-color: #e0af5d;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 20px;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  position: relative;
+  bottom: -31px;
+  text-transform: uppercase;
+  font-family: 'Boogaloo', cursive;
+}
+
 
 @media screen and (max-width: 1280px) {
   .Activiteselect {
@@ -123,12 +151,5 @@
   }
   .textback{
     width: 240px
-  }
-}
-
-@media screen and (max-width: 1560px) {
-  .Activites{
-    background-image: none;
-    background-color: #f7f7f7;
   }
 }

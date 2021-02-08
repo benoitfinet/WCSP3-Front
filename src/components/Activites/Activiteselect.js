@@ -22,7 +22,7 @@ class Activiteselect extends Component {
         onClick={this.props.handleChangeTab}
         >
           Parcours d'énigmes
-        </Link>
+        </Link><br/>
         <Link to="/Activites/chasse-tresor" id="chasse-tresor" className={this.props.active === 'chasse-tresor' ? 'Gpe-active' : 'unActive'}
         onClick={this.props.handleChangeTab}
         >
@@ -32,6 +32,11 @@ class Activiteselect extends Component {
         onClick={this.props.handleChangeTab}
         >
           Laser Game
+        </Link>
+        <Link to="/Activites/chasse-mot" id="chasse-mot" className={this.props.active === 'chasse-mot' ? 'Gpe-active' : 'unActive'}
+        onClick={this.props.handleChangeTab}
+        >
+          Chasse au mot
         </Link>
       </div>
     );

@@ -22,10 +22,16 @@
     font-size: 20px;
 }
 
+#titre-evenement {
+  margin-bottom: 2%;
+    color: white;
+    font-family: 'Boogaloo', cursive;
+}
+
 .title-event {
   font-size: 50px;
   font-family: 'Luckiest Guy', cursive!important;
-  color: #3b735c;
+  color: #4fa582;
 }
 
 .subtitle-event {
@@ -35,7 +41,7 @@
 }
 
 #block-evenement {
-  background-color: #3b735c;
+  background-color: #4fa582;
   margin-top: 0!important;
   padding-top: 4%;
   position: initial;

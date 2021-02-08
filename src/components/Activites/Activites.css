@@ -9,7 +9,7 @@
 }
 
 .container {
-  margin: 0;
+  margin: auto;
 }
 
 .first-block-img-para {
@@ -18,13 +18,25 @@
 }
 
 .block-img-para {
-  display: flex;
   margin-top: 2%;
-  margin-bottom: 5%;
+  display: flex;
+  padding-bottom: 7%;
+}
+
+.test-back {
+  padding: 6%;
+}
+
+.block-img-activite {
+  background-color: #4fa582;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  display: flex;
 }
 
 .h1activite {
   font-family: 'Francois One', sans-serif;
+  font-size: 48px;
 }
 
 .block-card {
@@ -40,20 +52,37 @@
   margin: 0;
   font-family: 'Londrina Solid';
   padding-top: 3%;
+  padding-bottom: 4%;  
+  background-color: #f7f6f5;
+}
+
+.background-tree {
+  background-color: rgb(247, 245, 245);
+}
+
+.background-tree {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-repeat: repeat;
   padding-bottom: 4%;
-  background-repeat: no-repeat;
 }
 
 .Activiteselect {
   border: 1px solid;
-  border-radius: 30px;
   margin: auto;
-  margin-top: 1%;
-  width: 61%;
-  background-color: white;
+  width: 39%;
   position: relative;
-  top: -90px;
+  border-radius: 30px;
+  top: -50px;
+  background-color: white;
   padding: 1%;
+  z-index: 200;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
 
 .textactivites {
@@ -90,14 +119,14 @@
 
 .Activites-content {
   width: 75%;
-  margin: auto;
-  border: 1px solid #d0c6c68c;
-  background-color: white;
-  border-radius: 30px;
-  padding: 2%;
-  box-shadow: 0 0 10px #acb9bf96;
-  position: relative;
-  top: -25px;
+    margin: auto;
+    border: 1px solid #d0c6c68c;
+    background-color: white;
+    box-shadow: 0 0 10px #acb9bf96;
+    z-index: 100;
+    padding: 3%;
+    margin-top: 1%;
+    border-radius: 30px;
 }
 
 .block-text-bouton {

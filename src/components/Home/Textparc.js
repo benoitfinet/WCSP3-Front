@@ -29,6 +29,10 @@ class Textparc extends React.Component {
             <h2 className="home-title">{homes.length !== 0 && homes[0].title}</h2>
             <h3 className="home-subtitle">{homes.length !== 0 && homes[0].subtitle}</h3>
             <p className="home-para">{homes.length !== 0 && homes[0].text}</p>
+            <div className="block-ouverture">
+              <h3>Nouveau propriétaire !</h3>
+              <h4> Ouverture du parc saison 2021 le samedi 17 avril </h4>
+            </div>
             <button className="button"><a href="/Parc" className="parc-link">Découvrir le parc</a></button>
         </div>
     );

@@ -2,6 +2,8 @@ import React from 'react';
 import { HashLink } from 'react-router-hash-link';
 import { MDBCarousel, MDBCarouselCaption, MDBCarouselInner, MDBCarouselItem, MDBView, MDBMask, MDBContainer } from 'mdbreact';
 
+import Photo6 from '../../img/10.jpeg';
+
 import './Carousel.css';
 import './Carouselhome.css';
 
@@ -34,7 +36,7 @@ class CarouselPage extends React.Component {
       <h3 className="home-subtitle">{homes.length !== 0 && homes[1].subtitle}</h3>
       <MDBCarousel
       activeItem={1}
-      length={5}
+      length={6}
       showControls={true}
       showIndicators={true}
       className="z-depth-1"
@@ -115,6 +117,21 @@ class CarouselPage extends React.Component {
           </MDBCarouselCaption>
           </HashLink>
         </MDBCarouselItem>
+        <MDBCarouselItem itemId="6">
+          <HashLink to="/Activites/chasse-mot#ancre">
+            <MDBView>
+              <img
+                className="d-block w-100"
+                src={Photo6}
+                alt="Third slide"
+              />
+            <MDBMask overlay="light" />
+            </MDBView>
+            <MDBCarouselCaption>
+              <h3 className="h3-responsive">Chasse au mot</h3>
+            </MDBCarouselCaption>
+            </HashLink>
+          </MDBCarouselItem>
       </MDBCarouselInner>
     </MDBCarousel>
     </MDBContainer>
