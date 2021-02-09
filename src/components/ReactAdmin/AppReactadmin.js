@@ -13,10 +13,11 @@ import { PostEditParc, PostListParc } from './Parc';
 import { PostEditPhoto, PostListPhoto } from './Photo';
 import PostIcon from '@material-ui/icons/Book';
 import Dashboard from './Dashboard';
+import authProvider from './authoProvider';
 
 function AppReactadmin () {
   return (
-   <Admin dashboard={Dashboard} dataProvider={jsonServerProvider('http://localhost:5000', httpClient)} >
+   <Admin authProvider={authProvider} dashboard={Dashboard} dataProvider={jsonServerProvider('http://localhost:5000', httpClient)} >
      <Resource name='info' list={PostListInfo} edit={PostEditInfo} icon={PostIcon} />
      <Resource name='home' list={PostListHome} edit={PostEditHome} icon={PostIcon} />
      <Resource name='activity' list={PostListActivity} edit={PostEditActivity} icon={PostIcon} />
