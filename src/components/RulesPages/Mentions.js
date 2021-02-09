@@ -2,7 +2,6 @@ import React from 'react';
 
 import Footer from '../Footer/Footer';
 import Navbar from '../Nav/Navbar';
-import ImgBanner from './img/IMAGE_2.jpg';
 
 import './RulesPages.css';
 
@@ -31,7 +30,7 @@ class Mentions extends React.Component {
     return (
     <div>
       <div id="ancre-mentions"></div>
-      <Navbar imgbanner={ImgBanner} textbanner="Mentions légales" />
+      <Navbar imgbanner={infos.length !== 0 && infos[32].image} textbanner="Mentions légales" />
       <div className="pagesBody">
         <div className="pagesContent">
           <h3 className="title-reglement">{infos.length !== 0 && infos[12].description}</h3>

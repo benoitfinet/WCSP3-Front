@@ -2,7 +2,6 @@ import React from 'react';
 
 import Footer from '../Footer/Footer';
 import Navbar from '../Nav/Navbar';
-import ImgBanner from './img/IMAGE_4.jpg';
 
 import './RulesPages.css';
 
@@ -30,7 +29,7 @@ class Politique extends React.Component {
     return (
     <div>
     <div id="ancre-politique"></div>
-    <Navbar imgbanner={ImgBanner} textbanner="Politique de confidentialité" />
+    <Navbar imgbanner={infos.length !== 0 && infos[33].image} textbanner="Politique de confidentialité" />
     <div className="pagesBody">
         <div className="pagesContent">
           <h3 className="title-reglement">{infos.length !== 0 && infos[1].description}</h3>
