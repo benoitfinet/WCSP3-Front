@@ -1,0 +1,53 @@
+.block-activite {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  width: 80%;
+}
+
+.block-number-activite {
+  display: flex;
+  justify-content: center;
+}
+
+.block-number-activite p {
+  padding-right: 3%;
+  padding-left: 3%;
+}
+
+.activitie {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.price {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: auto;
+  width: 20%;
+  font-size: 12px;
+}
+
+.menu {
+  height: 36px;
+  margin: auto;
+  padding: 1%;
+  font-size: 12px;
+}
+
+.block-title-activite-description {
+  width: 37%;
+  font-size: 12px;
+}
+
+.block-activite-total {
+  display: flex;
+  width: 82%;
+  margin: auto;
+}
+
+.block-total {
+  width: 30%;
+  background-color: antiquewhite;
+}
