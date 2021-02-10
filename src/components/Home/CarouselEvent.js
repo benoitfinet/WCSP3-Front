@@ -12,16 +12,22 @@ import './CarouselEvent.css';
 
 class CarouselEvent extends React.Component {
   state = {
-    homes: []
+    homes: [],
+    loaded: false
   };
 
   getInfo = () => {
     fetch('http://localhost:5000/home/')
-      .then((res) => res.json())
+      .then((res) => {
+        console.log('test');
+        return res.json();
+      })
+
       .then((data) => {
+        console.log('data', data);
         this.setState({
-          homes: data
-        });
+          homes: data, loaded: true
+        }, console.log(this.state));
       });
   };
 
@@ -30,7 +36,7 @@ class CarouselEvent extends React.Component {
   }
 
   render () {
-    const { homes } = this.state;
+    const { homes, loaded } = this.state;
 
     return (
       <div className="block-carousel-event">
@@ -81,22 +87,25 @@ class CarouselEvent extends React.Component {
     </div>
 
     <div>
-      <figure>
-        <HashLink to="/groupes/anniversaires#ancre">
-          <div className="wprock-img-zoom-hover">
-            <div className="wprock-img-zoom">
-              <img
-                alt=''
-                src={homes.length !== 0 && homes[10].subtext}
-                className="img-carousel"
-              />
+        {loaded
+          ? <figure>
+          <HashLink to="/groupes/anniversaires#ancre">
+            <div className="wprock-img-zoom-hover">
+              <div className="wprock-img-zoom">
+                <img
+                  alt=''
+                  src={this.state.homes[11].subtext}
+                  className="img-carousel"
+                  />
+                </div>
               </div>
+            </HashLink>
+            <div className="style-figcation">
+              <figcaption>{homes[11].text}</figcaption>
             </div>
-          </HashLink>
-          <div className="style-figcation">
-            <figcaption>{homes.length !== 0 && homes[10].text}</figcaption>
-          </div>
-      </figure>
+          </figure>
+          : null
+          }
     </div>
 
     <div>

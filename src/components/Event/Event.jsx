@@ -1,55 +1,76 @@
 import Footer from '../Footer/Footer';
 import Navbar from '../Nav/Navbar';
 import PhotoBanner from '../Nav/img/8.jpeg';
-import Photo6 from '../../img/14.jpeg';
 
 import './Event.css';
 
-const Event = () => {
-  return (
+import React, { Component } from 'react';
+
+class Event extends Component {
+    state = {
+      event: []
+    };
+
+    getHome = () => {
+      fetch('http://localhost:5000/event/')
+        .then((res) => res.json())
+        .then((data) => {
+          this.setState({
+            event: data
+          });
+        });
+    };
+
+    componentDidMount () {
+      this.getHome();
+    }
+
+    render () {
+      const { event } = this.state;
+      return (
     <div>
       <Navbar imgbanner={PhotoBanner} textbanner="Nos évènements" />
     <div className="Activites">
     <div className="Activites-content">
     <div className="block-card">
       <div className="card-event">
-        <img alt="photo" className="photo-card-event" src={Photo6}></img>
+        <img alt="photo" className="photo-card-event" src={event.length !== 0 && event[0].image}></img>
         <div className="block-title-para-event">
-          <h3 className="title-event-page">Les Nocturnes</h3>
-          <p className="para-event-page">Atout Branches propose des mois de Mai à Septembre une soirée nocturne et à partir de 10 ans. Réservation obligatoire, places limitées.</p>
+          <h3 className="title-event-page">{event.length !== 0 && event[0].name}</h3>
+          <p className="para-event-page">{event.length !== 0 && event[0].description}</p>
         </div>
       </div>
       <div className="card-event">
-        <img alt="photo" className="photo-card-event" src={Photo6}></img>
+        <img alt="photo" className="photo-card-event" src={event.length !== 0 && event[1].image}></img>
         <div className="block-title-para-event">
-          <h3 className="title-event-page">Fête des mères et fête des pères</h3>
-          <p className="para-event-page">Fête des mères et fête de pères. 50% sur le prix de l’entrée pour le parent pratiquant sous condition de venir en famille de trois personnes minimum.</p>
+          <h3 className="title-event-page">{event.length !== 0 && event[1].name}</h3>
+          <p className="para-event-page">{event.length !== 0 && event[1].description}</p>
         </div>
       </div>
       <div className="card-event">
-        <img alt="photo" className="photo-card-event" src={Photo6}></img>
+        <img alt="photo" className="photo-card-event" src={event.length !== 0 && event[2].image}></img>
         <div className="block-title-para-event">
-          <h3 className="title-event-page">Fête de la nature</h3>
-          <p className="para-event-page">Texte à ajouter</p>
+          <h3 className="title-event-page">{event.length !== 0 && event[2].name}</h3>
+          <p className="para-event-page">{event.length !== 0 && event[2].description}</p>
         </div>
       </div>
       <div className="card-event">
-        <img alt="photo" className="photo-card-event" src={Photo6}></img>
+        <img alt="photo" className="photo-card-event" src={event.length !== 0 && event[3].image}></img>
         <div className="block-title-para-event">
-          <h3 className="title-event-page">Halloween</h3>
-          <p className="para-event-page">Texte à ajouter</p>
+          <h3 className="title-event-page">{event.length !== 0 && event[3].name}</h3>
+          <p className="para-event-page">{event.length !== 0 && event[3].description}</p>
         </div>
       </div>
     </div>
     <div className="first-block-img-para">
-        <p className="textactivites">Privatisation du parc ou pour toutes demandes particulières, contactez-nous : contact@atoutbranches.com
+        <p className="textactivites">{event.length !== 0 && event[4].description}
         </p>
     </div>
   </div>
   </div>
   <Footer />
   </div>
-  );
-};
-
+      );
+    }
+}
 export default Event;

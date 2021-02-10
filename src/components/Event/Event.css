@@ -17,12 +17,10 @@
 .title-event-page {
   margin-bottom: 2%;
   color: #ca9669;
-  font-family: 'Boogaloo', cursive;
 }
 
 .para-event-page {
   color: #344454;
-  font-family: 'Boogaloo', cursive;
 }
 
 .block-title-para-event {
@@ -31,105 +29,104 @@
   margin: auto;
 }
 
-  .Activites{
-    background-size: 100%;
-    padding: 0;
-    margin: 0;
-    font-family: 'Londrina Solid';
-    padding-top: 3%;
-    background-repeat: no-repeat;
-    padding-bottom: 6%;
-    background-color: #eef1f3;
-  }
+.Activites{
+  background-size: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Londrina Solid';
+  padding-top: 3%;
+  background-repeat: no-repeat;
+  padding-bottom: 6%;
+  background-color: #eef1f3;
+}
   
-  .textactivites {
-    padding-right: 3%;
-    padding-left: 3%;
-    font-family: 'Roboto';
-    font-size: 1.2em;
-    color: #344454;
-    line-height: 1.7em;
-  }
+.textactivites {
+  padding-right: 3%;
+  padding-left: 3%;
+  font-family: 'Roboto';
+  font-size: 1.2em;
+  color: #344454;
+  line-height: 1.7em;
+}
   
-  .h1activite{
-    font-family: "Luckiest Guy",cursive;
-    color: #4fa582;
-    padding-top: 1%;
-    padding-bottom: 3%;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
+.h1activite{
+  color: #4fa582;
+  padding-top: 1%;
+  padding-bottom: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
     
-  .Activiteselect button.active {
-    border-radius: 30px;
-    background-color: #009378;
-  }
+.Activiteselect button.active {
+  border-radius: 30px;
+  background-color: #009378;
+}
     
-  .Activiteselect button:focus {
-    outline: none;
-  }
+.Activiteselect button:focus {
+  outline: none;
+}
   
+.photoactivite{
+  height: auto;
+  width: 700px;
+  border-radius: 30px 30px 30px 30px;
+  margin: auto;
+  padding: 3%;
+  width: 50%!important;
+}
+
+.textactivites{
+  margin: auto;
+}
+
+@media screen and (max-width: 1280px) {
+  .Activiteselect {
+    width: 440px;
+  }
+  .textback{
+    width: 540px
+  }
   .photoactivite{
-    height: auto;
-    width: 700px;
-    border-radius: 30px 30px 30px 30px;
-    margin: auto;
-    padding: 3%;
-    width: 50%!important;
+    width: 540px;
   }
-  
-  .textactivites{
-    margin: auto;
+}
+
+@media screen and (max-width: 986px) {
+  .Activiteselect {
+    width: 340px;
   }
-  
-  @media screen and (max-width: 1280px) {
-    .Activiteselect {
-      width: 440px;
-    }
-    .textback{
-      width: 540px
-    }
-    .photoactivite{
-      width: 540px;
-    }
+  .textback{
+    width: 340px
   }
-  
-  @media screen and (max-width: 986px) {
-    .Activiteselect {
-      width: 340px;
-    }
-    .textback{
-      width: 340px
-    }
-    .photoactivite{
-      width: 340px;
-    }
+  .photoactivite{
+    width: 340px;
   }
-  
-  @media screen and (max-width: 606px) {
-    .Activiteselect {
-      width: 240px;
-    }
-    .textback{
-      width: 240px
-    }
-    .photoactivite{
-      width: 240px;
-    }
+}
+
+@media screen and (max-width: 606px) {
+  .Activiteselect {
+    width: 240px;
   }
-  
-  @media screen and (max-width: 410px) {
-    .Activiteselect {
-      width: 240px;
-    }
-    .textback{
-      width: 240px
-    }
+  .textback{
+    width: 240px
   }
-  
-  @media screen and (max-width: 1560px) {
-    .Activites{
-      background-image: none;
-      background-color: #eef0f1;
-    }
+  .photoactivite{
+    width: 240px;
   }
+}
+
+@media screen and (max-width: 410px) {
+  .Activiteselect {
+    width: 240px;
+  }
+  .textback{
+    width: 240px
+  }
+}
+
+@media screen and (max-width: 1560px) {
+  .Activites{
+    background-image: none;
+    background-color: #eef0f1;
+  }
+}

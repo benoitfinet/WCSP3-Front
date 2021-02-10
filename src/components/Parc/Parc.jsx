@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import Footer from '../Footer/Footer';
 import './Parc.css';
 import Navbar from '../Nav/Navbar';
-import PhotoBanner from '../Nav/img/11.jpeg';
-import CarteBuvette from './ParcImg/carte-restauration.pdf';
 
 class Parc extends Component {
   state = {
@@ -28,14 +26,14 @@ class Parc extends Component {
       const { parc } = this.state;
       return (
     <div>
-        <Navbar imgbanner={PhotoBanner} textbanner="Le parc" />
+        <Navbar imgbanner={parc.length !== 0 && parc[6].image} textbanner="Le parc" />
             <div className="Activites">
                   <div className="Activites-content">
                   <div className="Activitespadding">
                   <div className="block-img-text-buvette">
-              <img className="img-buvette" src={parc.length !== 0 && parc[3].image} alt="Carte de Milly-la-Forêt"/>
+              <img className="img-buvette" src={parc.length !== 0 && parc[1].image} alt="Carte de Milly-la-Forêt"/>
               <p className="text-parc-buvette">{parc.length !== 0 && parc[0].text}<br/><br/>
-              {parc.length !== 0 && parc[1].text} <a href={parc.length !== 0 && parc[3].image} target="blank">{parc.length !== 0 && parc[1].title}</a>
+              {parc.length !== 0 && parc[1].text} <a href={parc.length !== 0 && parc[5].image} target="blank">{parc.length !== 0 && parc[1].title}</a>
               </p>
             </div>
         </div>
@@ -62,7 +60,7 @@ class Parc extends Component {
           </div>
             <div className="block-img-text-buvette">
             <img className="img-buvette" src={parc.length !== 0 && parc[3].image} alt="Carte de Milly-la-Forêt"/>
-            <p className="text-parc-buvette">{parc.length !== 0 && parc[2].text}<br/><br/>{parc.length !== 0 && parc[4].title} <a href={CarteBuvette} target="blank">{parc.length !== 0 && parc[4].text}</a>
+            <p className="text-parc-buvette">{parc.length !== 0 && parc[2].text}<br/><br/>{parc.length !== 0 && parc[4].title} <a href={parc.length !== 0 && parc[2].image} target="blank">{parc.length !== 0 && parc[4].text}</a>
             </p>
             </div>
           </div>
