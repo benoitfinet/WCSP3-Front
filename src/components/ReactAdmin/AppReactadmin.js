@@ -11,12 +11,14 @@ import { PostEditHoraires, PostListHoraires } from './Horaires';
 import { PostEditTarifs, PostListTarifs } from './Tarifs';
 import { PostEditParc, PostListParc } from './Parc';
 import { PostEditPhoto, PostListPhoto } from './Photo';
+import { PostEditEvent, PostListEvent } from './Event';
 import PostIcon from '@material-ui/icons/Book';
 import Dashboard from './Dashboard';
+import authProvider from './authoProvider';
 
 function AppReactadmin () {
   return (
-   <Admin dashboard={Dashboard} dataProvider={jsonServerProvider('http://localhost:5000', httpClient)} >
+   <Admin authProvider={authProvider} dashboard={Dashboard} dataProvider={jsonServerProvider('http://localhost:5000', httpClient)} >
      <Resource name='info' list={PostListInfo} edit={PostEditInfo} icon={PostIcon} />
      <Resource name='home' list={PostListHome} edit={PostEditHome} icon={PostIcon} />
      <Resource name='activity' list={PostListActivity} edit={PostEditActivity} icon={PostIcon} />
@@ -26,6 +28,7 @@ function AppReactadmin () {
      <Resource name='tarifs' list={PostListTarifs} edit={PostEditTarifs} icon={PostIcon} />
      <Resource name='parc' list={PostListParc} edit={PostEditParc} icon={PostIcon} />
      <Resource name='photo' list={PostListPhoto} edit={PostEditPhoto} icon={PostIcon} />
+     <Resource name='event' list={PostListEvent} edit={PostEditEvent} icon={PostIcon} />
     </Admin>
   );
 }

@@ -27,7 +27,7 @@ class Map extends Component {
       const { findus } = this.state;
       return (
     <div>
-      <Navbar title="Où nous trouver"/>
+      <Navbar imgbanner={findus.length !== 0 && findus[1].image} textbanner="Le parc"/>
         <div className="mapBody">
           <div className="mapContent">
           <div>

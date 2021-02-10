@@ -2,7 +2,6 @@ import React from 'react';
 
 import Footer from '../Footer/Footer';
 import Navbar from '../Nav/Navbar';
-import PhotoBanner from '../Nav/img/IMAGE_2.jpg';
 
 import './RulesPages.css';
 
@@ -30,7 +29,7 @@ class Reglement extends React.Component {
 
     return (
     <div>
-       <Navbar imgbanner={PhotoBanner} textbanner="Reglement intérieur" />
+       <Navbar imgbanner={infos.length !== 0 && infos[34].image} textbanner="Reglement intérieur" />
         <div className="Activites">
           <div className="Activitespadding">
             <div className="Activites-content">

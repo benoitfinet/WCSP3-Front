@@ -4,16 +4,37 @@ import HomeEvent from './HomeEvent';
 import Footer from '../Footer/Footer';
 import CarouselEvent from './CarouselEvent';
 import Textparc from './Textparc';
-import Photo1 from './NavHome/img/backgroundhome.jpeg';
+import React from 'react';
 
 import TestEvenementSection from './TestEvenementSection';
 
 import './Home.css';
 
-function Home () {
-  return (
+class Home extends React.Component {
+  state = {
+    homes: []
+  };
+
+  getHome = () => {
+    fetch('http://localhost:5000/home/')
+      .then((res) => res.json())
+      .then((data) => {
+        this.setState({
+          homes: data
+        });
+      });
+  };
+
+  componentDidMount () {
+    this.getHome();
+  }
+
+  render () {
+    const { homes } = this.state;
+
+    return (
     <div>
-      <NavbarHome imgbanner={Photo1}/>
+      <NavbarHome imgbanner={homes.length !== 0 && homes[0].subtext}/>
       <Textparc className="textparc"/>
       <Carousel className="carousel" />
       <CarouselEvent />
@@ -21,7 +42,7 @@ function Home () {
       <HomeEvent />
       <Footer />
     </div>
-  );
+    );
+  }
 }
-
 export default Home;

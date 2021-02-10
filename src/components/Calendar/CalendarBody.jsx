@@ -29,7 +29,7 @@ class CalendarBody extends React.Component {
             <div className="Activites">
                   <div className="Activites-content">
                   <div className="Activitespadding">
-                  <h2 className="cldSeason">Calendrier 2021</h2>
+                  <h2 className="cldSeason">{horaires.length !== 0 && horaires[8].text}</h2>
             <img className='parkSchedule' src={horaires.length !== 0 && horaires[0].image} alt='saison 2021' />
     <div className='cldInfoText'>
           <h3>{horaires.length !== 0 && horaires[1].title}</h3>
