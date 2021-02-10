@@ -1,7 +1,6 @@
 import React from 'react';
 import { HashLink } from 'react-router-hash-link';
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from 'mdbreact';
-import plan from './img/plan.pdf';
 import MentionsLegales from '../MentionsLegales/MentionsLegales';
 
 import './Footer.css';
@@ -69,7 +68,7 @@ class Footer extends React.Component {
               <p>Notre buvette</p>
             </HashLink>
             <p>
-              <a href="#">Evénements</a>
+              <a href="/Event">Evénements</a>
             </p>
             <HashLink to="/Parc#ancre-engagement">
               <p>Nos engagements</p>
@@ -90,7 +89,7 @@ class Footer extends React.Component {
               <p>Où nous trouver ?</p>
             </HashLink>
             <p>
-              <a href={plan} target="blank">Plan du parc</a>
+              <a href={info.length !== 0 && info[35].image} target="blank">Plan du parc</a>
             </p>
             <HashLink to="/Horaires#ancre-calendrier">
               <p>Calendrier et horaires</p>
@@ -102,7 +101,7 @@ class Footer extends React.Component {
               <p>Tarifs</p>
             </HashLink>
             <p>
-              <a href="#!">Billeterie</a>
+              <a href="/Reservation">Billeterie</a>
             </p>
           </MDBCol>
           <MDBCol md="3" lg="2" xl="2" className="mb-4">

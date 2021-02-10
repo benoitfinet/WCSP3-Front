@@ -16,7 +16,6 @@ export const PostIcon = BookIcon;
 export const PostListpetitCarousel = (props) => (
   <List {...props}>
     <Datagrid rowClick="edit">
-        <TextField source="id" />
         <TextField source="text" />
         <ImageField source="image" />
       <EditButton/>

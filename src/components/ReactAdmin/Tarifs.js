@@ -15,7 +15,6 @@ export const PostIcon = BookIcon;
 export const PostListTarifs = (props) => (
   <List {...props}>
     <Datagrid rowClick="edit">
-        <TextField source="id" />
         <TextField source="title" />
       <EditButton/>
     </Datagrid>

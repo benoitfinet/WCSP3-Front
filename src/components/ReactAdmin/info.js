@@ -7,7 +7,8 @@ import {
   TextField,
   TextInput,
   EditButton,
-  Edit
+  Edit,
+  ImageField
 } from 'react-admin';
 import BookIcon from '@material-ui/icons/Book';
 export const PostIcon = BookIcon;
@@ -16,6 +17,7 @@ export const PostListInfo = (props) => (
   <List {...props}>
     <Datagrid rowClick="edit">
       <TextField source="title" />
+      <ImageField source="image" />
       <EditButton/>
     </Datagrid>
   </List>
