@@ -15,6 +15,7 @@ import { Switch, Route } from 'react-router-dom';
 import AppReactadmin from './components/ReactAdmin/AppReactadmin.js';
 import CalendarPage from './components/Calendar/CalendarPage.jsx';
 import Reservation from './components/Reservation/Reservation.js';
+import Contact from './components/ContactForm/Contact.js';
 
 const RouterWebSite = () => {
   return (
@@ -34,6 +35,7 @@ const RouterWebSite = () => {
       <Route path="/Tarifs/:tarifs" component={TarifsTest} />
       <Route path="/Event" component={Event} />
       <Route path="/Buvette" component={Buvette} />
+      <Route path="/Contact" component={Contact}/>
     </Switch>
   );
 };
