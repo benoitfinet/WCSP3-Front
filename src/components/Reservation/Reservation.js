@@ -4,11 +4,14 @@ import Calendar from 'react-calendar';
 import './Reservation.css';
 import 'react-calendar/dist/Calendar.css';
 import axios from 'axios';
+import Navbar from '../Nav/Navbar';
+import Footer from '../Footer/Footer';
 // import { Children } from 'react';
 // import Enigmes from '../Activites/Escalade';
 // import Tresors from '../Activites/Tresors';
 class Reservation extends React.Component {
   state = {
+    photo: [],
     value: new Date(),
     pricePitchounForOne: 11,
     priceOuistitiForOne: 15,
@@ -204,9 +207,27 @@ class Reservation extends React.Component {
       });
   }
 
+  getHome = () => {
+    fetch('http://localhost:5000/photo/')
+      .then((res) => res.json())
+      .then((data) => {
+        this.setState({
+          photo: data
+        });
+      });
+  };
+
+  componentDidMount () {
+    this.getHome();
+  }
+
   render () {
+    const { photo } = this.state;
+
     return (
       <div>
+      <div>
+        <Navbar imgbanner={photo.length !== 0 && photo[1].location} textbanner="Réservation" />
         <h1 className='title-page-reservation'>Réservation :</h1>
         <div className="block-activite-total" onSubmit={this.submitReservForm}>
           <div className="block-all-activite">
@@ -654,6 +675,8 @@ class Reservation extends React.Component {
             />
           </div>
         </div>
+      </div>
+      <Footer />
       </div>
     );
   }
