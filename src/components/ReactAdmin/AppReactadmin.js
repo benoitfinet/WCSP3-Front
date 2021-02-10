@@ -12,6 +12,7 @@ import { PostEditTarifs, PostListTarifs } from './Tarifs';
 import { PostEditParc, PostListParc } from './Parc';
 import { PostEditPhoto, PostListPhoto } from './Photo';
 import { PostEditEvent, PostListEvent } from './Event';
+import { PostEditpetitCarousel, PostListpetitCarousel } from './petitCarousel';
 import PostIcon from '@material-ui/icons/Book';
 import Dashboard from './Dashboard';
 import authProvider from './authoProvider';
@@ -29,6 +30,7 @@ function AppReactadmin () {
      <Resource name='parc' list={PostListParc} edit={PostEditParc} icon={PostIcon} />
      <Resource name='photo' list={PostListPhoto} edit={PostEditPhoto} icon={PostIcon} />
      <Resource name='event' list={PostListEvent} edit={PostEditEvent} icon={PostIcon} />
+     <Resource name='petitCarousel' list={PostListpetitCarousel} edit={PostEditpetitCarousel} icon={PostIcon} />
     </Admin>
   );
 }

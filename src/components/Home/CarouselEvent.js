@@ -1,47 +1,29 @@
-import React from 'react';
+import { useEffect, useState } from 'react';
 import InfiniteCarousel from 'react-leaf-carousel';
 import PropTypes from 'prop-types';
 import { HashLink } from 'react-router-hash-link';
-import Photo1 from '../../img/6.jpeg';
-import Photo3 from '../../img/12.jpeg';
-import Photo4 from '../../img/13.jpeg';
-import Photo5 from '../../img/10.jpeg';
-import Photo6 from '../../img/9.jpeg';
+import TitlePetitCarousel from './TitlePetitCarousel';
 
 import './CarouselEvent.css';
+import axios from 'axios';
 
-class CarouselEvent extends React.Component {
-  state = {
-    homes: [],
-    loaded: false
-  };
+function CarouselEvent () {
+  const [homes, setHomes] = useState([]);
 
-  getInfo = () => {
-    fetch('http://localhost:5000/home/')
-      .then((res) => {
-        console.log('test');
-        return res.json();
-      })
+  useEffect(() => {
+    const getHome = async () => {
+      const { data } = await axios.get('http://localhost:5000/petitCarousel/');
+      console.log(data);
+      setHomes(data);
+    };
+    getHome();
+  }, []);
 
-      .then((data) => {
-        console.log('data', data);
-        this.setState({
-          homes: data, loaded: true
-        }, console.log(this.state));
-      });
-  };
-
-  componentDidMount () {
-    this.getInfo();
-  }
-
-  render () {
-    const { homes, loaded } = this.state;
-
-    return (
+  return (
       <div className="block-carousel-event">
-        <h2 className="home-title-carouselEvent">{homes.length !== 0 && homes[4].title}</h2>
-        <h3 className="home-subtitle">{homes.length !== 0 && homes[4].subtitle}</h3>
+        <TitlePetitCarousel />
+        {
+          homes.length &&
         <InfiniteCarousel
     breakpoints={[
       {
@@ -67,7 +49,33 @@ class CarouselEvent extends React.Component {
     slidesToShow={5}
     scrollOnDevice={true}
   >
-    <div>
+    {
+      homes.map((home, index) => {
+        // if (home.title === 'petitCarousel') {
+        return (
+          <div key={index}>
+          <figure>
+            <HashLink to="/groupes/centreLoisirs#ancre">
+              <div className="wprock-img-zoom-hover">
+                <div className="wprock-img-zoom">
+                  <img
+                    alt=''
+                    src={home.image}
+                    className="img-carousel"
+                  />
+                </div>
+              </div>
+            </HashLink>
+            <div className="style-figcation">
+              <figcaption>{home.text}</figcaption>
+            </div>
+          </figure>
+        </div>
+        );
+        // }
+      })
+    }
+    {/* <div>
       <figure>
         <HashLink to="/groupes/familleAmis#ancre">
           <div className="wprock-img-zoom-hover">
@@ -81,31 +89,28 @@ class CarouselEvent extends React.Component {
           </div>
         </HashLink>
         <div className="style-figcation">
-          <figcaption>En famille et entre amis</figcaption>
+          <figcaption>En famille et entre amis </figcaption>
         </div>
       </figure>
     </div>
 
     <div>
-        {loaded
-          ? <figure>
+          <figure>
           <HashLink to="/groupes/anniversaires#ancre">
             <div className="wprock-img-zoom-hover">
               <div className="wprock-img-zoom">
                 <img
                   alt=''
-                  src={this.state.homes[11].subtext}
+                  src={homes.length !== 0 && homes[11].subtext}
                   className="img-carousel"
                   />
                 </div>
               </div>
             </HashLink>
             <div className="style-figcation">
-              <figcaption>{homes[11].text}</figcaption>
+              <figcaption>{homes.length !== 0 && homes[11].text}</figcaption>
             </div>
           </figure>
-          : null
-          }
     </div>
 
     <div>
@@ -182,12 +187,12 @@ class CarouselEvent extends React.Component {
         <figcaption>EVG / EVJF</figcaption>
       </div>
       </figure>
-    </div>
+    </div> */}
   </InfiniteCarousel>
+        }
   <button className="button-carousel-event"><a href="/groupes/familleAmis" className="parc-link">Découvrez toutes nos offres</a></button>
-      </div>
-    );
-  }
+    </div>
+  );
 }
 
 CarouselEvent.propTypes = {
