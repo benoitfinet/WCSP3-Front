@@ -111,7 +111,7 @@ class Footer extends React.Component {
             </h6>
             <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style={{ width: '60px' }} />
             <p>
-              <a href="#!">Écrivez-nous</a>
+              <a href="/Contact">Écrivez-nous</a>
             </p>
 
           </MDBCol>
