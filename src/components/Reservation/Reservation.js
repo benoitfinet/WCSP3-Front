@@ -3,6 +3,7 @@ import Calendar from 'react-calendar';
 
 import './Reservation.css';
 import 'react-calendar/dist/Calendar.css';
+import axios from 'axios';
 // import { Children } from 'react';
 // import Enigmes from '../Activites/Escalade';
 // import Tresors from '../Activites/Tresors';
@@ -172,19 +173,42 @@ class Reservation extends React.Component {
     this.setState({ prenomClient: e.target.value });
   }
 
-  handleChangeNom = (e) => {
-    this.setState({ Client: e.target.value });
+  handleChangeTel = (e) => {
+    this.setState({ telClient: e.target.value });
   }
 
-  handleChangeNom = (e) => {
-    this.setState({ nomClient: e.target.value });
+  handleChangeEmail = (e) => {
+    this.setState({ emailClient: e.target.value });
+  }
+
+  submitReservForm = (e) => {
+    e.preventDefault();
+
+    const data = {
+      nomClient: this.state.nomClient,
+      prenomClient: this.state.prenomClient,
+      telClient: this.state.telClient,
+      emailClient: this.state.emailClient,
+      basket: this.state.basket,
+      value: this.state.value
+    };
+
+    axios.post('/Reservation', data)
+      .then(res => {
+        this.setState({
+          sent: true
+        }, this.submitReservForm());
+      })
+      .catch(() => {
+        console.log('message not sent');
+      });
   }
 
   render () {
     return (
       <div>
         <h1 className='title-page-reservation'>Réservation :</h1>
-        <div className="block-activite-total">
+        <div className="block-activite-total" onSubmit={this.submitReservForm}>
           <div className="block-all-activite">
             <h3 className="title-reservation">Parcours accrobatiques en hauteur</h3>
             <div className="block-activite">
@@ -621,8 +645,9 @@ class Reservation extends React.Component {
             <hr></hr>
             <label>Nom : <input type="text" value={this.state.nomClient} onChange={this.handleChangeNom} /></label>
             <label>Prénom : <input type="text" value={this.state.prenomClient} onChange={this.handleChangePrenom} /></label>
-            <label>Tel : <input type="text" value={this.state.telClient} onChange={this.handleChangeTel} /></label>
-            <label>Email : <input type="text" value={this.state.emailClient} onChange={this.handleChangeEmail} /></label>
+            <label>Tel : <input type="number" value={this.state.telClient} onChange={this.handleChangeTel} /></label>
+            <label>Email : <input type="email" value={this.state.emailClient} onChange={this.handleChangeEmail} /></label>
+                <button type='button' onClick={(e) => this.submitReservForm(e)}>Envoyer</button>
             <Calendar
               onChange={this.onChange}
               value={this.state.value}
