@@ -30,10 +30,10 @@ class Textparc extends React.Component {
             <h3 className="home-subtitle-orange">{homes.length !== 0 && homes[0].subtitle}</h3>
             <p className="home-para-black">{homes.length !== 0 && homes[0].text}</p>
             <div className="block-ouverture">
-              <h3>{homes.length !== 0 && homes[13].title}</h3>
-              <h4>{homes.length !== 0 && homes[13].subtitle}</h4>
+              <h3 className="home-para-black">{homes.length !== 0 && homes[13].title}</h3>
+              <h4 className="home-para-black">{homes.length !== 0 && homes[13].subtitle}</h4>
             </div>
-            <button className="button"><a href="/Parc" className="parc-link">Découvrir le parc</a></button>
+            <button className="button buttonresp"><a href="/Parc" className="parc-link">Découvrir le parc</a></button>
         </div>
     );
   }

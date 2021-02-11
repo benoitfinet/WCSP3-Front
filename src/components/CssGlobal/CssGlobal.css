@@ -24,3 +24,56 @@
   margin-right: 5%;
   font-family: 'Luckiest Guy', cursive;
 }
+@media screen and (max-width: 1100px) {
+.home-title-green{
+  font-size: 36px;
+}
+.home-subtitle-orange{
+  font-size: 24px;
+  padding-bottom: 5px;
+}
+.home-para-black{
+  font-size: 18px;
+}
+.home-subtitle-white{
+  font-size: 24px;
+  padding-bottom: 5px;
+}
+.home-para-white{
+  font-size: 18px;
+}
+.home-title-white{
+  font-size: 36px;
+}
+.buttonresp {
+  font-size: 16px;
+  margin: 2.5px 1.5px;
+}
+}
+
+@media screen and (max-width: 790px) {
+  .home-title-green{
+    font-size: 24px;
+  }
+  .home-subtitle-orange{
+    font-size: 18px;
+    padding-bottom: 5px;
+  }
+  .home-para-black{
+    font-size: 12px;
+  }
+  .home-title-white{
+    font-size: 24px;
+  }
+  .home-subtitle-white{
+    font-size: 18px;
+    padding-bottom: 5px;
+  }
+  .home-para-white{
+    font-size: 12px;
+  }
+  .buttonresp {
+    font-size: 10px;
+    margin: 2px 1px;
+  }
+  }

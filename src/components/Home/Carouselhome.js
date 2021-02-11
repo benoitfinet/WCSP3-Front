@@ -133,7 +133,7 @@ class CarouselPage extends React.Component {
       </MDBCarouselInner>
     </MDBCarousel>
     </MDBContainer>
-    <button className="button-carousel-activities"><a href="/groupes/familleAmis" className="parc-link">Découvrez toutes nos offres</a></button>
+    <button className="button-carousel-activities buttonresp"><a href="/groupes/familleAmis" className="parc-link">Découvrez toutes nos offres</a></button>
     </div>
     );
   }

@@ -24,7 +24,7 @@ class TitlePetitCarousel extends Component {
 
       return (
         <div className="block-carousel-event">
-            <h2 className="home-title-carouselEvent">{homes.length !== 0 && homes[4].title}</h2>
+            <h2 className="home-title-green">{homes.length !== 0 && homes[4].title}</h2>
             <h3 className="home-subtitle-orange">{homes.length !== 0 && homes[4].subtitle}</h3>
         </div>
       );

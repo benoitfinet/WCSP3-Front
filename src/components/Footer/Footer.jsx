@@ -29,28 +29,9 @@ class Footer extends React.Component {
       return (
         <div>
     <MDBFooter color="unique-color-dark" className="page-footer font-small pt-0 test-background">
-      <div style={{ backgroundColor: '#545454' }}>
-        <MDBContainer fluid className="text-center text-md-left">
-          <MDBRow className="py-4 d-flex align-items-center" id="test-display">
-            <MDBCol md="6" lg="5" className="text-center">
-              <h6 className="mb-0 white-text">
-                RÉSEAUX SOCIAUX ET LABELS
-              </h6>
-            </MDBCol>
-            <MDBCol md="6" lg="7" className="text-center">
-              <a className="fb-ic ml-0" href="https://fr-fr.facebook.com/AtoutBranches/" target="blank">
-                <i className="fab fa-facebook-f white-text mr-lg-4"> </i>
-              </a>
-              <a className="ins-ic" href="https://www.instagram.com/atout_branches/" target="blank">
-                <i className="fab fa-instagram white-text mr-lg-4"> </i>
-              </a>
-            </MDBCol>
-          </MDBRow>
-        </MDBContainer>
-      </div>
       <MDBContainer className="mt-5 mb-4 text-center text-md-left" id="margin-hide">
         <MDBRow className="mt-3" id="margin-none">
-        <MDBCol md="3" lg="4" xl="3" className="mb-4">
+        <MDBCol md="3" lg="4" xl="5" className="mb-4">
             <h6 className="text-uppercase font-weight-bold">
               <strong>Atout Branches</strong>
             </h6>
@@ -77,7 +58,7 @@ class Footer extends React.Component {
               <a href="/Reglement">Réglement intérieur</a>
             </p>
           </MDBCol>
-          <MDBCol md="3" lg="2" xl="2" className="mb-4">
+          <MDBCol md="2" lg="2" xl="2" className="mb-4">
             <h6 className="text-uppercase font-weight-bold">
               <strong>INFOS PRATIQUES</strong>
             </h6>
@@ -104,7 +85,7 @@ class Footer extends React.Component {
               <a href="/Reservation">Billeterie</a>
             </p>
           </MDBCol>
-          <MDBCol md="3" lg="2" xl="2" className="mb-4">
+          <MDBCol md="2" lg="2" xl="2" className="mb-4">
             <h6 className="text-uppercase font-weight-bold">
               <strong>Contact</strong>
             </h6>

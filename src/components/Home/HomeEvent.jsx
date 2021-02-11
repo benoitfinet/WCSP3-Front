@@ -45,7 +45,7 @@ class BlogPage extends React.Component {
             </p>
           </MDBCol>
           <MDBCol lg="5">
-            <MDBView className="rounded z-depth-2 mb-lg-0 mb-4" hover waves>
+            <MDBView className="rounded z-depth-2 mb-lg-0 mb-4 imgeventhome" hover waves>
               <img
                 className="img-fluid"
                 src={homes.length !== 0 && homes[3].subtext}

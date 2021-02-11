@@ -32,7 +32,7 @@ class TestEvenementSection extends React.Component {
       <MDBCardBody>
         <MDBRow>
           <MDBCol lg="5">
-            <MDBView className="rounded z-depth-2 mb-lg-0 mb-4" hover waves>
+            <MDBView className="rounded z-depth-2 mb-lg-0 mb-4 imgeventhome" hover waves>
               <img className="img-fluid" src={homes.length !== 0 && homes[2].subtext} alt="image d'un homme faisant de l'accrobranche de nuit"/>
               <a href="#!">
                 <MDBMask overlay="white-slight" />
@@ -41,7 +41,7 @@ class TestEvenementSection extends React.Component {
           </MDBCol>
           <MDBCol lg="7">
             <a href="#!" className="black-text">
-              <h3 className="font-weight-bold mb-3 title-evenement">
+              <h3 className="font-weight-bold mb-3 title-evenement home-title-white">
               {homes.length !== 0 && homes[2].title}
               </h3>
             </a>
@@ -51,7 +51,7 @@ class TestEvenementSection extends React.Component {
             <p className="home-para-white">
             {homes.length !== 0 && homes[2].text}
             </p>
-            <button className="button"><a href="/Event" className="event-link">En savoir plus</a></button>
+            <button className="button buttonresp"><a href="/Event" className="event-link">En savoir plus</a></button>
           </MDBCol>
         </MDBRow>
       </MDBCardBody>

@@ -34,10 +34,24 @@ function CarouselEvent () {
         }
       },
       {
-        breakpoint: 768,
+        breakpoint: 1050,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3
+        }
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4
+        }
+      },
+      {
+        breakpoint: 730,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
         }
       }
     ]}
@@ -51,7 +65,6 @@ function CarouselEvent () {
   >
     {
       homes.map((home, index) => {
-        // if (home.title === 'petitCarousel') {
         return (
           <div key={index}>
           <figure>
@@ -72,125 +85,11 @@ function CarouselEvent () {
           </figure>
         </div>
         );
-        // }
       })
     }
-    {/* <div>
-      <figure>
-        <HashLink to="/groupes/familleAmis#ancre">
-          <div className="wprock-img-zoom-hover">
-            <div className="wprock-img-zoom">
-              <img
-                alt=''
-                src={Photo1}
-                className="img-carousel"
-              />
-            </div>
-          </div>
-        </HashLink>
-        <div className="style-figcation">
-          <figcaption>En famille et entre amis </figcaption>
-        </div>
-      </figure>
-    </div>
-
-    <div>
-          <figure>
-          <HashLink to="/groupes/anniversaires#ancre">
-            <div className="wprock-img-zoom-hover">
-              <div className="wprock-img-zoom">
-                <img
-                  alt=''
-                  src={homes.length !== 0 && homes[11].subtext}
-                  className="img-carousel"
-                  />
-                </div>
-              </div>
-            </HashLink>
-            <div className="style-figcation">
-              <figcaption>{homes.length !== 0 && homes[11].text}</figcaption>
-            </div>
-          </figure>
-    </div>
-
-    <div>
-      <figure>
-        <HashLink to="/groupes/centreLoisirs#ancre">
-          <div className="wprock-img-zoom-hover">
-            <div className="wprock-img-zoom">
-              <img
-                alt=''
-                src={Photo3}
-                className="img-carousel"
-              />
-            </div>
-          </div>
-        </HashLink>
-        <div className="style-figcation">
-          <figcaption>Les centres de loisirs et scolaires</figcaption>
-        </div>
-      </figure>
-    </div>
-
-    <div>
-      <figure>
-        <HashLink to="/groupes/teamBuilding#ancre">
-          <div className="wprock-img-zoom-hover">
-            <div className="wprock-img-zoom">
-              <img
-                alt=''
-                src={Photo4}
-                className="img-carousel"
-              />
-            </div>
-          </div>
-        </HashLink>
-        <div className="style-figcation">
-          <figcaption>Le Team building/Séminaires</figcaption>
-        </div>
-      </figure>
-    </div>
-
-    <div>
-      <figure>
-        <HashLink to="/groupes/comiteEntreprise#ancre">
-          <div className="wprock-img-zoom-hover">
-            <div className="wprock-img-zoom">
-              <img
-                alt=''
-                src={Photo5}
-                className="img-carousel"
-              />
-            </div>
-          </div>
-        </HashLink>
-        <div className="style-figcation">
-          <figcaption>Les comités d’entreprises et les associations</figcaption>
-        </div>
-      </figure>
-    </div>
-
-    <div>
-      <figure>
-        <HashLink to="/groupes/EVG-EVJF#ancre">
-          <div className="wprock-img-zoom-hover">
-            <div className="wprock-img-zoom">
-              <img
-                alt=''
-                src={Photo6}
-                className="img-carousel"
-              />
-            </div>
-          </div>
-        </HashLink>
-      <div className="style-figcation">
-        <figcaption>EVG / EVJF</figcaption>
-      </div>
-      </figure>
-    </div> */}
   </InfiniteCarousel>
         }
-  <button className="button-carousel-event"><a href="/groupes/familleAmis" className="parc-link">Découvrez toutes nos offres</a></button>
+  <button className="button-carousel-event buttonresp"><a href="/groupes/familleAmis" className="parc-link">Découvrez toutes nos offres</a></button>
     </div>
   );
 }
