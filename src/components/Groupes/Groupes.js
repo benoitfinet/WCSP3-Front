@@ -13,6 +13,7 @@ import Scolaires from './Scolaires';
 import Seminaire from './Seminaire';
 
 import './Groupes.css';
+import '../CssGlobal/CssGlobal.css';
 
 const Anniversaires = () => <Annivs />;
 
@@ -86,16 +87,14 @@ class Groupes extends Component {
       <div>
         <Navbar imgbanner={photo.length !== 0 && photo[1].location} textbanner="Groupes" />
         <div id="ancre"></div>
-        <div className="Activites">
-          <div className="Activitespadding">
+        <div className="background-pages">
           <Groupesselect
             active={this.state.activeId}
             handleChangeTab={this.handleChangeTab}
           />
-          <div className="Activites-content">{this.getTabContent()}</div>
-          </div>
+          <div className="content-framing">{this.getTabContent()}</div>
         </div>
-        <Footer />
+      <Footer />
       </div>
     );
   }

@@ -1,29 +1,28 @@
 import React, { Component } from 'react';
 
 class TarifsIndivs extends Component {
-    state = {
-      tarifs: []
-    };
+  state = {
+    tarifs: []
+  };
 
-      getHome = () => {
-        fetch('http://localhost:5000/tarifs/')
-          .then((res) => res.json())
-          .then((data) => {
-            this.setState({
-              tarifs: data
-            });
-          });
-      };
+  getHome = () => {
+    fetch('http://localhost:5000/tarifs/')
+      .then((res) => res.json())
+      .then((data) => {
+        this.setState({
+          tarifs: data
+        });
+      });
+  };
 
-      componentDidMount () {
-        this.getHome();
-      }
+  componentDidMount () {
+    this.getHome();
+  }
 
-      render () {
-        const { tarifs } = this.state;
-        return (
-      <div className="tarif-page">
-        <div className="block-page-tarif">
+  render () {
+    const { tarifs } = this.state;
+    return (
+      <div className="block-page-tarif">
         <h1 className="title-tarif">{tarifs.length !== 0 && tarifs[0].title}</h1>
         <div className="trait_et_rond">
           <div className="trait"></div>
@@ -72,10 +71,9 @@ class TarifsIndivs extends Component {
           <p>{tarifs.length !== 0 && tarifs[14].text}</p>
         <h2 className="secondary-title">{tarifs.length !== 0 && tarifs[15].title}</h2>
         <p>{tarifs.length !== 0 && tarifs[15].text}</p>
-            </div>
-            </div>
-        );
-      }
+      </div>
+    );
+  }
 }
 
 export default TarifsIndivs;

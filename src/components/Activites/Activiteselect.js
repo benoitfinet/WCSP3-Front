@@ -2,12 +2,10 @@ import React, { Component } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import PropTypes from 'prop-types';
 
-import './Activiteselect.css';
-
 class Activiteselect extends Component {
   render () {
     return (
-      <div className="Activiteselect">
+      <div className="block-select-activities">
         <Link to="/Activites/parcours-acrobatiques" id="parcours-acrobatiques" className={this.props.active === 'parcours-acrobatiques' ? 'Gpe-active' : 'unActive'}
         onClick={this.props.handleChangeTab}
         >

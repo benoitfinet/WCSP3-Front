@@ -33,14 +33,14 @@ class BlogPage extends React.Component {
         <MDBRow>
           <MDBCol lg="7">
             <a href="#!" className="black-text">
-              <h3 className="font-weight-bold mb-3">
+              <h3 className="home-title-green">
               {homes.length !== 0 && homes[3].title}
               </h3>
             </a>
-            <h4 className="font-weight-bold mb-3 p-0">
+            <h4 className="home-subtitle-orange">
               <strong>{homes.length !== 0 && homes[3].subtitle}</strong>
             </h4>
-            <p className="home-event-para">
+            <p className="home-para-black">
             {homes.length !== 0 && homes[3].text}
             </p>
           </MDBCol>

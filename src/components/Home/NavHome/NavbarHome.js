@@ -38,8 +38,7 @@ const NavbarHome = ({ imgbanner, textbanner }) => {
   window.addEventListener('scroll', changeBackground);
 
   return (
-    <div className="block-title-button">
-      <h1 className="testtitle">{}</h1>
+    <div className="block-navbar-banner">
     <nav className={navbar ? 'blocknavbar' : 'blocknavbaractive'}>
       <div className="nav-center">
         <div className="nav-header">

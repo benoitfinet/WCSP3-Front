@@ -64,15 +64,13 @@ class TarifsTest extends Component {
     return (
       <div>
         <Navbar imgbanner={photo.length !== 0 && photo[2].location} textbanner="Tarifs" />
-        <div className="Activites">
-          <div className="Activitespadding">
-          <div id="ancre-tarifs"></div>
+        <div id="ancre"></div>
+        <div className="background-pages">
           <TarifsSelect
             active={this.state.activeId}
             handleChangeTab={this.handleChangeTab}
           />
-          <div className="Activites-content">{this.getTabContent()}</div>
-          </div>
+          <div className="content-framing">{this.getTabContent()}</div>
         </div>
         <Footer />
       </div>

@@ -23,16 +23,16 @@ class Tresors extends Component {
       const { activity } = this.state;
       return (
         <div>
-        <h1 className="h1activite">{activity.length !== 0 && activity[16].title}</h1>
-        <div className="trait_et_rond">
-          <div className="trait"></div>
-          <div className="rond_bleu"></div>
+          <h1 className="title-framing">{activity.length !== 0 && activity[16].title}</h1>
+          <div className="trait_et_rond">
+            <div className="trait"></div>
+            <div className="rond_bleu"></div>
+          </div>
+          <div className="block-img-para">
+            <img alt="photo" className="photoactivite" src={activity.length !== 0 && activity[16].image}></img>
+            <p className="textactivites">{activity.length !== 0 && activity[16].text}</p>
+          </div>
         </div>
-        <div className="block-img-para">
-          <img alt="photo" className="photoactivite" src={activity.length !== 0 && activity[16].image}></img>
-          <p className="textactivites">{activity.length !== 0 && activity[16].text}</p>
-        </div>
-      </div>
       );
     }
 }

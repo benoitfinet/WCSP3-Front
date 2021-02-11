@@ -39,7 +39,6 @@ const Navbar = ({ imgbanner, textbanner }) => {
 
   return (
     <div className="block-title-button">
-      <h1 className="testtitle">{}</h1>
     <nav className={navbar ? 'blocknavbar' : 'blocknavbaractive'}>
       <div className="nav-center">
         <div className="nav-header">

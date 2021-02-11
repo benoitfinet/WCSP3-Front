@@ -8,10 +8,12 @@ import PropTypes from 'prop-types';
 import Chasse from './Escalade';
 import Navbar from '../Nav/Navbar';
 
-import './Activites.css';
 import Enigmes from './Enigmes';
 import Tresors from './Tresors';
 import LaserGames from './LaserGame';
+
+import './Activites.css';
+import '../CssGlobal/CssGlobal.css';
 
 const ParcoursAcrobatiques = () => <Parcours />;
 
@@ -85,14 +87,12 @@ class Activites extends Component {
       <div>
         <Navbar imgbanner={photo.length !== 0 && photo[0].location} textbanner="Activités" />
         <div id="ancre"></div>
-         <div className="background-tree">
+         <div className="background-pages">
             <Activiteselect
               active={this.state.activeId}
               handleChangeTab={this.handleChangeTab}
             />
-            <div className="activite-contenu">
-              <div className="Activites-content">{this.getTabContent()}</div>
-            </div>
+            <div className="content-framing">{this.getTabContent()}</div>
          </div>
         <Footer />
       </div>

@@ -1,0 +1,26 @@
+.background-pages {
+  padding-bottom: 4%;
+  background-color: #f3f4f5;
+}
+
+.content-framing { 
+  width: 75%;
+  margin: auto;
+  border: 1px solid #d0c6c68c;
+  background-color: white;
+  box-shadow: 0 0 10px #acb9bf96;
+  z-index: 100;
+  padding: 3%;
+  margin-top: 1%;
+  border-radius: 30px;
+}
+
+.title-framing {
+  font-size: 48px;
+  color: #4fa582;
+  padding-top: 1%;
+  padding-bottom: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: 'Luckiest Guy', cursive;
+}

@@ -13,12 +13,52 @@
     font-family: 'Boogaloo', cursive;
 }
 
-.test-button {
-    position: relative;
-    top: -51px;
+.block-text-parc {
+    width: 70%;
+    margin: auto;
 }
 
 .home-event-para {
     font-size: 20px;
     font-family: 'Boogaloo', cursive;
+}
+
+.home-title-green {
+    font-family: "Luckiest Guy",cursive;
+    font-size: 50px;
+    padding-top: 3%;
+    color: #4fa582;
+}
+
+.home-title-white {
+    font-family: "Luckiest Guy",cursive;
+    font-size: 50px;
+    padding-top: 3%;
+    color: white;
+}
+
+.home-subtitle-orange {
+    margin-bottom: 2%;
+    color: #ca9669;
+    font-family: "Boogaloo",cursive;
+}
+
+.home-subtitle-white {
+    margin-bottom: 2%;
+    color: white;
+    font-family: "Boogaloo",cursive;
+}
+
+.home-para-white {
+    font-weight: 100;
+    color: white;
+    font-family: 'Roboto';
+    font-size: 20px;
+}
+
+.home-para-black {
+    font-weight: 100;
+    color: black;
+    font-family: 'Roboto';
+    font-size: 20px;
 }

@@ -30,8 +30,8 @@ class CarouselPage extends React.Component {
     return (
     <div className="block-caroussel">
     <MDBContainer className="carousel">
-      <h2 className="home-title">{homes.length !== 0 && homes[1].title}</h2>
-      <h3 className="home-subtitle">{homes.length !== 0 && homes[1].subtitle}</h3>
+      <h2 className="home-title-white">{homes.length !== 0 && homes[1].title}</h2>
+      <h3 className="home-subtitle-white">{homes.length !== 0 && homes[1].subtitle}</h3>
       <MDBCarousel
       activeItem={1}
       length={6}
@@ -133,6 +133,7 @@ class CarouselPage extends React.Component {
       </MDBCarouselInner>
     </MDBCarousel>
     </MDBContainer>
+    <button className="button-carousel-activities"><a href="/groupes/familleAmis" className="parc-link">Découvrez toutes nos offres</a></button>
     </div>
     );
   }

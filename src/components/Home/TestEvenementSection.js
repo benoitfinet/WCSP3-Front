@@ -45,10 +45,10 @@ class TestEvenementSection extends React.Component {
               {homes.length !== 0 && homes[2].title}
               </h3>
             </a>
-            <h4 className="font-weight-bold mb-3 p-0 subtitle-event">
+            <h4 className="home-subtitle-white">
               <strong>{homes.length !== 0 && homes[2].subtitle}</strong>
             </h4>
-            <p className="home-evenement-para">
+            <p className="home-para-white">
             {homes.length !== 0 && homes[2].text}
             </p>
             <button className="button"><a href="/Event" className="event-link">En savoir plus</a></button>

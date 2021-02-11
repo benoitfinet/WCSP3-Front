@@ -16,26 +16,12 @@ table {
   font-weight: bold;
 }
 
-.tarif-page {
-  background-color: #eef1f3;
-}
-
 .para-tarifs {
   font-size: 20px;
   width: 80%;
   margin: auto;
   color: #344454;
   font-family: 'Boogaloo', cursive;
-}
-
-.block-page-tarif {
-  background-size: 100%;
-  padding: 0;
-  margin: 0;
-  font-family: 'Londrina Solid';
-  padding-top: 3%;
-  padding-bottom: 4%;
-  background-repeat: no-repeat;
 }
 
 .title-tarif {
@@ -56,14 +42,14 @@ table {
 
 .tarifs-select {
   border: 1px solid;
-  border-radius: 30px;
   margin: auto;
-  margin-top: 1%;
   width: 25%;
-  background-color: white;
   position: relative;
-  top: -83px;
-  padding: 0.5%;
+  border-radius: 30px;
+  top: -34px;
+  background-color: white;
+  padding: 1%;
+  z-index: 200;
 }
 
 table td {
