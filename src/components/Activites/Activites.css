@@ -164,6 +164,10 @@
   margin: auto;
 }
 
+.block-text-button-activites {
+  margin: auto;
+}
+
 @media screen and (max-width: 1280px) {
   .Activiteselect {
     width: 440px;

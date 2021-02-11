@@ -30,7 +30,10 @@ class Tresors extends Component {
         </div>
         <div className="block-img-para">
           <img alt="photo" className="photoactivite" src={groupes.length !== 0 && groupes[3].image}></img>
-          <p className="textactivites">{groupes.length !== 0 && groupes[3].text}</p>
+          <div className="block-text-button-gpes">
+            <p className="textactivites">{groupes.length !== 0 && groupes[3].text}</p>
+            <button className="button"><a href="/Reservation" className="parc-link">Reserver</a></button>
+          </div>
         </div>
       </div>
     );

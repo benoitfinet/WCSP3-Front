@@ -30,7 +30,10 @@ class Parcours extends Component {
           </div>
           <div className="block-img-para">
             <img alt="photo" className="photoactivite" src={activity.length !== 0 && activity[14].image}></img>
-            <p className="textactivites">{activity.length !== 0 && activity[14].text}</p>
+            <div className="block-text-button-activites">
+              <p className="textactivites">{activity.length !== 0 && activity[14].text}</p>
+              <button className="button"><a href="/Reservation" className="parc-link">Reserver</a></button>
+            </div>
           </div>
       </div>
       );

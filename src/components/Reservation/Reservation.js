@@ -6,6 +6,9 @@ import 'react-calendar/dist/Calendar.css';
 import axios from 'axios';
 import Navbar from '../Nav/Navbar';
 import Footer from '../Footer/Footer';
+import ModalPage from './ModalCovid';
+import { FaArrowRight } from 'react-icons/fa';
+import { IconContext } from 'react-icons';
 // import { Children } from 'react';
 // import Enigmes from '../Activites/Escalade';
 // import Tresors from '../Activites/Tresors';
@@ -229,7 +232,48 @@ class Reservation extends React.Component {
         <Navbar imgbanner={photo.length !== 0 && photo[1].location} textbanner="Réservation" />
         <div className="background-page-find-us">
           <div className="content-framing">
-          <h1 className='title-page-reservation'>Réservation :</h1>
+          <h1 className='title-framing'>Réserver en ligne, sans règlement :</h1>
+          <div className='block-covid-information'>
+            <p>En raison du contexte sanitaire, merci de lire les recommandations et obligations pour pratiquer l’activité en toute sécurité.</p>
+            <ModalPage />
+          </div>
+          <div className="block-information-to-know">
+            <h2 className="information-to-know-title">Les informations à savoir !</h2>
+              <div className="block-arrow-instruction">
+                <IconContext.Provider
+                  value={{ color: 'rgb(224 171 84)', size: '18px' }}
+                  >
+                <FaArrowRight />
+                </IconContext.Provider>
+                <p className="reservation-instructions">Consultez nos <a href="/Horaires">horaires d'ouverture</a></p>
+              </div>
+              <div className="block-arrow-instruction">
+                <IconContext.Provider
+                  value={{ color: 'rgb(224 171 84)', size: '18px' }}
+                  >
+                <FaArrowRight />
+                </IconContext.Provider>
+                <p className="reservation-instructions">Consultez toutes les informations utiles à <a href="/FAQ">l'organistion de votre journée</a></p>
+              </div>
+              <div className="block-arrow-instruction">
+                <IconContext.Provider
+                  value={{ color: 'rgb(224 171 84)', size: '18px' }}
+                  >
+                <FaArrowRight />
+                </IconContext.Provider>
+                <p className="reservation-instructions">La réservation en ligne se fait sans règlement.</p>
+              </div>
+              <div className="block-arrow-instruction">
+                <IconContext.Provider
+                  value={{ color: 'rgb(224 171 84)', size: '18px' }}
+                  >
+                <FaArrowRight />
+                </IconContext.Provider>
+                <p className="reservation-instructions">Pour les groupes (Anniversaires, Centres de loisirs et scolaires, Team building et Séminaires, Comités d'entreprise,  Associations, EVG / EVJF), merci de ne pas utiliser la réservation en ligne mais de faire votre demande de réservation par email.</p>
+              </div>
+              <button className="button-contact"><a href="/Contact">CONTACTEZ-NOUS !</a></button>
+            </div>
+            <h2 className="title-reservation-now">Réservez dès à présent !</h2>
           <div className="block-activite-total" onSubmit={this.submitReservForm}>
             <div className="block-all-activite">
               <h3 className="title-reservation">Parcours accrobatiques en hauteur</h3>
@@ -260,6 +304,7 @@ class Reservation extends React.Component {
                   <option value="6">6</option>
                 </select>
               </div>
+              <hr/>
               <div className="block-activite">
                 <div className="block-title-activite-description">
                   <h3 className="title-activitie">Ouistiti</h3>
@@ -287,6 +332,7 @@ class Reservation extends React.Component {
                   <option value="6">6</option>
                 </select>
               </div>
+              <hr/>
               <div className="block-activite">
                 <div className="block-title-activite-description">
                   <h3 className="title-activitie">Enfant</h3>
@@ -316,6 +362,7 @@ class Reservation extends React.Component {
                   <option value="6">6</option>
                 </select>
               </div>
+              <hr/>
               <div className="block-activite">
                 <div className="block-title-activite-description">
                   <h3 className="title-activitie">Junior</h3>
@@ -345,6 +392,7 @@ class Reservation extends React.Component {
                   <option value="6">6</option>
                 </select>
               </div>
+              <hr/>
               <div className="block-activite">
                 <div className="block-title-activite-description">
                   <h3 className="title-activitie">Adulte</h3>
@@ -375,6 +423,7 @@ class Reservation extends React.Component {
                   <option value="6">6</option>
                 </select>
               </div>
+              <hr/>
               <div className="block-activite">
                 <div className="block-title-activite-description">
                   <h3 className="title-activitie">Nocturne</h3>
@@ -497,7 +546,7 @@ class Reservation extends React.Component {
                 </select>
               </div>
               <h3 className="title-reservation">TERRASSES AERIENNES PRIVATIVES</h3>
-              <div className="block-activite">
+              <div className="block-activite-terrasse">
                 <div className="block-title-activite-description">
                 </div>
                 <p className="price">
@@ -514,166 +563,42 @@ class Reservation extends React.Component {
               </div>
             </div>
             <div className="block-total">
-              <p>Votre selection :</p>
-
+              <div>
+                <p className="your-selection">Votre selection :</p>
+                <hr/>
+              </div>
               <p>{this.state.basket.map((item) => {
                 console.log(item);
                 return (
-                  <p key={item.activity}>{item.numberSelectedActivity}{item.activity}</p>
+                  <div key={item.activity} className="block-activity-selected">
+                    <p className="number-selected-activity" key={item.activity}>{item.numberSelectedActivity}</p>
+                    <p className="item-activity" key={item.activity}>{item.activity}</p>
+                  </div>
                 );
-              })}</p>
-
-              <p>
-                <div className="block-number-activite">
-                  <p>
-                    {this.state.selectionNumberPitchoun !== ''
-                      ? this.state.selectionNumberPitchoun
-                      : ''}
-                  </p>
-                  <p>
-                    {this.state.totalPricePitchoun !== 0
-                      ? 'Parcours accrobatique Pitchoun'
-                      : ''}
-                  </p>
-                </div>
-                <div className="block-number-activite">
-                  <p>
-                    {this.state.selectionNumberOuistiti !== ''
-                      ? this.state.selectionNumberOuistiti
-                      : ''}
-                  </p>
-                  <p>
-                    {this.state.totalPriceOuistiti !== 0
-                      ? 'Parcours accrobatique Ouistiti'
-                      : ''}
-                  </p>
-                </div>
-                <div className="block-number-activite">
-                  <p>
-                    {this.state.selectionNumberChildren !== ''
-                      ? this.state.selectionNumberChildren
-                      : ''}
-                  </p>
-                  <p>
-                    {this.state.totalPriceChildren !== 0
-                      ? 'Parcours accrobatique Enfant'
-                      : ''}
-                  </p>
-                </div>
-                <div className="block-number-activite">
-                  <p>
-                    {this.state.selectionNumberJunior !== ''
-                      ? this.state.selectionNumberJunior
-                      : ''}
-                  </p>
-                  <p>
-                    {this.state.totalPriceJunior !== 0
-                      ? 'Parcours accrobatique Junior'
-                      : ''}
-                  </p>
-                </div>
-                <div className="block-number-activite">
-                  <p>
-                    {this.state.selectionNumberAdult !== ''
-                      ? this.state.selectionNumberAdult
-                      : ''}
-                  </p>
-                  <p>
-                    {this.state.totalPriceAdult !== 0
-                      ? 'Parcours accrobatique Adulte'
-                      : ''}
-                  </p>
-                </div>
-                <div className="block-number-activite">
-                  <p>
-                    {this.state.selectionNumberNocturne !== ''
-                      ? this.state.selectionNumberNocturne
-                      : ''}
-                  </p>
-                  <p>
-                    {this.state.totalPriceNocturne !== 0
-                      ? 'Parcours accrobatique Nocturne'
-                      : ''}
-                  </p>
-                </div>
-                <div className="block-number-activite">
-                  <p>
-                    {this.state.selectionNumberEscape !== ''
-                      ? this.state.selectionNumberEscape
-                      : ''}
-                  </p>
-                  <p>
-                    {this.state.totalPriceEscape !== 0
-                      ? 'Forescape - Escape Game'
-                      : ''}
-                  </p>
-                </div>
-                <div className="block-number-activite">
-                  <p>
-                    {this.state.selectionNumberEnigme !== ''
-                      ? this.state.selectionNumberEnigme
-                      : ''}
-                  </p>
-                  <p>
-                    {this.state.totalPriceEnigme !== 0
-                      ? 'Parcours d\'énigme au sol'
-                      : ''}
-                  </p>
-                </div>
-                <div className="block-number-activite">
-                  <p>
-                    {this.state.selectionNumberTresor !== ''
-                      ? this.state.selectionNumberTresor
-                      : ''}
-                  </p>
-                  <p>
-                    {this.state.totalPriceTresor !== 0
-                      ? 'Chasse au trésor'
-                      : ''}
-                  </p>
-                </div>
-                <div className="block-number-activite">
-                  <p>
-                    {this.state.selectionNumberLaserGAme !== ''
-                      ? this.state.selectionNumberLaserGame
-                      : ''}
-                  </p>
-                  <p>
-                    {this.state.totalPriceLaserGame !== 0
-                      ? 'Laser Game'
-                      : ''}
-                  </p>
-                </div>
-                <div className="block-number-activite">
-                  <p>
-                    {this.state.selectionNumberTerrasse !== ''
-                      ? this.state.selectionNumberTerrasse
-                      : ''}
-                  </p>
-                  <p>
-                    {this.state.totalPriceTerrasse !== 0
-                      ? 'Terrasse privative'
-                      : ''}
-                  </p>
-                </div>
+              })}
                 {this.state.basket.length
-                  ? <p>
+                  ? <p className="total-basket">
                     {`Total : ${this.totalPrice()},00€`}
                   </p>
                   : null
                 }
-
               </p>
-              <hr></hr>
+              <div>
+                <p className="title-information-reservation">
+                    Vos coordonnées de réservation :
+                </p>
+                <hr/>
+              </div>
               <label>Nom : <input type="text" value={this.state.nomClient} onChange={this.handleChangeNom} /></label>
               <label>Prénom : <input type="text" value={this.state.prenomClient} onChange={this.handleChangePrenom} /></label>
               <label>Tel : <input type="number" value={this.state.telClient} onChange={this.handleChangeTel} /></label>
               <label>Email : <input type="email" value={this.state.emailClient} onChange={this.handleChangeEmail} /></label>
-                  <button type='button' onClick={(e) => this.submitReservForm(e)}>Envoyer</button>
+              <p className="reservation-date-selection">Date de la réservation :</p>
               <Calendar
                 onChange={this.onChange}
                 value={this.state.value}
               />
+              <button type='button' onClick={(e) => this.submitReservForm(e)} className="validation-reservation-button">Valider votre réservation</button>
             </div>
           </div>
           </div>

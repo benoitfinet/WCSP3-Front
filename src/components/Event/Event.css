@@ -41,12 +41,10 @@
 }
   
 .textactivites {
-  padding-right: 3%;
-  padding-left: 3%;
-  font-family: 'Roboto';
-  font-size: 1.2em;
-  color: #344454;
-  line-height: 1.7em;
+  font-weight: 100;
+    font-family: 'Roboto';
+    font-size: 18px;
+    color: #45475d;
 }
     
 .Activiteselect button.active {
@@ -65,10 +63,6 @@
   margin: auto;
   padding: 3%;
   width: 50%!important;
-}
-
-.textactivites{
-  margin: auto;
 }
 
 @media screen and (max-width: 1280px) {
