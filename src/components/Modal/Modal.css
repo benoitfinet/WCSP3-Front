@@ -3,6 +3,11 @@
     color: white;
 }
 
+.btn-info {
+    color: #fff;
+    background-color: #88a9b5!important;
+}
+
 .modal-wrapper {
     width: 750px;
     margin-left: 20%;

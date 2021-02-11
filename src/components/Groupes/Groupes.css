@@ -15,6 +15,10 @@
   z-index: 200;
 }
 
+.block-text-button-gpes {
+  margin: auto;
+}
+
 .InfiniteCarouselSlide img:hover {
   width: 100%;
 }
@@ -97,6 +101,12 @@
   bottom: -31px;
   text-transform: uppercase;
   font-family: 'Boogaloo', cursive;
+}
+
+.title-birthday {
+  margin-bottom: 2%;
+  color: #ca9669;
+  font-family: "Boogaloo",cursive;
 }
 
 
