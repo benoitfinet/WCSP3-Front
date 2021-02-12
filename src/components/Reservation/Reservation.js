@@ -15,7 +15,7 @@ import { IconContext } from 'react-icons';
 class Reservation extends React.Component {
   state = {
     photo: [],
-    value: new Date(),
+    date: new Date(),
     pricePitchounForOne: 11,
     priceOuistitiForOne: 15,
     priceChildForOne: 16,
@@ -196,18 +196,66 @@ class Reservation extends React.Component {
       telClient: this.state.telClient,
       emailClient: this.state.emailClient,
       basket: this.state.basket,
-      value: this.state.value
+      date: this.state.date
     };
 
     axios.post('/Reservation', data)
       .then(res => {
         this.setState({
           sent: true
-        }, this.submitReservForm());
+        }, this.reset());
       })
       .catch(() => {
         console.log('message not sent');
       });
+    this.reset();
+  }
+
+  reset = () => {
+    this.setState({
+      selectionNumberPitchoun: '',
+      selectionNumberOuistiti: '',
+      selectionNumberChildren: '',
+      selectionNumberJunior: '',
+      selectionNumberAdulte: '',
+      selectionNumberNocturne: '',
+      selectionNumberEscape: '',
+      selectionNumberEnigme: '',
+      selectionNumberTresor: '',
+      selectionNumberLaserGame: '',
+      selectionNumberTerrasse: '',
+
+      totalPricePitchoun: 0,
+      totalPriceOuistiti: 0,
+      totalPriceChildren: 0,
+      totalPriceJunior: 0,
+      totalPriceAdult: 0,
+      totalPriceNocturne: 0,
+      totalPriceEscape: 0,
+      totalPriceEnigme: 0,
+      totalPriceTresor: 0,
+      totalPriceLaserGame: 0,
+      totalPriceTerrasse: 0,
+      total: null,
+
+      escape: true,
+      enigmeIsSelect: false,
+      tresorIsSelect: false,
+      terrasseIsSelect: false,
+
+      nomClient: '',
+      prenomClient: '',
+      telClient: '',
+      emailClient: '',
+      basket: []
+    });
+  }
+
+  onChange = date => {
+    const currentDate = this.state.date + date;
+    this.setState({
+      date: currentDate
+    });
   }
 
   getHome = () => {
