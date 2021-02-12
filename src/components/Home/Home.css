@@ -11,6 +11,7 @@
     margin: auto;
     color: #344454;
     font-family: 'Boogaloo', cursive;
+    white-space: pre-line;
 }
 
 .block-text-parc {
@@ -59,6 +60,6 @@
 .home-para-black {
     font-weight: 100;
     font-family: 'Roboto';
-    font-size: 18px;
+    font-size: 20px;
     color: #45475d;
 }

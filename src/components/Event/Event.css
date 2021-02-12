@@ -12,21 +12,31 @@
   width: 40%;
   padding: 2%;
   margin: auto;
+  object-fit: cover;
 }
 
 .title-event-page {
   margin-bottom: 2%;
   color: #ca9669;
+  font-family: "Boogaloo",cursive;
 }
 
 .para-event-page {
-  color: #344454;
+  text-align: left;
+  padding-top: 5%;
+  padding-left: 1%;
+  position: relative;
+  top: -2px;
+  width: 100%;
+  color: #45475d;
+  white-space: pre-line;
 }
 
 .block-title-para-event {
   width: 40%;
   padding: 2%;
   margin: auto;
+  white-space: pre-line;
 }
 
 .Activites{
@@ -36,7 +46,6 @@
   font-family: 'Londrina Solid';
   padding-top: 3%;
   background-repeat: no-repeat;
-  padding-bottom: 6%;
   background-color: #eef1f3;
 }
   
@@ -63,6 +72,7 @@
   margin: auto;
   padding: 3%;
   width: 50%!important;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 1280px) {
@@ -114,5 +124,19 @@
   .Activites{
     background-image: none;
     background-color: #eef0f1;
+  }
+}
+
+@media all and (max-device-width: 480px) {
+  .photoactivite {
+    width: 100%!important;
+    height: 50%!important;
+    object-fit: cover;
+}
+
+.textactivites {
+  font-size: 12px;
+  padding-top: 6%;
+  padding-bottom: 6%;
   }
 }

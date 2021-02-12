@@ -21,7 +21,7 @@ class Activiteselect extends Component {
          onClick={this.props.handleChangeTab}
         >
           Les centres de loisirs et scolaires
-        </Link><br/>
+        </Link><br className="br-groupes"/>
         <Link to="/groupes/teamBuilding" id="teamBuilding" className={this.props.active === 'teamBuilding' ? 'Gpe-active' : 'unActive'}
          onClick={this.props.handleChangeTab}
         >

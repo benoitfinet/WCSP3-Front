@@ -50,11 +50,11 @@
   
   .para-reglement {
     text-align: left;
-    font-size: 20px;
-    color: #0e0e0ead;
-    font-family: 'Boogaloo', cursive;
-    font-weight: lighter;
-    white-space: pre-line;
+    padding-left: 1%;
+    position: relative;
+    top: -2px;
+    width: 100%;
+    color: #45475d;
   }
   
   span {
@@ -67,6 +67,10 @@
     font-family: 'Boogaloo', cursive;
     margin-top: 3%;
     text-transform: uppercase;
+  }
+
+  .img-reglement {
+    width: 100%;
   }
   
   

@@ -22,6 +22,7 @@ table {
   margin: auto;
   color: #344454;
   font-family: 'Boogaloo', cursive;
+  white-space: pre-line;
 }
 
 .title-tarif {
@@ -30,6 +31,7 @@ table {
   color: #4fa582;
   padding-top: 3%;
   padding-bottom: 3%;
+  white-space: pre-line;
 }
 
 .secondary-title {
@@ -38,6 +40,7 @@ table {
   font-family: 'Boogaloo', cursive;
   margin-top: 3%;
   text-transform: uppercase;
+  white-space: pre-line;
 }
 
 .tarifs-select {
@@ -50,6 +53,11 @@ table {
   background-color: white;
   padding: 1%;
   z-index: 200;
+  white-space: pre-line;
+}
+
+p{
+  white-space: pre-line;
 }
 
 table td {
@@ -62,4 +70,23 @@ table td {
 
 table {
   border-radius: 50px;
+}
+
+@media all and (max-device-width: 480px) {
+  .title-tarif {
+    font-size: 24px;
+    padding-top: 12%!important;
+  }
+
+  .tarifs-select {
+    width: 78%;
+    position: relative;
+    top: -60px;
+  }
+
+  .secondary-title {
+    font-size: 18px;
+    padding-bottom: 9%;
+    padding-top: 2%;
+  }
 }

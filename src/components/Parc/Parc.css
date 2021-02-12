@@ -1,5 +1,6 @@
 .block-park {
   font-family: 'Francois One', sans-serif;
+  white-space: pre-line;
 }
 
 .block-img-text-buvette {
@@ -7,11 +8,9 @@
 }
 
 .text-parc-buvette {
-  width: 40%;
-  padding: 2%;
+  width: 45%;
+  color: #45475d;
   margin: auto;
-  color: #344454;
-  font-family: 'Boogaloo', cursive;
 }
 
 .img-buvette {
@@ -52,12 +51,12 @@
 }
 
 .text-parc {
-  font-size: 20px;
-    width: 80%;
-    margin: auto;
-    color: #344454;
-    font-family: 'Boogaloo', cursive;
-    padding-top: 2%;
+  position: relative;
+  top: -2px;
+  width: 80%;
+  color: #45475d;
+  margin: auto;
+  padding: 3%;
 }
 
 @media screen and (max-width: 1280px) {

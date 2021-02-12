@@ -41,7 +41,7 @@ class Parc extends Component {
           <div className="textback">
           <div className="parc-layout">
             <div className="textback">
-              <h2 className="home-title">{parc.length !== 0 && parc[3].title}</h2>
+              <h2 className="title-framing">{parc.length !== 0 && parc[3].title}</h2>
               <div id="ancre-engagement"></div>
               <div id="ancre-engagement"></div>
               <div className="trait_et_rond">
@@ -51,14 +51,14 @@ class Parc extends Component {
               <p className="text-parc">{parc.length !== 0 && parc[3].text}
               </p>
             </div>
-            <h2 className="home-title">{parc.length !== 0 && parc[2].title}</h2>
-            <div id="ancre-buvette"></div>
+            <h2 className="title-framing">{parc.length !== 0 && parc[2].title}</h2>
           <div id="ancre-plan"></div>
           <div className="trait_et_rond">
             <div className="trait"></div>
             <div className="rond_bleu"></div>
           </div>
             <div className="block-img-text-buvette">
+            <div id="ancre-buvette"></div>
             <img className="img-buvette" src={parc.length !== 0 && parc[3].image} alt="Carte de Milly-la-Forêt"/>
             <p className="text-parc-buvette">{parc.length !== 0 && parc[2].text}<br/><br/>{parc.length !== 0 && parc[4].title} <a href={parc.length !== 0 && parc[2].image} target="blank">{parc.length !== 0 && parc[4].text}</a>
             </p>

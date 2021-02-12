@@ -16,6 +16,7 @@
     background-image: url("./img/IMAGE_1.jpg");
     background-size: cover;
     position: relative;
+    white-space: pre-line;
 }
 
 .test-background::before{

@@ -20,7 +20,7 @@ class Activiteselect extends Component {
         onClick={this.props.handleChangeTab}
         >
           Parcours d'énigmes
-        </Link><br/>
+        </Link><br className="br-select"/>
         <Link to="/Activites/chasse-tresor" id="chasse-tresor" className={this.props.active === 'chasse-tresor' ? 'Gpe-active' : 'unActive'}
         onClick={this.props.handleChangeTab}
         >

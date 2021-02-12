@@ -4,6 +4,7 @@
   text-align: center;
   margin: auto;
   width: 80%;
+  white-space: pre-line;
 }
 
 .block-number-activite {
@@ -252,4 +253,30 @@ input {
 
 .block-activite-terrasse {
   margin: auto;
+}
+
+@media all and (max-device-width: 480px) {
+  .block-activite-total {
+    display: block;
+  }
+
+  .block-title-activite-description {
+    width: 100%;
+  }
+
+  .price {
+    width: 100%;
+    padding-bottom: 8%;
+  }
+
+  .block-activite {
+    display: block;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  .block-total {
+    width: 100%;
+    padding-bottom: 13%;
+  }
 }

@@ -13,6 +13,7 @@
   background-color: white;
   padding: 1%;
   z-index: 200;
+  white-space: pre-line;
 }
 
 #ancre {
@@ -94,14 +95,15 @@
 
 .Activites-content {
   width: 75%;
-    margin: auto;
-    border: 1px solid #d0c6c68c;
-    background-color: white;
-    box-shadow: 0 0 10px #acb9bf96;
-    z-index: 100;
-    padding: 3%;
-    margin-top: 1%;
-    border-radius: 30px;
+  margin: auto;
+  border: 1px solid #d0c6c68c;
+  background-color: white;
+  box-shadow: 0 0 10px #acb9bf96;
+  z-index: 100;
+  padding: 3%;
+  margin-top: 1%;
+  border-radius: 30px;
+  margin-bottom: 6%;
 }
 
 .block-text-bouton {
@@ -158,6 +160,7 @@
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   height: 38%;
+  object-fit: cover;
 }
 
 .textactivites{
@@ -210,5 +213,54 @@
   }
   .textback{
     width: 240px
+  }
+}
+
+@media all and (max-device-width: 480px) {
+  .content-framing {
+    width: 100%!important;
+    border-radius: 0!important;
+    padding-bottom: 12%!important;
+  }
+
+  .block-card {
+    display: block;
+  }
+
+  .card-activite {
+    width:100%;
+    margin: 0;
+  }
+
+  .block-select-activities {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    top: -110px;
+  }
+
+  .br-select {
+    display: none;
+  }
+
+  .background-pages {
+    padding-bottom: 0%!important;
+  }
+
+  .block-img-para {
+    display: block;
+  }
+
+  .title-framing {
+    font-size: 24px!important;
+  }
+
+  .card-activite {
+    height: 469px;
+    margin-bottom: 10%;
+  }
+
+  .photo-card {
+    object-fit: cover;
   }
 }

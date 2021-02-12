@@ -510,3 +510,26 @@ nav {
     display: none;
   }
 }
+
+@media all and (max-device-width: 480px) {
+  .blocknavbaractive {
+    z-index: 300;
+    padding-bottom: 4%;
+  }
+
+  .blocknavbar {
+    padding-bottom: 4%;
+  }
+
+  .test:last-child a {
+    display: initial;
+  }
+
+  .banner-home-all-pages {
+    height: 470px;
+  }
+
+  .textbanner {
+    font-size: 52px;
+  }
+}

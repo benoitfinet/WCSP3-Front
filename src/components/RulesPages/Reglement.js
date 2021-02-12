@@ -50,7 +50,7 @@ class Reglement extends React.Component {
                 {infos.length !== 0 && infos[6].subtitle}
                 <br></br>
                 </p>
-                <img className="imageinfos" src={infos.length !== 0 && infos[6].image} />
+                <img className="img-reglement" src={infos.length !== 0 && infos[6].image} />
                 <p className="para-reglement">
                 {infos.length !== 0 && infos[7].subtitle}
                 </p>

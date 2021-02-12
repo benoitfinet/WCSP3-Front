@@ -26,6 +26,10 @@
     padding: 30px;
 }
 
+.text-map-introduction {
+  
+}
+
 @media screen and (max-width: 1280px) {
     .textback{
       width: 540px

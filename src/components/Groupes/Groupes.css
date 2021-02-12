@@ -13,6 +13,7 @@
   background-color: white;
   padding: 1%;
   z-index: 200;
+  white-space: pre-line;
 }
 
 .block-text-button-gpes {
@@ -41,6 +42,7 @@
   background-color: #EFB960;
   font-weight: 400;
   font-family: 'Boogaloo', cursive;
+  white-space: pre-line;
 }
 
 .Gpe-active:hover {
@@ -54,6 +56,7 @@
   font-family: 'Francois One', sans-serif;
   font-size: 1.5rem;
   font-family: 'Boogaloo', cursive;
+  white-space: pre-line;
 }
 
 .textactivites {
@@ -62,6 +65,7 @@
   margin: auto;
   color: #344454;
   font-family: 'Boogaloo', cursive;
+  white-space: pre-line;
 }
 
 .photoactivite{
@@ -152,5 +156,37 @@
   }
   .textback{
     width: 240px
+  }
+}
+
+@media all and (max-device-width: 480px) {
+  .Gpe-active {
+    font-size: 1.3em;
+    width: 59%;
+    margin: auto;
+  }
+
+  .unActive {
+    font-size: 1.3em;
+  }
+
+  .title-framing {
+    font-size: 24px!important;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 9%;
+    padding-top: 8%;
+  }
+
+  .block-select-groups {
+    width: 80%;
+    position: relative;
+    top: -115px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .br-groupes {
+    display: none;
   }
 }

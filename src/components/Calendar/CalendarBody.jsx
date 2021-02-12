@@ -28,6 +28,7 @@ class CalendarBody extends React.Component {
         <Navbar imgbanner={horaires.length !== 0 && horaires[1].image} textbanner="Nos horaires" />
         <div className="background-page-calendar">
           <div className="content-framing">
+            <div id="ancre-calendrier"></div>
             <h2 className="title-framing">{horaires.length !== 0 && horaires[8].text}</h2>
             <img className='parkSchedule' src={horaires.length !== 0 && horaires[0].image} alt='saison 2021' />
               <div className='cldInfoText'>
@@ -49,12 +50,6 @@ class CalendarBody extends React.Component {
                 <br/>
                 <h3>{horaires.length !== 0 && horaires[6].title}</h3>
                 <p>{horaires.length !== 0 && horaires[6].text}</p>
-              </div>
-              <div className='cldReservationInfo'>
-                <h3 className="title-framing">{horaires.length !== 0 && horaires[7].title}</h3>
-                <p>
-                {horaires.length !== 0 && horaires[7].text}
-                </p>
               </div>
           </div>
         </div>
